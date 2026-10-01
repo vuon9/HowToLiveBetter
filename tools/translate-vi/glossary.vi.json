@@ -1,0 +1,32 @@
+{
+  "_comment": "Terminology for the Vietnamese translation. Field labels are the single source of truth used by translate_book.py when re-assembling items.",
+  "field_labels": {
+    "成本": "Chi phí",
+    "说人话": "Nói đơn giản",
+    "收益": "Lợi ích",
+    "证据等级": "Mức bằng chứng",
+    "来源": "Nguồn",
+    "备注": "Ghi chú"
+  },
+  "terms": {
+    "证据等级": "mức bằng chứng (A/B/C giữ nguyên)",
+    "争议": "tranh cãi",
+    "口径": "tính theo",
+    "元": "nhân dân tệ",
+    "医保": "bảo hiểm y tế (医保)",
+    "社保": "bảo hiểm xã hội (社保)",
+    "户口": "hộ khẩu (户口)",
+    "低保": "trợ cấp sinh hoạt tối thiểu (低保)",
+    "医保个人账户": "tài khoản cá nhân trong bảo hiểm y tế",
+    "工伤": "tai nạn lao động (工伤)",
+    "劳动仲裁": "trọng tài lao động (劳动仲裁)",
+    "疾控中心": "trung tâm kiểm soát bệnh tật (疾控中心)",
+    "ICP 备案": "đăng ký ICP (ICP 备案)",
+    "节": "phần",
+    "条": "mục",
+    "最高人民法院": "Tòa án nhân dân tối cao Trung Quốc",
+    "国家统计局": "Cục Thống kê Quốc gia Trung Quốc"
+  },
+  "cross_reference_format": "见第 X 节第 Y 条 → xem phần X, mục Y; 第 X 节 → phần X; within the same chapter 第 Y 条 → mục Y. The parenthetical anchor right after a reference must be translated with the exact wording of that target item's translated title.",
+  "status_line": "> Bản dịch không chính thức của [book/{src}](../{src}). Nếu có khác biệt, bản gốc tiếng Trung là bản có hiệu lực."
+}

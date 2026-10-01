@@ -1,0 +1,29 @@
+> Bản dịch không chính thức của [docs/核实记录/追加-青光眼急性发作.md](../../../docs/核实记录/追加-青光眼急性发作.md). Nếu có khác biệt, bản gốc tiếng Trung là bản có hiệu lực.
+[← Về mục lục](../../../README.vi.md)
+
+# Bổ sung: Cơn glôcôm cấp và ranh giới của mục chống ánh sáng xanh · Hồ sơ kiểm chứng (2026-09-21)
+
+Nguồn nhiệm vụ: Độc giả hỏi phần 6, mục 16 (kính chống ánh sáng xanh) có vấn đề gì không: "Nếu nhìn liên tục mười mấy tiếng thức trắng đêm thì sao".
+
+Phạm vi bao quát ban đầu: Nửa câu đầu của phần 6, mục 16 (tròng kính chống ánh sáng xanh vô dụng) có Cochrane bảo chứng, không có vấn đề gì. Nửa câu sau "mỏi mắt, khô mắt do nhìn màn hình có thể tự hồi phục" lại viết thành một câu không có ranh giới điều kiện, đọc lên nghe như "nhìn màn hình không hại mắt". Tìm kiếm toàn bộ sách với từ khóa "glôcôm", "nhãn áp" đều không có kết quả, cấp cứu nhãn khoa ở phần 13 chỉ có mục 5 (loại đột nhiên tối sầm một bên mắt, không đau không đỏ). Vì vậy phần còn thiếu là nửa còn lại: loại đau, đỏ, nhìn đèn thấy quầng cầu vồng. Đó là cơn glôcôm góc đóng cấp, chỉ vài ngày là có thể chèn ép làm hỏng dây thần kinh thị giác, mà "chỗ tối, cúi đầu thời gian dài, đồng tử giãn to" lại chính là tư thế thức đêm lướt điện thoại.
+
+Điểm xử lý: Phần 13 thêm mới 1 mục (mục 6, chèn sau mục 5, các mục từ 6 đến 42 cũ dời thành 7 đến 43); phần 6, mục 16 đổi tiêu đề, đổi trường Nói đơn giản, bổ sung trường hợp ngoại lệ này vào trường Ghi chú và dẫn đường.
+
+Các tham chiếu đã sửa sau khi dời mục: book/01 mục 26, 31, 32 (phần 13, mục 11→12, 18→19, 19→20, 10→11), book/08 mục 11 (38→39), book/17 mục 8 (10→11), book/19 mục 11 (20→21), docs/家庭应急装备清单.md bốn chỗ (25→26, 11→12, 13→14, 14→15), docs/遇到陌生人出事该不该停.md một chỗ (40→41), nội bộ phần 13 có mười một chỗ. Trong trường Ghi chú của phần 13, mục 38, Điều 5, 9 của 《指导意见》 là số điều luật nên giữ nguyên. Bản diff của docs/引用对照.md đã được kiểm tra từng dòng: mỗi dòng đều là đổi số mục, tiêu đề được trỏ tới không đổi, không có chỗ nào bị lệch.
+
+## Phần 13, mục 6 (Glaucoma góc đóng cấp)
+| Tài liệu | Kiểm tra lại | Con số |
+|---|---|---|
+| Zhou L, Wu S, Wang Y, Bao X, Peng T, Luo W, Ortega-Usobiaga J (2022). Clinical presentation of acute primary angle closure during the COVID-19 epidemic lockdown. Front Med 9:1078237. <https://doi.org/10.3389/fmed.2022.1078237> (Europe PMC lấy được toàn văn tóm tắt, PMID 36590933) | Có | Đợt phong tỏa 76 ngày năm 2020 có 54 người 64 mắt, cùng kỳ năm 2021 có 46 người 51 mắt; tỉ lệ mù lòa 21,87% so với 7,84%; thời gian từ khi có triệu chứng đến lúc điều trị 241,84±211,95 giờ so với 121,53±96,12 giờ (P=0,001); nhãn áp khi khám 52,63±12,45 so với 45,16±9,79 mmHg (P=0,001); đường kính đồng tử 5,47±1,62 so với 4,33±1,27 mm (P=0,001); bệnh thần kinh thị giác do glaucoma 20/64 (31,25%) so với 7/51 (13,73%) (P=0,03) |
+| Sung MS, Kim HJ, Park SW (2023). Predictors of long-term visual field outcome after an episode of acute primary angle closure. Clin Exp Ophthalmol 51(4):291-299. <https://doi.org/10.1111/ceo.14206> (PMID 36641235) | Có | 50 người 50 mắt, sau khi phát bệnh đã mổ lấy thể thủy tinh, sau 1 năm có 25 mắt (50%) bị khuyết thị trường; thời gian từ lúc xuất hiện triệu chứng đến khi hạ nhãn áp (p=0,005), nhãn áp khi khám (p=0,014), độ cong mống mắt phẳng (p=0,037) là ba yếu tố dự đoán, kết hợp cả ba yếu tố cho AUC=0,921 |
+| Wang J, Wang J, Ng TK, Huang C (2025). Asymmetric intraocular pressure changes in dominant and contralateral eyes: the dark room prone provocative test. Semin Ophthalmol 40(4):325-331. <https://doi.org/10.1080/08820538.2024.2443972> (PMID 39844657) | Có | 43 người có tiền phòng nông với 86 mắt, sau 1 giờ nằm sấp trong phòng tối nhãn áp hai mắt đều tăng rõ rệt (p<.01); mức tăng trung vị ở mắt thuận là 3,60 mmHg, mắt đối bên là 2,70 mmHg (p<.05) |
+
+Xếp mức B: cả ba nghiên cứu đều là nghiên cứu quan sát, hai nghiên cứu đầu còn là hồi cứu đơn trung tâm, nhóm Vũ Hán bị lẫn các khác biệt do chính việc phong tỏa tạo ra. Mức độ lợi ích "lớn", tính theo tỉ lệ tử vong hoặc kết cục sức khỏe, mù lòa là không thể đảo ngược. Chi phí theo thông lệ của các mục cấp cứu khác trong phần 13, ghi nhận "tiền=0 thời gian=vừa".
+
+Những điểm cố ý không đưa vào phần nội dung chính: (1) Không có bất kỳ nghiên cứu nào chứng minh "nhìn điện thoại gây ra glaucoma", nội dung chính chỉ viết môi trường tối kèm cúi đầu thời gian dài là yếu tố kích hoạt cơn phát bệnh, đồng thời nêu rõ nhóm nguy cơ cao là người trên 50 tuổi, viễn thị, tiền phòng nông, người trẻ thức đêm không đi theo cơ chế này; (2) Bệnh hắc võng mạc trung tâm thanh dịch (liên quan đến thức đêm và căng thẳng, phân tích gộp trên Retina 2016 đưa ra OR cho rối loạn giấc ngủ = 1,90) không được đưa vào, do phần tóm tắt đó in 95% CI là 1.28–1.83, giới hạn dưới lớn hơn giới hạn trên, rõ ràng là lỗi in ấn, không lấy được khoảng tin cậy chính xác để đối chiếu từng chữ; (3) Tỉ lệ mắc khô mắt ở người làm việc với màn hình (BMJ Open 2016, xác định theo ba tiêu chuẩn khách quan là 11,6%, 95% CI 10,5–12,9) không đưa vào mục Lợi ích, chỉ để lại một câu trong phần ghi chú của phần 6, mục 16 là "khô mắt để lâu sẽ chuyển thành mạn tính", vẫn tính là đồng thuận mức C.
+
+## Chỉnh sửa ở phần 6, mục 16 (Kính chống ánh sáng xanh)
+Mức bằng chứng, nguồn, mục lợi ích không đổi chữ nào. Đã sửa ba chỗ: cuối tiêu đề thêm ", nhưng mắt đau tức đỏ cộm phải coi là cấp cứu"; phần Nói đơn giản viết lại dưới 120 chữ, lược bỏ các khẳng định không có trong mục Lợi ích; phần Ghi chú bổ sung trường hợp ngoại lệ này, yếu tố kích hoạt và nhóm nguy cơ cao, đồng thời thêm một câu về việc khô mắt có thể chuyển sang mạn tính, dẫn nguồn sang phần 13, mục 6.
+
+## Thống kê
+Toàn bộ sách 574 → 575 mục, mức A 385 không đổi, mức B 139 → 140, mức C 50 không đổi; tranh cãi 51, TODO 38 không đổi; liên kết tài liệu gốc trong book/ 1.176 → 1.179; hiệu quả chi phí rất cao 105, cao 267, trung bình 203.

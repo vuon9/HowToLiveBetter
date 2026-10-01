@@ -1,0 +1,78 @@
+> Bản dịch không chính thức của [docs/核实记录/追加-第1节骨质疏松筛查.md](../../../docs/核实记录/追加-第1节骨质疏松筛查.md). Nếu có khác biệt, bản gốc tiếng Trung là bản có hiệu lực.
+[← Về mục lục](../../../README.vi.md)
+
+# Bổ sung: phần 1, mục 39 và 40, tầm soát loãng xương và dùng thuốc sau khi phát hiện
+
+2026-10-01. Bạn đọc đề nghị bổ sung "phòng ngừa té ngã cho người già, loãng xương, chuẩn bị trước khi mất khả năng tự chăm sóc, chứ không chỉ cách đỡ khi đã té". Phòng ngừa té ngã đã có ở phần 1, mục 13, lần này chỉ bổ sung loãng xương: ai nên tầm soát, tầm soát những gì, phát hiện ra thì làm thế nào. Hai mục được thêm vào cuối phần, không chèn vào giữa, để tránh phải đánh số lại toàn bộ các mục phía sau.
+
+## 和已有条目的分工 (nghĩa: Phân công với các mục đã có)
+
+- 第 1 节第 13 条（平衡和腿部力量、家里防滑扶手）管「少摔」 (dịch: Điều 13 khoản 1 (thăng bằng và sức mạnh chân, tay vịn chống trượt trong nhà) lo phần "ít ngã")`，第 39、40 条管「摔了骨头经不经得住」 (dịch: Điều 39, 40 lo phần "ngã rồi thì xương có chịu được hay không")`。第 39 条备注指向第 13 条。
+- Điều 18 khoản 6 (đừng dựa vào gói khám sức khỏe tổng quát để phòng bệnh) phủ định là gói khám hằng năm, không phải khám sàng lọc đơn lẻ. Đo mật độ xương là khám sàng lọc đơn lẻ làm theo tuổi và giới tính, không mâu thuẫn với điều đó. Không sửa khoản 6 (phạm vi nhiệm vụ chỉ cho phép sửa book/01).
+- Điều 2 khoản 13 (đừng vội đỡ người già sau khi ngã), cố định tại chỗ khi gãy xương khoản 13, là chuyện sau khi ngã, không lặp lại.
+- Điều vitamin D khoản 6 nói là người vốn không thiếu thì đừng bổ sung, nói rõ người bị loãng xương thì bổ sung theo chỉ dẫn của bác sĩ, không mâu thuẫn với điều 40.
+- `grep -n '骨质疏松\|骨密度\|跌倒' book/*.md` 全书此前没有骨密度筛查和抗骨质疏松药的条目。 (dịch: `grep -n 'loãng xương\|mật độ xương\|ngã' book/*.md` toàn sách trước đây không có mục nào về sàng lọc mật độ xương và thuốc chống loãng xương.)
+
+## 1. USPSTF 2025 推荐声明 (nghĩa: Tuyên bố khuyến nghị USPSTF 2025)
+
+- DOI：<https://doi.org/10.1001/jama.2024.27154> (PMID 39808425, tóm tắt lấy qua Europe PMC)
+- 原文：「The USPSTF recommends screening for osteoporosis to prevent osteoporotic fractures in women 65 years or older. (B recommendation)」 (dịch: USPSTF khuyến nghị sàng lọc loãng xương để phòng gãy xương do loãng xương ở phụ nữ từ 65 tuổi trở lên. (Khuyến nghị mức B))`；「…in postmenopausal women younger than 65 years who are at increased risk for an osteoporotic fracture as estimated by clinical risk assessment. (B recommendation)」 (dịch: …ở phụ nữ sau mãn kinh dưới 65 tuổi có nguy cơ gãy xương do loãng xương tăng lên theo đánh giá nguy cơ lâm sàng. (Khuyến nghị mức B))`；「…the current evidence is insufficient to assess the balance of benefits and harms of screening for osteoporosis to prevent osteoporotic fractures in men. (I statement)」 (dịch: …bằng chứng hiện có chưa đủ để đánh giá sự cân bằng giữa lợi ích và tác hại của sàng lọc loãng xương nhằm phòng gãy xương do loãng xương ở nam giới. (Tuyên bố mức I))
+- 发表时间只写「2025 年」 (dịch: Thời gian công bố chỉ ghi "năm 2025")`：Europe PMC 题录的 firstPublicationDate 是 2025-02-01（印刷版），线上首发日没有核到，所以不写月份。
+
+## 2. USPSTF 证据综述（Kahwati 2025） (nghĩa: Tổng quan bằng chứng USPSTF (Kahwati 2025))
+
+- DOI：<https://doi.org/10.1001/jama.2024.21653> (PMID 39808441); báo cáo đầy đủ của AHRQ PMID 39869729
+- 原文：「Screening was associated with reduced hip (pooled relative risk [RR], 0.83 [95% CI, 0.73-0.93]; 3 RCTs; 42 009 participants)」 (dịch: Sàng lọc có liên quan đến giảm gãy cổ xương đùi (nguy cơ tương đối gộp [RR], 0.83 [KTC 95%, 0.73-0.93]; 3 thử nghiệm ngẫu nhiên có đối chứng; 42 009 người tham gia))`；「Corresponding absolute risk differences were 5 to 6 fewer fractures per 1000 participants screened.」 (dịch: Mức chênh lệch nguy cơ tuyệt đối tương ứng là ít hơn 5 đến 6 ca gãy xương trên 1000 người tham gia được sàng lọc.)`（AHRQ 版写明「5 (hip) to 6 (MOF)」 (dịch: Bản AHRQ ghi rõ "5 (cổ xương đùi) đến 6 (gãy xương chính)")`）
+- 原文：「Two RCTs used 2-stage screening: Fracture Risk Assessment Tool estimate with bone mineral density (BMD) testing if risk threshold exceeded.」 (dịch: Hai thử nghiệm đối chứng ngẫu nhiên sử dụng sàng lọc hai bước: ước tính bằng Công cụ Đánh giá Nguy cơ Gãy xương, kèm đo mật độ khoáng xương (BMD) nếu vượt ngưỡng nguy cơ.) `；「No evidence evaluated screening with BMD alone or screening in men or younger women.」 (dịch: Không có bằng chứng nào đánh giá việc sàng lọc chỉ bằng BMD hoặc sàng lọc ở nam giới hay phụ nữ trẻ hơn.)
+- 原文（AHRQ 版）：「One SR estimated the risk for overdiagnosis as between 11.8 and 24.1 percent.」 (dịch: Một tổng quan hệ thống ước tính nguy cơ chẩn đoán quá mức nằm trong khoảng 11,8 đến 24,1 phần trăm.)
+- 原文（AHRQ 版）：「sample sizes and treatment durations may not have been adequate for the detection of rare harms such as osteonecrosis of the jaw and atypical femur fractures.」 (dịch: cỡ mẫu và thời gian điều trị có thể chưa đủ để phát hiện các tác hại hiếm gặp như hoại tử xương hàm và gãy xương đùi không điển hình.)
+- 试验人群：「European women (median ages, 71 to 76 years)」 (dịch: phụ nữ châu Âu (tuổi trung vị 71 đến 76)) `。条目写「欧洲老年女性」 (dịch: mục từ ghi "phụ nữ cao tuổi châu Âu") `。
+- Không ghi: nguy cơ tương đối (RR) 0,94 đối với gãy xương chính do loãng xương, vì phần tóm tắt không nêu loại gãy xương này gồm những vị trí nào, nếu đưa vào thì phải giải thích mà lại không kiểm chứng được định nghĩa.
+
+## 3. SCOOP
+
+- DOI：<https://doi.org/10.1016/S0140-6736(17)32640-5>（PMID 29254858）
+- 原文：「a two-arm randomised controlled trial in women aged 70-85 years」 (dịch: một thử nghiệm đối chứng ngẫu nhiên hai nhánh ở phụ nữ từ 70 đến 85 tuổi) `；「12 483 eligible women were identified and participated in the trial」 (dịch: 12 483 phụ nữ đủ điều kiện đã được xác định và tham gia thử nghiệm) `；「Screening did not reduce the primary outcome of incidence of all osteoporosis-related fractures (hazard ratio [HR] 0·94, 95% CI 0·85-1·03, p=0·178)」 (dịch: Sàng lọc không làm giảm kết cục chính là tỷ lệ mắc tất cả các trường hợp gãy xương liên quan đến loãng xương (tỷ số nguy cơ [HR] 0·94, KTC 95% 0·85-1·03, p=0·178)) `；「screening reduced the incidence of hip fractures (0·72, 0·59-0·89, p=0·002). There was no evidence of differences in mortality」 (dịch: sàng lọc làm giảm tỷ lệ gãy cổ xương đùi (0·72, 0·59-0·89, p=0·002). Không có bằng chứng về sự khác biệt về tỷ lệ tử vong)
+
+## 4. 中华医学会《原发性骨质疏松症诊疗指南(2017)》 (nghĩa: Hướng dẫn chẩn đoán và điều trị bệnh loãng xương nguyên phát (2017) của Hội Y học Trung Hoa)
+
+- URL：<https://html.rhhz.net/GUSS/html/cc825127-29a3-47c1-9a95-7a212fdcce55.htm>（期刊全文页，页面自带「DOI: 10.3969/j.issn.1674-2591.2017.05.002」「中华骨质疏松和骨矿盐疾病杂志, 2017, 10(5): 413-443」） (dịch: trang toàn văn của tạp chí, trang có sẵn "DOI: 10.3969/j.issn.1674-2591.2017.05.002" "Tạp chí Loãng xương và Bệnh xương chuyển hóa Trung Hoa, 2017, 10(5): 413-443")
+- 表 5 原文：「符合以下任何一条，建议行骨密度测定 ·女性65岁以上和男性70岁以上者 ·女性65岁以下和男性70岁以下，有一个或多个骨质疏松危险因素者 ·有脆性骨折史的成年人」 (dịch: đáp ứng bất kỳ điều nào sau đây thì nên đo mật độ xương: ·nữ trên 65 tuổi và nam trên 70 tuổi ·nữ dưới 65 tuổi và nam dưới 70 tuổi có một hoặc nhiều yếu tố nguy cơ loãng xương ·người trưởng thành có tiền sử gãy xương giòn)
+- 跟骨超声原文：「目前主要用于骨质疏松风险人群的筛查和骨质疏松性骨折的风险评估，但还不能用于骨质疏松症的诊断和药物疗效判断」 (dịch: Nguyên văn về siêu âm xương gót: «Hiện nay chủ yếu dùng để sàng lọc nhóm người có nguy cơ loãng xương và đánh giá nguy cơ gãy xương do loãng xương, nhưng chưa thể dùng để chẩn đoán loãng xương và phán đoán hiệu quả điều trị bằng thuốc»)「如结果怀疑骨质疏松，应进一步行DXA测量」 (dịch: «Nếu kết quả nghi ngờ loãng xương, nên tiến hành đo DXA tiếp theo»)
+- 脆性骨折定义：「脆性骨折是指受到轻微创伤或日常活动中即发生的骨折」 (dịch: Định nghĩa gãy xương do loãng xương (gãy xương giòn): «Gãy xương giòn là gãy xương xảy ra chỉ sau một chấn thương nhẹ hoặc trong các hoạt động thường ngày»)
+- 表 10 原文：「·发生椎体脆性骨折(临床或无症状)或髋部脆性骨折者 ·DXA骨密度(腰椎、股骨颈、全髋部或桡骨远端1/3)T-值≤-2.5，无论是否有过骨折 ·骨量低下者(骨密度：-2.5＜T-值＜-1.0)，具备以下情况之一： -发生过某些部位的脆性骨折(肱骨上段、前臂远端或骨盆) -FRAX®工具计算出未来10年髋部骨折概率≥3%或任何主要骨质疏松性骨折发生概率≥20%」 (dịch: Nguyên văn Bảng 10: «·Người bị gãy xương giòn đốt sống (có triệu chứng hoặc không triệu chứng) hoặc gãy xương giòn vùng hông ·Mật độ xương DXA (cột sống thắt lưng, cổ xương đùi, toàn bộ xương hông hoặc 1/3 xa xương quay) chỉ số T ≤ -2,5, bất kể đã từng gãy xương hay chưa ·Người có khối lượng xương thấp (mật độ xương: -2,5 < chỉ số T < -1,0), kèm một trong các tình trạng sau: -Đã từng gãy xương giòn ở một số vị trí (đoạn trên xương cánh tay, đầu xa cẳng tay hoặc xương chậu) -Công cụ FRAX® tính được xác suất gãy xương hông trong 10 năm tới ≥ 3% hoặc xác suất xảy ra bất kỳ loại gãy xương chính do loãng xương nào ≥ 20%»)
+- 钙剂原文：「目前尚无充分证据表明单纯补钙可以替代其他抗骨质疏松药物治疗」 (dịch: Nguyên văn về bổ sung canxi: «Hiện chưa có đủ bằng chứng cho thấy chỉ bổ sung canxi đơn thuần có thể thay thế các thuốc chống loãng xương khác»)
+- 复查原文：「本指南仍推荐在药物首次治疗或改变治疗后每年、效果稳定后每1~2年重复骨密度测量」 (dịch: Nguyên văn về tái khám: «Hướng dẫn này vẫn khuyến nghị đo lại mật độ xương mỗi năm sau lần điều trị thuốc đầu tiên hoặc sau khi thay đổi điều trị, và mỗi 1~2 năm sau khi hiệu quả đã ổn định»)
+- 髋部骨折后果原文：「发生髋部骨折后1年之内，20%患者会死于各种并发症，约50%患者致残」 (dịch: Nguyên văn về hậu quả gãy xương hông: «Trong vòng 1 năm sau khi bị gãy xương hông, 20% bệnh nhân tử vong do các biến chứng khác nhau, khoảng 50% bệnh nhân bị tàn phế»)
+- 未取得：2022 年版（中华医学会骨质疏松和骨矿盐疾病分会，《中华骨质疏松和骨矿盐疾病杂志》2022 年第 15 卷第 6 期）的原文。分会官网指南栏（csobmr.cma.org.cn/nlist.aspx?cids=20）没有挂，期刊站 rhhz.net / xml-data.cn 目录页 403，搜索只给出医学资讯站的转述。所以条目明写「2017 年版」，没有拿转述里 2022 版的内容凑。TODO（待核实：2022 版的骨密度检查指征和用药适应证是否与 2017 版一致，拿到原文后替换来源）。 (dịch: Chưa lấy được: nguyên văn bản 2022 (Phân hội Loãng xương và Bệnh xương mô khoáng Trung Hoa y học hội (中华医学会骨质疏松和骨矿盐疾病分会), 《中华骨质疏松和骨矿盐疾病杂志》 năm 2022, tập 15, số 6). Mục hướng dẫn trên trang chính thức của phân hội (csobmr.cma.org.cn/nlist.aspx?cids=20) không đăng, trang mục lục của các trang tạp chí rhhz.net / xml-data.cn trả về 403, tìm kiếm chỉ cho ra các bài tường thuật lại của các trang tin y học. Vì vậy điều mục ghi rõ «bản 2017», không lấy nội dung bản 2022 trong các bài tường thuật để lấp vào. TODO (cần xác minh: chỉ định kiểm tra mật độ xương và chỉ định dùng thuốc của bản 2022 có nhất quán với bản 2017 hay không, thay nguồn sau khi có nguyên văn)).
+
+## 5. 中国骨质疏松流行病学调查（Wang 2021） (nghĩa: Điều tra dịch tễ học loãng xương Trung Quốc (Wang 2021))
+- DOI: <https://doi.org/10.1001/jamanetworkopen.2021.21106>（PMID 34398202）
+- Nguyên văn: "conducted from December 2017 to August 2018"; "The prevalence of osteoporosis among those aged 40 years or older was 5.0% (95% CI, 4.2%-5.8%) among men and 20.6% (95% CI, 19.3%-22.0%) among women."; "Among men and women, 0.3% (95% CI, 0.0%-0.7%) and 1.4% (95% CI, 0.8%-2.0%), respectively, with osteoporosis diagnosed on the basis of bone mineral density or with fracture were receiving antiosteoporosis treatment"
+
+## 6. Cochrane 阿仑膦酸钠综述（Wells 2025 更新） (nghĩa: Tổng quan Cochrane về alendronate (cập nhật Wells 2025))
+- DOI: <https://doi.org/10.1002/14651858.CD001155.pub3>（PMID 39868546; tác giả theo Europe PMC authorString: Wells GA, Hsieh SC, Peterson J, Zheng C, Kelly SE, Shea B, Tugwell P）
+- Định nghĩa dự phòng cấp hai, nguyên văn: "a diagnosis of osteoporosis, a history of vertebral fractures, a low bone mineral density T-score (-2.5 or lower), and 75 years old or older". Điều mục khái quát thành "phụ nữ sau mãn kinh đã có loãng xương hoặc đã bị gãy xương". Nhóm này cũng bao gồm những người trên 75 tuổi, điều mục không triển khai từng mục một.
+- Dự phòng cấp hai, nguyên văn: "clinical vertebral fractures (24/1114 in the alendronate group versus 51/1055 in the placebo group; RR 0.45, 95% CI 0.28 to 0.73 … moderate-certainty evidence)"; "hip fractures (RR 0.49, 95% CI 0.25 to 0.96; ARR 1.0% fewer … low-certainty evidence)"
+- Dự phòng cấp một, nguyên văn: "hip fractures (RR 0.76, 95% CI 0.43 to 1.32 …)"
+- Nguyên văn: "Zero incidents of osteonecrosis of the jaw and atypical femoral fracture were observed."
+
+## 7. HORIZON 髋部骨折后试验（Lyles 2007） (nghĩa: Thử nghiệm HORIZON sau gãy xương hông (Lyles 2007))
+- DOI: <https://doi.org/10.1056/NEJMoa074941>（PMID 17878149）
+- Nguyên văn: "1065 patients were assigned to receive yearly intravenous zoledronic acid … and 1062 patients were assigned to receive placebo"（合计 2127）; "first administered within 90 days after surgical repair of a hip fracture. All patients (mean age, 74.5 years)"; "The median follow-up was 1.9 years."; "The rates of any new clinical fracture were 8.6% in the zoledronic acid group and 13.9% in the placebo group, a 35% risk reduction"; "101 of 1054 patients in the zoledronic acid group (9.6%) and 141 of 1057 patients in the placebo group (13.3%) died, a reduction of 28% in deaths from any cause"
+- Trong phần 说人话 (nói tiếng người) đã xóa "死亡少约三成" (tử vong giảm khoảng ba phần mười): sau khi gộp nhiều thử nghiệm thì không có ý nghĩa thống kê (xem mục tiếp theo), chỉ giữ lại ở cột lợi ích, và ghi rõ tranh cãi trong phần ghi chú.
+
+## 8. 反方: Cummings 2019 总死亡率荟萃 (nghĩa: Phía phản biện: phân tích tổng hợp tỷ lệ tử vong chung Cummings 2019)
+- DOI: <https://doi.org/10.1001/jamainternmed.2019.2779>（PMID 31424486）
+- Nguyên văn: "Of 38 clinical trials that included 101 642 unique participants"; "No significant association was found between all drug treatments for osteoporosis and overall mortality rate (risk ratio [RR], 0.98; 95% CI, 0.91-1.05; I2 = 0%)"; "zoledronate treatment (RR, 0.88; 95% CI, 0.68-1.13)"; "should only be recommended to reduce fracture risk"
+
+## 没写进去的 (nghĩa: Những phần không đưa vào)
+- 国家基本公共卫生服务 (Dịch vụ y tế công cộng cơ bản quốc gia): trong danh mục các hạng mục khám sức khỏe miễn phí cho người trên 65 tuổi (đã liệt kê từng mục ở 第 6 节第 18 条, tức Mục 6 Điều 18) không có mật độ xương, theo yêu cầu không ghi "miễn phí". 2017 版指南 (hướng dẫn bản 2017) có một câu "我国已经将骨密度检测项目纳入40岁以上人群常规体检内容" (nước ta đã đưa hạng mục đo mật độ xương vào nội dung khám sức khỏe định kỳ cho người trên 40 tuổi), ý nói hạng mục được khuyến nghị trong khám sức khỏe, không phải hạng mục miễn phí, dễ bị hiểu sai, nên không thu.
+- Chi phí kiểm tra "一两百元" (một hai trăm tệ): không tìm thấy văn bản quy định giá thống nhất toàn quốc, đây là ước lượng theo kinh nghiệm, thuộc cấp C. Giá cả khác nhau giữa các địa phương đã được ghi rõ ở cột chi phí.
+- Cách dùng tên thuốc cụ thể (空腹, 站立半小时, tức lúc đói, đứng nửa giờ), giá thuốc, bảo hiểm y tế chi trả: chưa đối chiếu được với nguyên văn, nên không viết.
+- Nam giới có cần tầm soát hay không: Hoa Kỳ đưa ra tuyên bố I, 中国 2017 版指南 (hướng dẫn bản 2017 của Trung Quốc) định ở độ tuổi trên 70. Cách nói của cả hai bên được viết song song trong ghi chú của 第 39 条 (Điều 39), không kết luận.
+
+## 收益量级与证据等级 (nghĩa: Mức độ lợi ích và cấp độ bằng chứng)
+- 第 39 条 (Điều 39): cấp A (kết quả gộp của 3 thử nghiệm ngẫu nhiên). Tiêu chí tỷ lệ tử vong (bao gồm điểm kết thúc sức khỏe). Gãy xương hông là điểm kết thúc cứng, không phải điểm kết thúc thay thế như mật độ xương; mức giảm tương đối 17%, nằm trong 10-20%, nên định "trung bình". Tỷ lệ tử vong chung không thấy khác biệt. Kết quả chính âm tính và chẩn đoán quá mức được ghi vào ghi chú "tranh cãi".
+- 第 40 条 (Điều 40): cấp A (thử nghiệm ngẫu nhiên và tổng quan Cochrane). Tiêu chí tỷ lệ tử vong (bao gồm điểm kết thúc sức khỏe). Người đã được chẩn đoán hoặc đã từng gãy xương có gãy xương hông thấp hơn khoảng 51%, ≥20%, nên định "lớn". Tỷ lệ tử vong chung: thử nghiệm đơn lẻ HORIZON thấp hơn 28%, nhưng Cummings 2019 gộp 38 thử nghiệm thì không có ý nghĩa thống kê, nên độ lớn chỉ định theo gãy xương, không dựa vào tỷ lệ tử vong.
+- Nhãn chi phí: 第 39 条 (Điều 39) tiền "ít" (một lần một hai trăm tệ), thời gian "ít", kiên trì "không". 第 40 条 (Điều 40) tiền "ít" (ước theo chi phí thuốc dài hạn; chưa đối chiếu được giá thuốc, nhãn dựa theo phán đoán), thời gian "ít", kiên trì "chút" (phải dùng liên tục vài năm).

@@ -1,0 +1,784 @@
+[
+ {
+  "source": "01-不要早死.md",
+  "file": "01-dung-chet-som.md",
+  "sections": 17,
+  "hanzi_kept": 126,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "02-不要慢慢死.md",
+  "file": "02-dung-chet-mon.md",
+  "sections": 20,
+  "hanzi_kept": 26,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "03-不要浪费精力.md",
+  "file": "03-dung-lang-phi-suc-luc.md",
+  "sections": 15,
+  "hanzi_kept": 20,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "04-不要浪费时间.md",
+  "file": "04-dung-lang-phi-thoi-gian.md",
+  "sections": 21,
+  "hanzi_kept": 223,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "05-不要浪费钱.md",
+  "file": "05-khong-lang-phi-tien.md",
+  "sections": 17,
+  "hanzi_kept": 1774,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "06-反面清单.md",
+  "file": "06-danh-sach-nhung-dieu-khong-nen-lam.md",
+  "sections": 15,
+  "hanzi_kept": 140,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "07-劳动仲裁条重写.md",
+  "file": "07-07-muc-2-no-luong-ho-so-kiem.md",
+  "sections": 12,
+  "hanzi_kept": 241,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "07-没钱的时候怎么活.md",
+  "file": "07-ho-so-kiem-chung-nguon-phan-7.md",
+  "sections": 16,
+  "hanzi_kept": 3498,
+  "model": "deepseek-flash (trực tiếp)"
+ },
+ {
+  "source": "08-别把自己搭进去.md",
+  "file": "08-dung-tu-chuoc-hoa-vao-than-an-toan-phap-luat-va.md",
+  "sections": 18,
+  "hanzi_kept": 5207,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "09-普通人容易踩的法律红线.md",
+  "file": "09-nhung-ranh-gioi-do-phap-ly-nguoi-binh-thuong-de.md",
+  "sections": 22,
+  "hanzi_kept": 4362,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "file": "10-ho-so-kiem-chung-mo-rong-phan-10-bo.md",
+  "source": "10-21-23-恋爱出国娱乐减压与技能.md",
+  "sections": 8,
+  "hanzi": 2071,
+  "model": "deepseek-flash (trực tiếp)",
+  "hanzi_kept": 2071
+ },
+ {
+  "source": "10-结婚划不划算.md",
+  "file": "10-phan-10-ket-hon-co-loi-hay-khong-ho-so.md",
+  "sections": 15,
+  "hanzi_kept": 1026,
+  "model": "deepseek-flash (trực tiếp)"
+ },
+ {
+  "source": "11-程序员红线.md",
+  "file": "11-nhung-lan-ranh-do-lap-trinh-vien-va-nguoi-lam.md",
+  "sections": 4,
+  "hanzi_kept": 288,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "12-创业与做生意.md",
+  "file": "12-khoi-nghiep-va-kinh-doanh-dung-de-mat-trang-gia.md",
+  "sections": 21,
+  "hanzi_kept": 4582,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "13-急救与野外补充.md",
+  "file": "13-ho-so-kiem-chung-phan-13-bo-sung-9-muc.md",
+  "sections": 3,
+  "hanzi_kept": 722,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "13-紧急情况.md",
+  "file": "13-ho-so-kiem-chung-phan-13.md",
+  "sections": 30,
+  "hanzi_kept": 1870,
+  "model": "deepseek-flash (trực tiếp)"
+ },
+ {
+  "source": "14-19-新增章节与HowToLiveLonger合入.md",
+  "file": "14-bao-mat-tai-khoan-va-thong-tin-ca-nhan.md",
+  "sections": 5,
+  "hanzi_kept": 249,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "19-工伤.md",
+  "file": "19-dang-lam-viec-thoi-viec-va-tai-nan-lao-dong.md",
+  "sections": 3,
+  "hanzi_kept": 31,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "24-25-看病与身后事.md",
+  "file": "24-kham-chua-benh-cach-bot-ton-tien-va-tranh-di.md",
+  "sections": 4,
+  "hanzi_kept": 1156,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "27-怀孕和生产与艾滋病预防阻断.md",
+  "file": "27-mang-thai-va-sinh-con-tu-khi-biet-co-thai-den.md",
+  "sections": 2,
+  "hanzi_kept": 158,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "28-别为了外形把身体搞坏.md",
+  "file": "28-dung-vi-ngoai-hinh-ma-lam-hong-co-the.md",
+  "sections": 6,
+  "hanzi_kept": 1137,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "29-遭遇重大打击之后.md",
+  "file": "29-sau-bien-co-lon.md",
+  "sections": 3,
+  "hanzi_kept": 43,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "30-上学以后的孩子.md",
+  "file": "30-tre-em-o-do-tuoi-di-hoc.md",
+  "sections": 3,
+  "hanzi_kept": 92,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "32-出国留学.md",
+  "file": "32-du-hoc-nuoc-ngoai-tu-cach-luu-tru-lam-them-bao.md",
+  "sections": 11,
+  "hanzi_kept": 164,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "33-残疾之后怎么活.md",
+  "file": "33-song-the-nao-sau-khi-bi-khuyet-tat.md",
+  "sections": 7,
+  "hanzi_kept": 249,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "34-家里的常备药别吃出事.md",
+  "file": "34-dung-thuoc-du-phong-tai-nha-dung-de-xay-ra.md",
+  "sections": 7,
+  "hanzi_kept": 48,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "口径变更-受益人分四档.md",
+  "file": "-thay-doi-cach-tinh-theo-nguoi-thu-huong.md",
+  "sections": 4,
+  "hanzi_kept": 28,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "性取向相关条目.md",
+  "file": "md-ho-so-kiem-chung-cac-muc-lien-quan-den.md",
+  "sections": 6,
+  "hanzi_kept": 22,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "排查-只给禁止不给出路.md",
+  "file": "rac-soat-ra-soat-cac-muc-chi-cam-doan-khong-dua.md",
+  "sections": 6,
+  "hanzi_kept": 28,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "排查-备注里的文献链接.md",
+  "file": "rac-soat-ra-soat-lien-ket-tai-lieu-trong-ghi-chu.md",
+  "sections": 5,
+  "hanzi_kept": 36,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "排查-说人话栏与收益栏对齐.md",
+  "file": "rac-soat-ra-soat-toan-sach-khop-truong-noi-don.md",
+  "sections": 5,
+  "hanzi_kept": 61,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "新增-第31节十八岁之后有哪几条路.md",
+  "file": "moi-them-bo-sung-phan-31-sau-18-tuoi-co-nhung.md",
+  "sections": 15,
+  "hanzi_kept": 3095,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-AI换脸拟声.md",
+  "file": "bo-sung-bo-sung-dung-ai-hoan-doi-khuon-mat-va.md",
+  "sections": 2,
+  "hanzi_kept": 581,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-issue28八处补来源.md",
+  "file": "bo-sung-issue-28-bo-sung-nguon-cho-8-muc-2026.md",
+  "sections": 3,
+  "hanzi_kept": 67,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-issue30国家赔偿免责与录音拍照留证.md",
+  "file": "bo-sung-issue-30-bo-sung-cac-truong-hop-mien.md",
+  "sections": 2,
+  "hanzi_kept": 186,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-issue31情绪疏导家暴与职场欺负.md",
+  "file": "bo-sung-issue-31-giai-toa-cam-xuc-xung-dot-ban.md",
+  "sections": 4,
+  "hanzi_kept": 70,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-issue37职称.md",
+  "file": "bo-sung-issue-37-dang-ky-chuc-danh-nghe-nghiep.md",
+  "sections": 4,
+  "hanzi_kept": 197,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-issue41境外投资渠道.md",
+  "file": "bo-sung-bo-sung-phan-5-muc-39-dau-tu-ra-nuoc.md",
+  "sections": 7,
+  "hanzi_kept": 445,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-issue44降尿酸药的选择.md",
+  "file": "bo-sung-issue-44-phan-16-muc-9-bo-sung-lua-chon.md",
+  "sections": 3,
+  "hanzi_kept": 114,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-issue57约会安全.md",
+  "file": "bo-sung-ho-so-kiem-chung-an-toan-hen-ho-issue.md",
+  "sections": 4,
+  "hanzi_kept": 68,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-issue60给个人干活被欠钱.md",
+  "file": "bo-sung-bo-sung-phan-7-muc-22-bi-no-tien-cong.md",
+  "sections": 8,
+  "hanzi_kept": 573,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-保险六条.md",
+  "file": "bo-sung-bo-sung-phan-5-muc-40-den-45-bao-hiem.md",
+  "sections": 7,
+  "hanzi_kept": 375,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-免责条款越界排查.md",
+  "file": "bo-sung-bo-sung-ra-soat-viec-vuot-qua-pham-vi.md",
+  "sections": 8,
+  "hanzi_kept": 171,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-养不了孩子的合法出路.md",
+  "file": "bo-sung-bo-sung-loi-thoat-hop-phap-va-ranh-gioi.md",
+  "sections": 2,
+  "hanzi_kept": 65,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-养老诈骗.md",
+  "file": "bo-sung-bo-sung-bay-lua-dao-dau-tu-duong-lao-va.md",
+  "sections": 3,
+  "hanzi_kept": 1046,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-勃起功能与嫖娼.md",
+  "file": "bo-sung-bo-sung-hai-muc-roi-loan-cuong-duong.md",
+  "sections": 3,
+  "hanzi_kept": 356,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-十条补缺.md",
+  "file": "bo-sung-bo-sung-bo-sung-du-muoi-muc-con-thieu.md",
+  "sections": 11,
+  "hanzi_kept": 1103,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-午睡时长.md",
+  "file": "bo-sung-bo-sung-mot-muc-ve-thoi-luong-ngu-trua.md",
+  "sections": 2,
+  "hanzi_kept": 20,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-卖器官.md",
+  "file": "bo-sung-bo-sung-mot-muc-ban-noi-tang-ho-so-kiem.md",
+  "sections": 5,
+  "hanzi_kept": 61,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-后循环卒中夹层头痛与中暑补液.md",
+  "file": "bo-sung-bo-sung-dot-quy-tuan-hoan-sau-loc-tach.md",
+  "sections": 4,
+  "hanzi_kept": 221,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-和机构打交道.md",
+  "file": "bo-sung-bo-sung-coi-co-quan-la-nguoi-di-lam.md",
+  "sections": 2,
+  "hanzi_kept": 183,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-喝茶的霉菌毒素与绿茶提取物.md",
+  "file": "bo-sung-bo-sung-phan-2-muc-26-doc-to-nam-moc.md",
+  "sections": 2,
+  "hanzi_kept": 38,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-回填十二处法规原文.md",
+  "file": "bo-sung-ho-so-kiem-chung-bo-sung-12-vi-tri-todo.md",
+  "sections": 3,
+  "hanzi_kept": 224,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-回填统计急救与文献TODO.md",
+  "file": "bo-sung-ho-so-kiem-chung-bo-sung-so-lieu-thong.md",
+  "sections": 3,
+  "hanzi_kept": 705,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-奢侈品收藏与十八岁路径.md",
+  "file": "bo-sung-bo-sung-chuoi-hat-vong-tay-dong-ho-hieu.md",
+  "sections": 4,
+  "hanzi_kept": 1433,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-家庭应急装备.md",
+  "file": "bo-sung-phan-1-muc-26-trang-bi-khan-cap-gia.md",
+  "sections": 4,
+  "hanzi_kept": 265,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-尿酸结石与胆囊结石.md",
+  "file": "bo-sung-ho-so-kiem-chung-axit-uric-soi-than-va.md",
+  "sections": 5,
+  "hanzi_kept": 96,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-幼儿屏幕时间与近视并发症.md",
+  "file": "bo-sung-bo-sung-thoi-gian-su-dung-man-hinh-o.md",
+  "sections": 4,
+  "hanzi_kept": 409,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-急诊分诊与伤残鉴定残疾人证.md",
+  "file": "bo-sung-bo-sung-cach-xep-hang-cap-cuu-di-vat.md",
+  "sections": 7,
+  "hanzi_kept": 741,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-情绪、算命、购物、打人.md",
+  "file": "bo-sung-add-3569-ho-so-kiem-chung-2026-09-07.md",
+  "sections": 7,
+  "hanzi_kept": 951,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-慢病长护险与个人信息权利.md",
+  "file": "bo-sung-ho-so-kiem-chung-bo-sung-muc-cho-tung.md",
+  "sections": 3,
+  "hanzi_kept": 797,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-戒烟戒酒学习与拖延的具体办法.md",
+  "file": "bo-sung-ho-so-kiem-chung-bien-phap-cu-the-ve.md",
+  "sections": 8,
+  "hanzi_kept": 117,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-拒执失信骗贷与新型毒品.md",
+  "file": "bo-sung-bo-sung-bi-thi-hanh-an-va-that-tin-lam.md",
+  "sections": 5,
+  "hanzi_kept": 91,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-攀比与别人的评价.md",
+  "file": "bo-sung-bo-sung-khong-so-bi-voi-nguoi-khac.md",
+  "sections": 3,
+  "hanzi_kept": 28,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-早引入花生防过敏.md",
+  "file": "bo-sung-bo-sung-muc-cho-tre-an-lac-som-ho-so.md",
+  "sections": 4,
+  "hanzi_kept": 122,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-早餐与进食时间.md",
+  "file": "bo-sung-bo-sung-muc-bua-sang-va-thoi-gian-an.md",
+  "sections": 2,
+  "hanzi_kept": 26,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-正当防卫.md",
+  "file": "bo-sung-bo-sung-phong-ve-chinh-dang-ho-so-kiem.md",
+  "sections": 3,
+  "hanzi_kept": 957,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-没有亲人朋友时怎么办.md",
+  "file": "bo-sung-bo-sung-khi-khong-co-nguoi-than-lan-ban.md",
+  "sections": 4,
+  "hanzi_kept": 107,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-泄愤式极端暴力.md",
+  "file": "bo-sung-bo-sung-bon-muc-bao-luc-cuc-doan-de.md",
+  "sections": 5,
+  "hanzi_kept": 236,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-熬夜补觉与夜班.md",
+  "file": "bo-sung-bo-sung-hai-muc-ngu-bu-va-ca-dem-ho-so.md",
+  "sections": 10,
+  "hanzi_kept": 26,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-燃气毒蘑菇车险预付消费与养犬.md",
+  "file": "bo-sung-ho-so-kiem-chung-bo-sung-8-muc-qua-cac.md",
+  "sections": 3,
+  "hanzi_kept": 1164,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-献血.md",
+  "file": "bo-sung-bo-sung-muc-hien-mau-ho-so-kiem-chung.md",
+  "sections": 3,
+  "hanzi_kept": 388,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-眼中风血栓硬膜下血肿与血尿.md",
+  "file": "bo-sung-bo-sung-dot-quy-mat-thuyen-tac-phoi-tu.md",
+  "sections": 4,
+  "hanzi_kept": 58,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-窗户破伤风二手烟公积金与猝死工伤.md",
+  "file": "bo-sung-ho-so-kiem-chung-bo-sung-5-muc-qua-cac.md",
+  "sections": 3,
+  "hanzi_kept": 177,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第10节伴侣治疗.md",
+  "file": "bo-sung-bo-sung-phan-10-muc-20-moi-quan-he-be.md",
+  "sections": 10,
+  "hanzi_kept": 82,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第10节父母出资与夫妻共同债务.md",
+  "file": "bo-sung-ho-so-kiem-chung-nguon-bo-sung-hai-muc.md",
+  "sections": 7,
+  "hanzi_kept": 958,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第11节白帽子与漏洞报送.md",
+  "file": "bo-sung-phan-11-bo-sung-kiem-thu-bao-mat-chua.md",
+  "sections": 3,
+  "hanzi_kept": 94,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第12节注册报税与涉税诈骗.md",
+  "file": "bo-sung-phan-12-bo-sung-ba-muc-dang-ky-kinh.md",
+  "sections": 5,
+  "hanzi_kept": 1483,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第13节婴儿噎住与心肺复苏.md",
+  "file": "bo-sung-bo-sung-phan-13-muc-43-44-tre-so-sinh.md",
+  "sections": 7,
+  "hanzi_kept": 49,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第15节与病历条回填.md",
+  "file": "bo-sung-ho-so-kiem-chung-phan-15-bo-sung-2-muc.md",
+  "sections": 3,
+  "hanzi_kept": 926,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第17节白内障手术.md",
+  "file": "bo-sung-bo-sung-phan-17-muc-9-nguoi-gia-bi-duc.md",
+  "sections": 9,
+  "hanzi_kept": 131,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第19节离职证明与补偿个税.md",
+  "file": "bo-sung-bo-sung-phan-19-muc-17-18-giay-chung.md",
+  "sections": 8,
+  "hanzi_kept": 814,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第1节失控放射源.md",
+  "file": "bo-sung-phan-1-bo-sung-khong-nhat-khong-thao-do.md",
+  "sections": 3,
+  "hanzi_kept": 115,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "file": "bo-sung-bo-sung-phan-1-muc-39-va-40-sang-loc.md",
+  "source": "追加-第1节骨质疏松筛查.md",
+  "sections": 11,
+  "hanzi": 1475,
+  "model": "deepseek-flash (trực tiếp)",
+  "hanzi_kept": 1475
+ },
+ {
+  "source": "追加-第20节新生儿黄疸.md",
+  "file": "bo-sung-bo-sung-phan-20-muc-13-dau-hieu-can-di.md",
+  "sections": 9,
+  "hanzi_kept": 61,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第21节境外用卡.md",
+  "file": "bo-sung-bo-sung-han-muc-rut-tien-mat-o-nuoc.md",
+  "sections": 2,
+  "hanzi_kept": 69,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第25节人没了当时怎么办.md",
+  "file": "bo-sung-bo-sung-nguoi-mat-ngay-luc-do-phai-lam.md",
+  "sections": 5,
+  "hanzi_kept": 188,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第26节做平台.md",
+  "file": "bo-sung-phan-26-lam-mot-trang-web-hoac-nen-tang.md",
+  "sections": 6,
+  "hanzi_kept": 342,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第2节室内空气.md",
+  "file": "bo-sung-bo-sung-phan-2-muc-42-bat-may-hut-mui.md",
+  "sections": 5,
+  "hanzi_kept": 24,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第30节管孩子不打和养育课程.md",
+  "file": "bo-sung-bo-sung-phan-30-muc-16-17-day-con-khong.md",
+  "sections": 16,
+  "hanzi_kept": 336,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第31节远程给境外雇主干活.md",
+  "file": "bo-sung-bo-sung-o-nha-lam-viec-tu-xa-cho-cong.md",
+  "sections": 4,
+  "hanzi_kept": 928,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第34节过期药与相互作用.md",
+  "file": "bo-sung-bo-sung-phan-34-muc-10-11-xu-ly-thuoc.md",
+  "sections": 14,
+  "hanzi_kept": 170,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第3、5节.md",
+  "file": "bo-sung-add-35-ho-so-kiem-chung-2026-09-07-toan.md",
+  "sections": 11,
+  "hanzi_kept": 739,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第5节炒股的两条行为账.md",
+  "file": "bo-sung-bo-sung-phan-5-hieu-ung-dinh-doat-va.md",
+  "sections": 5,
+  "hanzi_kept": 88,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第6节通用体检套餐.md",
+  "file": "bo-sung-bo-sung-phan-6-khong-dua-vao-goi-kham.md",
+  "sections": 2,
+  "hanzi_kept": 90,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第7、8节.md",
+  "file": "bo-sung-cac-muc-bo-sung-phan-7-va-8-ho-so-kiem.md",
+  "sections": 8,
+  "hanzi_kept": 2971,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-第8节被指控与被诬告.md",
+  "file": "bo-sung-phan-8-bo-sung-5-muc-sau-khi-bi-cao.md",
+  "sections": 5,
+  "hanzi_kept": 154,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "file": "bo-sung-bo-sung-thong-tin-ngoai-nuoc-chi-xem.md",
+  "source": "追加-第9节境外信息只看不转.md",
+  "sections": 1,
+  "hanzi": 40,
+  "model": "deepseek-flash (trực tiếp)",
+  "hanzi_kept": 40
+ },
+ {
+  "source": "追加-第9节薅羊毛.md",
+  "file": "bo-sung-bo-sung-dang-ky-hang-loat-tai-khoan-phu.md",
+  "sections": 1,
+  "hanzi_kept": 1547,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-职业病与化学灼伤.md",
+  "file": "bo-sung-bo-sung-phong-chong-benh-nghe-nghiep.md",
+  "sections": 4,
+  "hanzi_kept": 537,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "file": "bo-sung-bo-sung-ba-muc-ve-chuyen-tu-sat-ho-so.md",
+  "source": "追加-自杀的后果.md",
+  "sections": 5,
+  "hanzi": 637,
+  "model": "deepseek-flash (trực tiếp)",
+  "hanzi_kept": 637
+ },
+ {
+  "source": "追加-自首与追诉期限.md",
+  "file": "bo-sung-bo-sung-mot-muc-ve-tu-thu-thanh-khan.md",
+  "sections": 3,
+  "hanzi_kept": 762,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-被网暴之后怎么办.md",
+  "file": "bo-sung-bo-sung-phai-lam-gi-sau-khi-bi-bao-luc.md",
+  "sections": 2,
+  "hanzi_kept": 553,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "file": "bo-sung-bo-sung-co-nen-hoc-vet-khong-ho-so-kiem.md",
+  "source": "追加-要不要死记硬背.md",
+  "sections": 3,
+  "hanzi": 32,
+  "model": "deepseek-flash (trực tiếp)",
+  "hanzi_kept": 32
+ },
+ {
+  "source": "追加-读书还是打工.md",
+  "file": "bo-sung-bo-sung-hoc-tiep-hay-tot-nghiep-cap-hai.md",
+  "sections": 6,
+  "hanzi_kept": 893,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-进货假货与图案版权.md",
+  "file": "bo-sung-bo-sung-hang-gia-nhap-ve-va-ban-quyen.md",
+  "sections": 3,
+  "hanzi_kept": 44,
+  "model": "deepseek-flash (trực tiếp)"
+ },
+ {
+  "source": "追加-针对孩子的骗局.md",
+  "file": "bo-sung-bo-sung-lua-dao-nham-vao-tre-em-ho-so.md",
+  "sections": 3,
+  "hanzi_kept": 49,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-陌生人出事该不该上.md",
+  "file": "bo-sung-bo-sung-nguoi-la-gap-nan-co-nen-can.md",
+  "sections": 5,
+  "hanzi_kept": 1717,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-青光眼急性发作.md",
+  "file": "bo-sung-bo-sung-con-glocom-cap-va-ranh-gioi-cua.md",
+  "sections": 3,
+  "hanzi_kept": 53,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-食品安全.md",
+  "file": "bo-sung-bo-sung-an-toan-thuc-pham-nguoi-mua-doi.md",
+  "sections": 5,
+  "hanzi_kept": 83,
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "source": "追加-骗保.md",
+  "file": "bo-sung-bo-sung-hai-muc-ve-truc-loi-bao-hiem-ho.md",
+  "sections": 2,
+  "hanzi_kept": 1380,
+  "model": "gemini-3.8-flash"
+ }
+]

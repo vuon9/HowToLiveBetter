@@ -10,22 +10,32 @@ on:
     branches: [main]
     paths:
       - README.md
+      - README.vi.md
       - index.html
+      - index.vi.html
+      - vi/**
       - og.png
+      - og-vi.png
       - ads/**
       - book/**
-      - docs/*.md
+      - docs/**
       - tools/**
+      - translations.json
       - .github/workflows/book.yml
   pull_request:
     paths:
       - README.md
+      - README.vi.md
       - index.html
+      - index.vi.html
+      - vi/**
       - og.png
+      - og-vi.png
       - ads/**
       - book/**
-      - docs/*.md
+      - docs/**
       - tools/**
+      - translations.json
       - .github/workflows/book.yml
   workflow_dispatch:
 
@@ -79,6 +89,25 @@ jobs:
           node-version: 22
       - run: node tools/sync-stats.mjs --check
 
+  # Bản dịch tiếng Việt: cấu trúc, hồ sơ kiểm chứng, trang tra cứu. Một job riêng
+  # vì lỗi ở bản dịch không nên chặn việc phát hành bản tiếng Trung.
+  vi:
+    name: Kiểm tra bản dịch tiếng Việt
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Kiểm tra cấu trúc 34 phần và hồ sơ kiểm chứng
+        run: |
+          python3 tools/translate-vi/verify_vi.py
+          python3 tools/translate-vi/verify_records.py
+      - name: Kiểm tra trang tra cứu (bộ đếm, cú pháp JS, mắt nối tham chiếu, chữ Hán còn sót)
+        run: |
+          python3 tools/translate-vi/verify_index.py
+          python3 tools/translate-vi/audit_js_strings.py --check
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -113,6 +142,13 @@ jobs:
           typst fonts | grep -i -E 'noto (serif|sans) cjk' || echo '没找到 Noto CJK，PDF 会退到别的字体，检查 fonts-noto-cjk 这一步'
           node tools/pdf/build.mjs
 
+      # 越南语版：EPUB、PDF、离线单文件共用同一套构建，加 --lang vi 就换语言
+      - name: EPUB / 离线单文件 / PDF（越南语版）
+        run: |
+          node tools/epub/build.mjs --lang vi
+          node tools/offline/build.mjs --lang vi
+          node tools/pdf/build.mjs --lang vi
+
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -123,6 +159,7 @@ jobs:
           curl -sSL -o epubcheck.zip https://github.com/w3c/epubcheck/releases/download/v5.4.0/epubcheck-5.4.0.zip
           unzip -q epubcheck.zip
           java -jar epubcheck-5.4.0/epubcheck.jar dist/HowToLiveBetter.epub
+          java -jar epubcheck-5.4.0/epubcheck.jar dist/HowToLiveBetter-vi.epub
 
       - uses: actions/upload-artifact@v4
         with:
@@ -131,6 +168,9 @@ jobs:
             dist/HowToLiveBetter.epub
             dist/HowToLiveBetter.pdf
             dist/HowToLiveBetter.html
+            dist/HowToLiveBetter-vi.epub
+            dist/HowToLiveBetter-vi.pdf
+            dist/HowToLiveBetter-vi.html
 
       - name: 发布到 Release epub-latest
         if: github.event_name != 'pull_request'
@@ -148,4 +188,7 @@ jobs:
           gh release upload epub-latest \
             dist/HowToLiveBetter.epub \
             dist/HowToLiveBetter.pdf \
-            dist/HowToLiveBetter.html --clobber
+            dist/HowToLiveBetter.html \
+            dist/HowToLiveBetter-vi.epub \
+            dist/HowToLiveBetter-vi.pdf \
+            dist/HowToLiveBetter-vi.html --clobber

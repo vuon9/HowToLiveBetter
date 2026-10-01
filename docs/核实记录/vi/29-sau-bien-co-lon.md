@@ -1,0 +1,42 @@
+> Bản dịch không chính thức của [docs/核实记录/29-遭遇重大打击之后.md](../../../docs/核实记录/29-遭遇重大打击之后.md). Nếu có khác biệt, bản gốc tiếng Trung là bản có hiệu lực.
+[← Về mục lục](../../../README.vi.md)
+
+# Phần 29 "Sau khi gặp cú sốc lớn" · Hồ sơ kiểm chứng (2026-09-09)
+
+Nguồn nhiệm vụ: Lời bạn đọc - "Cảm thấy còn thiếu nội dung, ví dụ như đời người gặp biến cố lớn, người thân qua đời thì phải làm sao, có người vì chuyện này mà trầm cảm".
+
+Nội dung bao quát trước đây: rải rác ở ba chỗ, và đều không phải việc này. Phần 1, mục 25 nói về hạn chế phương tiện gây tử vong và 12356, phần 3, mục 19 nói về vận động và ánh sáng khi tâm trạng sa sút, phần 22, mục 7 nói về liều lượng vận động chống trầm cảm, toàn bộ phần 25 nói về thủ tục và tiền bạc sau khi người thân qua đời. Nguy cơ sức khỏe từ chính việc mất người thân, khung thời gian nguy cơ, khi nào nên đi khám, tỉ lệ tử vong sau khi thất nghiệp và ly hôn, sắp xếp thế nào cho con cái khi cha mẹ qua đời - toàn bộ sách chưa đề cập.
+
+Vị trí đặt (đã được người dùng xác nhận): **Mở mới phần 29**, tệp `book/29-遭遇重大打击之后.md`. Phương án dự phòng là tách vào ba phần 3, 25, 1, không áp dụng: điểm chung của nhóm mục này là "khung thời gian" - 24 giờ đầu, một tuần đầu, một tháng đầu, nửa năm đầu, tách ra sẽ không thấy được mạch này, người đọc khi gặp chuyện cũng không tìm được.
+
+## 11 mục được đưa vào và nguyên văn tương ứng
+Toàn bộ đã đối chiếu từng mục với nguyên văn tóm tắt qua Europe PMC REST (`abstractText` của `resultList.result`), giữ nguyên số liệu và khoảng tin cậy, không lấy từ trích dẫn gián tiếp.
+
+| Mục | Nguồn | Số liệu then chốt đã kiểm chứng |
+|---|---|---|
+| 1 | Mostofsky 2012 Circulation; Carey 2014 JAMA Intern Med | Thiết kế bắt chéo ca bệnh trên 1.985 ca nhồi máu cơ tim: trong vòng 24 giờ sau khi người quan trọng qua đời, tỷ lệ khởi phát nhồi máu cơ tim tăng 21,1 lần (13,1–34,1); rủi ro tuyệt đối ở nhóm có rủi ro 10 năm là 5% là 1/1.394, nhóm 20% là 1/320. Nghiên cứu tại Anh gồm 30.447 người mất bạn đời so với 83.588 người đối chứng: nhồi máu cơ tim hoặc đột quỵ trong vòng 30 ngày là 0,16% so với 0,08%, IRR 2,20 (1,52–3,15) |
+| 2 | Fang 2012 NEJM | 6,07 triệu người Thụy Điển: tuần đầu sau khi chẩn đoán ung thư có RR tự sát là 12,6 (8,6–17,8), năm đầu là 3,1; tử vong do tim mạch tuần đầu là 5,6 (5,2–5,9), 4 tuần đầu là 3,3 |
+| 3 | Roelfs 2011 Soc Sci Med | 42 nghiên cứu, hơn 20 triệu người: HR trung bình tử vong do mọi nguyên nhân ở người thất nghiệp là 1,63; trong các nghiên cứu có kiểm soát hành vi sức khỏe, HR trung bình thấp hơn 24% |
+| 4 | Erlangsen 2017 JAMA Psychiatry; Pitman 2014 Lancet Psychiatry | 6,7 triệu người Đan Mạch: trong vòng 5 năm sau khi bạn đời tự sát, IRR rối loạn tâm thần mới phát là nam 1,8, nữ 1,7 (so với dân số chung); so với người mất bạn đời do nguyên nhân khác là nam 1,7, nữ 2,0 |
+| 5 | Moon 2011 PLoS ONE; Shor 2012 Demography | 15 nghiên cứu đoàn hệ, 2,26 triệu người: mất bạn đời dưới 6 tháng có RR 1,41 (1,26–1,57), sau 6 tháng là 1,14; nam 1,23, nữ 1,04 (không có ý nghĩa thống kê). 123 bài báo, hơn 500 triệu người: HR 1,23, nam 1,27, nữ 1,15 |
+| 6 | Li 2014 PLoS Med | Hơn 7,3 triệu người tại 3 nước Bắc Âu, trong đó 189.094 người mất người thân trước 18 tuổi: tỷ số tử vong do mọi nguyên nhân là 1,50 (1,43–1,58); cha mẹ chết do nguyên nhân không tự nhiên là 1,84, chết do nguyên nhân tự nhiên là 1,33 |
+| 7 | Lundorff 2017 J Affect Disord; Prigerson 2009 PLoS Med; Shear 2005 JAMA | Tỷ lệ lưu hành gộp của rối loạn đau buồn kéo dài là 9,8% (6,8–14,0); tiêu chuẩn chẩn đoán gồm cảm giác khao khát kèm theo ít nhất 5 trong 9 triệu chứng, kéo dài ít nhất 6 tháng sau khi mất người thân và đi kèm suy giảm chức năng; tỷ lệ hiệu quả của trị liệu trúng đích là 51% so với trị liệu tâm lý tương tác cá nhân là 28% (P=0,02), số người cần điều trị là 4,3 |
+| 8 | Currier 2008 Psychol Bull; Wittouck 2011 Clin Psychol Rev; Bonanno 2002 JPSP | 61 nghiên cứu đối chứng: khi kết thúc hiệu ứng nhỏ, theo dõi sau đó không thấy lợi ích rõ rệt, can thiệp ở nhóm chỉ tuyển người khó thích ứng có hiệu quả tương đương các liệu pháp tâm lý khác; 14 thử nghiệm lâm sàng ngẫu nhiên có đối chứng (RCT): can thiệp điều trị có hiệu quả, can thiệp phòng ngừa không hiệu quả; nghiên cứu tiến cứu 205 người: trong 5 kiểu phản ứng, kiểu kiên cường là phổ biến nhất |
+| 9 | Sbarra 2011 Perspect Psychol Sci | 32 nghiên cứu tiến cứu, hơn 6,5 triệu người, 11 quốc gia: người ly thân hoặc ly hôn có nguy cơ chết sớm tăng rõ rệt, mức tăng ở nam giới và người trẻ tuổi lớn hơn. **Nguyên văn tóm tắt chỉ đưa ra chiều hướng và so sánh nhóm, không có HR gộp để trích dẫn, nên mục này không ghi số lần** |
+| 10 | 国卫医政发〔2026〕8 号 | Đường dây nóng 12356 liên thông với 110, 12355 liên thông với 12356; đến năm 2030 trên 80% thôn và khu dân cư có phòng tư vấn tâm lý, mỗi huyện (khu) có ít nhất 1 bệnh viện cung cấp phòng khám tâm lý, các tỉnh hoàn thành nền tảng 12356 cấp tỉnh |
+| 11 | Kinh nghiệm tác giả + Cùng phương án này | "3 tháng" là ngưỡng do tác giả đặt ra, không có tài liệu chứng minh, do đó xếp mức C; phương án xếp "biến cố gia đình, thất nghiệp, bỏ học" vào diện nguy cơ khủng hoảng tâm lý mà cộng đồng cần chủ động rà soát |
+
+## Một số quyết định khi viết
+- **Không ghi việc ICD-11 / DSM-5-TR đưa vào rối loạn đau buồn kéo dài**. Nguyên văn của Lundorff 2017 là "expected to be included in the forthcoming ICD-11", Prigerson 2009 là "proposed for DSM-V and ICD-11", cả hai đều dừng ở mức "đề xuất/dự kiến". Máy này chưa có nguyên văn ICD-11 hoặc DSM-5-TR để đối chiếu từng chữ, nên phần nội dung sửa thành "trong các tài liệu khác nhau gọi là đau buồn phức tạp hoặc rối loạn đau buồn kéo dài, các tiêu chuẩn khác nhau yêu cầu thời gian khác nhau (6 tháng hoặc 12 tháng), đừng tự mắc kẹt vào số tháng, hãy đi khám nếu thấy ảnh hưởng đến ăn, ngủ, đi làm, chăm con", tránh khẳng định điều chưa kiểm chứng này.
+- **Mục 6 xếp mức B thay vì mức A**. Li 2014 là nghiên cứu đoàn hệ trên toàn bộ dân số 3 nước, bản thân số liệu đạt mức A; hạ xuống mức B là vì từ "tỷ lệ tử vong cao hơn 50%" đến "nói thật với trẻ, cho trẻ tham gia lễ tang, đừng gửi trẻ đi nơi khác" không có bằng chứng thử nghiệm trực tiếp, thuộc dạng suy diễn.
+- **Mức độ lợi ích của mục 9 xếp loại "vừa" thay vì "lớn"**. Theo ngưỡng của dự án nên dựa vào mức giảm tương đối, nhưng nguyên văn không cung cấp tỷ số gộp có thể áp dụng, chỉ có chiều hướng và so sánh nhóm; theo quy tắc "khi số liệu không đủ để xác định thì dùng nhận định và nêu rõ căn cứ", trường hợp này dựa vào việc "chỉ có chiều hướng" để xếp loại vừa.
+- **Mục 8 tính theo tiền bạc**. Tác dụng thực tế của mục này là "khoan chi khoản tiền tư vấn này", lợi ích nằm ở khía cạnh tiết kiệm tiền; kết cục sức khỏe của bản thân nỗi đau buồn đã do mục 7 đảm nhiệm.
+- **Hướng không đưa vào**: Số ngày nghỉ tang (Bộ Lao động 劳总薪字〔1980〕29 号). Cơ sở dữ liệu văn bản chính sách của Quốc vụ viện tìm với `searchfield=title` theo các từ "nghỉ tang", "nghỉ cưới tang", "xin nghỉ cưới tang", "chế độ thăm người thân của công nhân viên chức" đều không có kết quả, cơ sở dữ liệu này chỉ lưu trữ văn bản hiện hành của hệ thống Quốc vụ viện, thông tư năm 1980 của Bộ Lao động cũ không nằm trong đó, máy này cũng không tìm được toàn văn chính thức để đối chiếu từng chữ, theo quy tắc dự án nên không viết.
+
+## Số lượng và các tệp sửa đồng bộ
+- `README.md`: Bảng chỉ mục vấn đề thêm 1 dòng; danh sách chương mục thêm mục 29; số mục ở huy hiệu và đoạn nội dung 440 → **451**, mức bằng chứng A 282·B 110·C 48 → **A 290·B 112·C 49**, số liên kết 845 → **865**, hiệu quả chi phí 78/219/143 → **80 (18%) / 225 (50%) / 146 (32%)**; trong mục "cách đọc" 282 mục → 290 mục, 78 mục → 80 mục; "tách thành 28 tệp" → 29 tệp.
+- `index.html`: Khớp toàn bộ meta description, og:description, twitter:description, `numberOfPages` của JSON-LD, "toàn sách 28 phần 440 mục" trong trang, "28 tệp dưới thư mục book/" ở thanh bên.
+- `tools/og.html` và `og.png`: Sau khi sửa 3 con số gồm tổng số mục, số mục mức A, số liên kết thì chụp lại màn hình theo lệnh trong phần chú thích.
+- `CLAUDE.md`: Cấu trúc thư mục thêm phần 29.
+
+Cách kiểm tra lại số lượng: Tính lại toàn sách theo cùng quy tắc `parse()` của index.html (`cs = tiền + thời gian + kiên trì`, 0/ít·ít/vừa·không/chút tính 0/1/2; lợi ích=lớn và cs=0 tính cực cao, cs≤2 tính cao, lợi ích=vừa và cs=0 tính cao, còn lại tính bình thường), ra kết quả 451 mục, A 290·B 112·C 49, cực cao 80·cao 225·bình thường 146, tranh cãi 43, TODO 36, trong dòng `- Nguồn:` và `- Ghi chú:` có 865 liên kết http(s). Tổng 3 mức hiệu quả và tổng A/B/C đều bằng 451, số liệu khớp nhau.
