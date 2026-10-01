@@ -91,6 +91,26 @@ python3 tools/translate-vi/repair_item.py 31 4
 - `rename_chapters.py`: đổi tên tệp theo slug chuẩn.
 - `make_status.py`: ghi `status.json`.
 
+## Bản dịch còn lại
+
+```bash
+# 1.2 MB hồ sơ kiểm chứng nguồn (docs/核实记录/*.md, 111 tệp) -> docs/核实记录/vi/
+VI_TRANSPORT=hermes VI_WORKERS=16 python3 tools/translate-vi/translate_records.py
+python3 tools/translate-vi/translate_records.py --only 01,02     # chạy thử vài tệp
+
+# trang tra cứu: index.html -> index.vi.html
+VI_TRANSPORT=hermes python3 tools/translate-vi/translate_index.py
+python3 tools/translate-vi/verify_index.py
+```
+
+`translate_index.py` tách hai loại chuỗi. Chuỗi chức năng (khóa và giá trị
+`成本标签`, nhãn trường mà trang tự phân tích, giá trị `data-v` của bộ lọc) được
+vá từ bảng cố định trong script, và vá trước khi dịch để mô hình không sửa vào.
+Chuỗi hiển thị thì đưa qua mô hình, chỉ ở nút văn bản và các thuộc tính
+`title` / `aria-label` / `alt` / `placeholder`, nên bộ lọc không bị lệch giá
+trị. Trang đọc `README.vi.md`, và phần chú thích trong mã vẫn là tiếng Trung
+như bản gốc.
+
 ## Kiểm tra tự động
 
 `verify_vi.py` so từng phần với bản gốc và báo:
