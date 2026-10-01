@@ -146,7 +146,7 @@
     "mục 20: số có thể thiếu ['2092']",
     "dòng 6: còn chữ Hán -> Phần này chia bài toán kết hôn có đáng không thành các khoản riêng: tiền bạc, thời gian, sức khỏe, rủi ro pháp",
     "dòng 23: còn chữ Hán -> - Nguồn: 全国人大常委会 (Ủy ban Thường vụ Đại hội Đại biểu Nhân dân Toàn quốc Trung Quốc) (2025 修订). 治安管理处罚法（第五十条第一款第",
-    "dòng 64: còn chữ Hán -> - Chi phí: Không tốn tiền. Đọc một lần đoạn đăng ký kết hôn trong công báo năm của 民政部 (Bộ Dân chính Trung Quố"
+    "dòng 64: còn chữ Hán -> - Chi phí: Không tốn tiền. Đọc một lần đoạn đăng ký kết hôn trong công báo năm của 民政部 (Bộ Dân chính), mất vài"
    ],
    "status": "reviewed"
   },
@@ -202,10 +202,10 @@
    "items": 9,
    "section": "14-账号与信息安全.md",
    "soft_issues": [
-    "dòng 50: còn chữ Hán -> - Nguồn: 最高人民法院 (Tòa án nhân dân tối cao Trung Quốc) (2021). 关于审理银行卡民事纠纷案件若干问题的规定 (Điều 4, 5, 7, 14, 15). <htt",
+    "dòng 50: còn chữ Hán -> - Nguồn: 最高人民法院 (Tòa án Nhân dân Tối cao Trung Quốc) (2021). 关于审理银行卡民事纠纷案件若干问题的规定 (Điều 4, 5, 7, 14, 15). <htt",
     "dòng 68: còn chữ Hán -> - Nguồn: 全国人大常委会 (Ủy ban Thường vụ Đại hội Đại biểu Nhân dân Toàn quốc Trung Quốc) (2021). 个人信息保护法. 中国人大网 (Tra",
     "dòng 77: còn chữ Hán -> - Nguồn: 全国人大常委会 (Ủy ban Thường vụ Đại hội Đại biểu Nhân dân Toàn quốc Trung Quốc) (2021). 个人信息保护法. 中国人大网. <ht",
-    "dòng 86: còn chữ Hán -> - Nguồn: 国家互联网信息办公室 (Văn phòng Thông tin Internet Quốc gia Trung Quốc), 公安部 (Bộ Công an Trung Quốc) (2025). 人脸"
+    "dòng 86: còn chữ Hán -> - Nguồn: 国家互联网信息办公室 (Văn phòng Thông tin Internet Quốc gia Trung Quốc), 公安部 (Bộ Công an) (2025). 人脸识别技术应用安全管理办"
    ],
    "status": "reviewed"
   },
@@ -375,54 +375,171 @@
    "status": "reviewed"
   },
   "26": {
+   "file": "book/vi/26-lam-mot-trang-web-hoac-nen-tang-giay-phep-dang.md",
+   "hanzi_outside_tags": 1042,
+   "hard_issues": [],
    "items": 11,
    "section": "26-做一个网站或平台.md",
-   "status": "missing"
+   "soft_issues": [
+    "mục 1: số có thể thiếu ['10', '200', '50']",
+    "mục 2: số có thể thiếu ['1000']",
+    "mục 4: số có thể thiếu ['5000']",
+    "mục 5: số có thể thiếu ['50']",
+    "mục 9: số có thể thiếu ['200']"
+   ],
+   "status": "reviewed"
   },
   "27": {
+   "file": "book/vi/27-mang-thai-va-sinh-con-tu-khi-biet-co-thai-den.md",
+   "hanzi_outside_tags": 423,
+   "hard_issues": [],
    "items": 16,
    "section": "27-怀孕和生产.md",
-   "status": "missing"
+   "soft_issues": [
+    "mục 1: số có thể thiếu ['6708']",
+    "dòng 23: còn chữ Hán -> - Nguồn: 国家卫生计生委 (Ủy ban Y tế và Kế hoạch hóa gia đình Quốc gia) (2017). 国家基本公共卫生服务规范（第三版）. <https://www.nhc.g",
+    "dòng 24: còn chữ Hán -> - Ghi chú: 5 lần này là mức tối thiểu miễn phí, không phải toàn bộ số lần khám thai. Bệnh viện sẽ tùy tình hìn",
+    "dòng 32: còn chữ Hán -> - Nguồn: 国家卫生健康委办公厅 (Văn phòng Ủy ban Y tế Sức khỏe Quốc gia) (2020). 预防艾滋病、梅毒和乙肝母婴传播工作规范（2020 年版）. <https://w",
+    "dòng 77: còn chữ Hán -> - Nguồn: 北京市卫生健康委员会 (Ủy ban Y tế Sức khỏe thành phố Bắc Kinh). 每周急救话题：准妈妈羊水早破怎样办？ <https://wjw.beijing.gov.cn/"
+   ],
+   "status": "reviewed"
   },
   "28": {
+   "file": "book/vi/28-dung-vi-ngoai-hinh-ma-lam-hong-co-the.md",
+   "hanzi_outside_tags": 261,
+   "hard_issues": [],
    "items": 8,
    "section": "28-别为了外形把身体搞坏.md",
-   "status": "missing"
+   "soft_issues": [
+    "mục 1: số có thể thiếu ['1000']",
+    "mục 7: số có thể thiếu ['1000']",
+    "dòng 21: còn chữ Hán -> - Chi phí: Không tốn tiền. Kiểm tra hai loại giấy tờ này chỉ mất vài phút. Cơ sở phải treo 《医疗机构执业许可证》 tại sản",
+    "dòng 23: còn chữ Hán -> - Lợi ích: Điều 2 của 《医疗美容服务管理办法》 đưa ra định nghĩa về thẩm mỹ y khoa. Nguyên văn là \"áp dụng phẫu thuật, thu",
+    "dòng 25: còn chữ Hán -> - Nguồn: 卫生部 (Bộ Y tế) (2002). 医疗美容服务管理办法 (卫生部令第 19 号, Điều 2, Điều 8, Điều 11, Điều 16, Điều 20, Điều 24). <h"
+   ],
+   "status": "reviewed"
   },
   "29": {
+   "file": "book/vi/29-sau-bien-co-lon.md",
+   "hanzi_outside_tags": 212,
+   "hard_issues": [],
    "items": 13,
    "section": "29-遭遇重大打击之后.md",
-   "status": "missing"
+   "soft_issues": [
+    "mục 1: số có thể thiếu ['1394', '1985', '30447', '83588']",
+    "mục 2: số có thể thiếu ['1000', '607']",
+    "mục 3: số có thể thiếu ['2000']",
+    "mục 4: số có thể thiếu ['36', '670']",
+    "mục 5: số có thể thiếu ['1377']"
+   ],
+   "status": "reviewed"
   },
   "30": {
+   "file": "book/vi/30-tre-em-o-do-tuoi-di-hoc.md",
+   "hanzi_outside_tags": 761,
+   "hard_issues": [],
    "items": 17,
    "section": "30-上学以后的孩子.md",
-   "status": "missing"
+   "soft_issues": [
+    "mục 1: số có thể thiếu ['1283', '2116']",
+    "mục 5: số có thể thiếu ['18905']",
+    "mục 13: số có thể thiếu ['1322', '1548', '7924']",
+    "mục 14: số có thể thiếu ['226247', '38935']",
+    "mục 15: số có thể thiếu ['150822']"
+   ],
+   "status": "reviewed"
   },
   "31": {
+   "file": "book/vi/31-cac-con-duong-sau-tuoi-18.md",
+   "hanzi_outside_tags": 2362,
+   "hard_issues": [],
    "items": 16,
    "section": "31-十八岁之后有哪几条路.md",
-   "status": "missing"
+   "soft_issues": [
+    "mục 4: số có thể thiếu ['12000', '16000', '20000', '25000', '8000']",
+    "mục 6: số có thể thiếu ['20000', '4500', '6000']",
+    "mục 7: số có thể thiếu ['34430']",
+    "mục 8: số có thể thiếu ['18', '52', '82', '88']",
+    "mục 14: số có thể thiếu ['300']"
+   ],
+   "status": "reviewed"
   },
   "32": {
+   "file": "book/vi/32-du-hoc-nuoc-ngoai-tu-cach-luu-tru-lam-them-bao.md",
+   "hanzi_outside_tags": 154,
+   "hard_issues": [],
    "items": 10,
    "section": "32-出国留学.md",
-   "status": "missing"
+   "soft_issues": [
+    "mục 8: số có thể thiếu ['1035', '1552']",
+    "dòng 12: còn chữ Hán -> ### 1. Kiểm tra trường học có nằm trong danh sách công nhận của Trung tâm Phục vụ Du học (留服中心) hay không trướ",
+    "dòng 14: còn chữ Hán -> - Chi phí: Không tốn tiền. Nhập tên trường một lần vào mục \"Tra cứu trường được công nhận\" của Trung tâm Phục ",
+    "dòng 15: còn chữ Hán -> - Nói đơn giản: Sau khi về nước, nếu muốn dùng tấm bằng này để thi công chức, vào doanh nghiệp nhà nước, nhập ",
+    "dòng 18: còn chữ Hán -> - Nguồn: 中国(教育部)留学服务中心 (Trung tâm Phục vụ Du học thuộc Bộ Giáo dục Trung Quốc). 认证院校查询. <http://yxcx.cscse.edu"
+   ],
+   "status": "reviewed"
   },
   "33": {
+   "file": "book/vi/33-song-the-nao-sau-khi-bi-khuyet-tat.md",
+   "hanzi_outside_tags": 700,
+   "hard_issues": [],
    "items": 20,
    "section": "33-残疾之后怎么活.md",
-   "status": "missing"
+   "soft_issues": [
+    "mục 2: số có thể thiếu ['2304']",
+    "mục 16: số có thể thiếu ['2104', '5902']",
+    "dòng 12: còn chữ Hán -> Năm việc đã viết ở chỗ khác, ở đây chỉ dẫn đường, không nhắc lại. Thủ tục làm giấy chứng nhận người khuyết tật",
+    "dòng 38: còn chữ Hán -> - Lợi ích: Điều 30 của 《精神卫生法》 (Luật Sức khỏe tâm thần) nêu rõ \"việc điều trị nội trú đối với rối loạn tâm thầ",
+    "dòng 40: còn chữ Hán -> - Nguồn: 中华人民共和国精神卫生法 (Luật Sức khỏe tâm thần Cộng hòa Nhân dân Trung Hoa) (sửa đổi năm 2018, Điều 30, Điều 31"
+   ],
+   "status": "reviewed"
   },
   "34": {
+   "file": "book/vi/34-dung-thuoc-du-phong-tai-nha-dung-de-xay-ra.md",
+   "hanzi_outside_tags": 451,
+   "hard_issues": [],
    "items": 11,
    "section": "34-家里的常备药别吃出事.md",
-   "status": "missing"
+   "soft_issues": [
+    "mục 2: số có thể thiếu ['1207']",
+    "mục 3: số có thể thiếu ['124513']",
+    "mục 7: số có thể thiếu ['1147']",
+    "mục 10: số có thể thiếu ['59092', '64', '640161']",
+    "dòng 18: còn chữ Hán -> - Lợi ích: 22 bệnh viện tại Mỹ đã theo dõi liên tục 662 ca suy gan cấp trong 6 năm. Trong đó 275 ca (42%) do p"
+   ],
+   "status": "reviewed"
   }
  },
  "description": "Trạng thái bản dịch tiếng Việt. Sinh ra bởi tools/translate-vi/make_status.py.",
- "docs": {},
+ "docs": {
+  "co-the-nhan-biet-thoi-gian-the-nao-va-vi-sao.md": {
+   "hanzi_outside_tags": 13
+  },
+  "danh-muc-trang-bi-khan-cap-gia-dinh-mua-gi-de-o.md": {
+   "hanzi_outside_tags": 243
+  },
+  "ket-hon-co-loi-khong-tach-mot-khoan-map-mo.md": {
+   "hanzi_outside_tags": 151
+  },
+  "lam-nen-tang-can-xin-nhung-giay-phep-nao-bang.md": {
+   "hanzi_outside_tags": 189
+  },
+  "nhung-viec-can-lam-truoc-va-sau-khi-sinh-con.md": {
+   "hanzi_outside_tags": 40
+  },
+  "sau-khi-bi-sa-thai-thi-lam-gi-truoc.md": {
+   "hanzi_outside_tags": 54
+  },
+  "sau-khi-vua-chan-doan-benh-man-tinh-tuan-dau-ba.md": {
+   "hanzi_outside_tags": 20
+  },
+  "tren-duong-gap-nguoi-la-gap-nan-bo-di-hay-dung.md": {
+   "hanzi_outside_tags": 333
+  }
+ },
  "generated_by": "tools/translate-vi/make_status.py",
  "model": "gemini-3.8-flash",
- "readme": {}
+ "readme": {
+  "hanzi_outside_tags": 171
+ }
 }

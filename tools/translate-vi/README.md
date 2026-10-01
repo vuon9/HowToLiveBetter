@@ -55,10 +55,41 @@ python3 tools/translate-vi/verify_vi.py
 
 Khóa API lấy từ `providers.gemini.api_key` trong `~/.hermes/config.yaml`, hoặc
 biến môi trường `GEMINI_API_KEY` / `VI_API_KEY`. Có thể đổi `VI_MODEL`
-(mặc định `gemini-3.8-flash`) và `VI_WORKERS` (mặc định 10).
+(mặc định `gemini-3.8-flash`), `VI_WORKERS` (mặc định 10) và `VI_CHUNK_CHARS`
+(mặc định 2600).
+
+Khi project Google chạm hạn mức chi tiêu tháng, đặt `VI_TRANSPORT=hermes` để
+gọi cùng model đó qua provider đã cấu hình trong Hermes (`VI_HERMES_MODEL` mặc
+định `google/gemini-3.8-flash`, `VI_HERMES_PROVIDER` mặc định `openrouter`).
+Đường này chậm hơn nhiều (khoảng 2 phút mỗi chunk vì mỗi lần gọi phải dựng một
+phiên Hermes), bù lại không phụ thuộc hạn mức của Google. Phiên đó che các
+chuỗi số dài thành `[PHONE]`, nên sau khi chạy phải chạy `fix_redactions.py`.
+
+```bash
+VI_TRANSPORT=hermes VI_WORKERS=16 python3 tools/translate-vi/translate_book.py docs
+```
 
 Chạy lại là an toàn: bảng tiêu đề được lưu ở `state/vi-titles.json`, và mỗi
 tệp dịch được ghi đè trọn vẹn nên chỉ cần chạy lại đúng phần đó.
+
+## Sửa một mục lẻ
+
+`repair_item.py` dịch lại một mục rồi ghép vào tệp, dùng khi `verify_vi.py` chỉ
+ra một mục hỏng (ví dụ dòng Nguồn bị cắt):
+
+```bash
+python3 tools/translate-vi/repair_item.py 31 4
+```
+
+## Dọn dẹp sau khi dịch
+
+- `fix_redactions.py`: khôi phục URL và chuỗi số bị thay bằng `[PHONE]` (chỉ
+  xảy ra với `VI_TRANSPORT=hermes`).
+- `normalize_terms.py --dry-run` rồi bỏ `--dry-run`: chốt một cách dịch duy
+  nhất cho mỗi tên cơ quan Trung Quốc (mỗi chunk dịch độc lập nên cùng một cơ
+  quan có thể ra nhiều cách gọi khác nhau).
+- `rename_chapters.py`: đổi tên tệp theo slug chuẩn.
+- `make_status.py`: ghi `status.json`.
 
 ## Kiểm tra tự động
 

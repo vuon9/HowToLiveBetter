@@ -58,6 +58,12 @@ LAW_MARKERS = ("法", "条例", "解释", "规定", "办法", "意见", "通知"
 MODEL = os.environ.get("VI_MODEL", "gemini-3.8-flash")
 WORKERS = int(os.environ.get("VI_WORKERS", "10"))
 ATTEMPTS = int(os.environ.get("VI_ATTEMPTS", "8"))
+# "gemini": call the Google endpoint with the key from ~/.hermes/config.yaml.
+# "hermes": shell out to `hermes -z`, which reaches the same model through a
+# configured provider (used when the Google project's spend cap is reached).
+TRANSPORT = os.environ.get("VI_TRANSPORT", "gemini")
+HERMES_MODEL = os.environ.get("VI_HERMES_MODEL", "google/gemini-3.8-flash")
+HERMES_PROVIDER = os.environ.get("VI_HERMES_PROVIDER", "openrouter")
 API_BASE = os.environ.get("VI_API_BASE", "https://generativelanguage.googleapis.com/v1beta/models")
 KEY_PATH = Path(os.environ.get("VI_KEY_PATH", "~/.hermes/config.yaml")).expanduser()
 
@@ -105,6 +111,44 @@ def call_gemini(
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": gen,
     }
+    if TRANSPORT == "hermes":
+        import subprocess  # noqa: PLC0415
+
+        text = (
+            f"{system}\n\n---\n\n{prompt}\n\n"
+            "Chỉ trả lời bằng bản dịch, không dùng công cụ, không giải thích, không thêm lời dẫn."
+        )
+        if schema:
+            text += "\nTrả về JSON đúng cấu trúc: " + json.dumps(schema, ensure_ascii=False)
+        last = None
+        for attempt in range(attempts):
+            try:
+                proc = subprocess.run(
+                    [
+                        "hermes",
+                        "-z",
+                        text,
+                        "-m",
+                        HERMES_MODEL,
+                        "--provider",
+                        HERMES_PROVIDER,
+                        "--reasoning",
+                        "none",
+                        "--ignore-rules",
+                    ],
+                    capture_output=True, text=True, timeout=900, cwd=str(Path(__file__).resolve().parent),
+                )
+                out = proc.stdout.strip()
+                out = re.sub(r"^```[a-zA-Z]*\n|\n```$", "", out).strip()
+                if not out:
+                    raise RuntimeError(f"empty stdout (rc={proc.returncode}): {proc.stderr[-200:]}")
+                return out
+            except Exception as exc:  # noqa: BLE001
+                last = exc
+                if attempt < attempts - 1:
+                    time.sleep(min(60, 2 ** attempt) + random.random())
+        raise RuntimeError(f"hermes transport failed after {attempts} attempts: {last}")
+
     last = None
     for attempt in range(attempts):
         try:
@@ -176,6 +220,48 @@ def strip_tags(block: str) -> tuple[str, list[str]]:
     tags = [ln for ln in block.split("\n") if TAG_RE.match(ln)]
     clean = "\n".join(ln for ln in block.split("\n") if not TAG_RE.match(ln)).strip("\n")
     return clean, tags
+
+
+def parse_json_loose(text: str) -> dict:
+    """Parse a JSON object out of a model answer that may carry prose or fences."""
+    text = re.sub(r"^```[a-zA-Z]*\n|\n```$", "", text.strip())
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+    start = text.find("{")
+    while start != -1:
+        depth, in_str, esc = 0, False, False
+        for i, ch in enumerate(text[start:], start):
+            if in_str:
+                if esc:
+                    esc = False
+                elif ch == "\\":
+                    esc = True
+                elif ch == '"':
+                    in_str = False
+                continue
+            if ch == '"':
+                in_str = True
+            elif ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    try:
+                        return json.loads(text[start : i + 1])
+                    except json.JSONDecodeError:
+                        break
+        start = text.find("{", start + 1)
+    raise ValueError(f"no JSON object in answer: {text[:200]!r}")
+
+
+def status_line(label: str, link: str) -> str:
+    """Provenance line. Chapters keep the upstream shape (book/NN-x.md -> ../NN-x.md)."""
+    return (
+        f"> Bản dịch không chính thức của [{label}]({link}). "
+        "Nếu có khác biệt, bản gốc tiếng Trung là bản có hiệu lực."
+    )
 
 
 def unfence(text: str) -> str:
@@ -325,7 +411,11 @@ def run_titles(chapters: list[dict], refresh: bool = False) -> dict:
 # --------------------------------------------------------------- pass 2: items
 
 
-def chunk_items(items: list[dict], max_chars: int = 2600) -> list[list[dict]]:
+CHUNK_CHARS = int(os.environ.get("VI_CHUNK_CHARS", "2600"))
+
+
+def chunk_items(items: list[dict], max_chars: int | None = None) -> list[list[dict]]:
+    max_chars = max_chars or CHUNK_CHARS
     chunks, cur, size = [], [], 0
     for it in items:
         ln = len(it["title_cn"]) + sum(len(x) for x in it["lines"])
@@ -407,6 +497,98 @@ def translate_chunk(chunk: list[dict], ctx: dict, hints: list[str]) -> tuple[dic
     return blocks, problems
 
 
+def assemble_chapter(ch: dict, meta: dict, results: dict[int, str], unresolved: list[str]) -> dict:
+    """Write book/vi/NN-slug.md from translated item blocks (source text for gaps)."""
+    slug = slugify(meta["title"])
+    prefix = ch["path"].name[:2] if re.match(r"^\d\d-", ch["path"].name) else f"{int(ch['number']):02d}"
+    out_path = ROOT / "book" / "vi" / f"{prefix}-{slug}.md"
+    lines = [
+        status_line(f"book/{ch['path'].name}", f"../{ch['path'].name}"),
+        "[← Về mục lục](../../README.vi.md)",
+        "",
+        f"# {int(ch['number'])}. {meta['title']}",
+        "",
+        meta["intro"],
+        "",
+    ]
+    for it in ch["items"]:
+        lines.append(f"### {it['n']}. {meta['items'][str(it['n'])]}")
+        lines.extend(it["tags"])
+        body = results.get(it["n"])
+        if body is None:
+            unresolved.append(f"mục {it['n']} chưa dịch")
+            lines.extend(it["lines"])
+        else:
+            body_lines = body.split("\n")[1:]
+            while body_lines and not body_lines[0].strip():
+                body_lines.pop(0)
+            lines.extend(body_lines)
+        lines.append("")
+    while lines and not lines[-1].strip():
+        lines.pop()
+    lines.append("")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text("\n".join(lines), encoding="utf-8")
+    han = len(HAN_RE.findall("\n".join(lines)))
+    log(f"  wrote {out_path.relative_to(ROOT)} ({len(ch['items'])} mục, {han} chữ Hán còn lại)")
+    return {"path": out_path, "unresolved": unresolved, "han": han, "meta": meta}
+
+
+def translate_chapters_parallel(chapters: list[dict], titles_state: dict, ch_by_no: dict) -> list[dict]:
+    """One shared worker pool over every chunk of every chapter (chapters in parallel).
+
+    Chapters are assembled as soon as their own chunks are done, so a slow or
+    retrying chunk does not hold up the rest.
+    """
+    jobs: list[tuple[dict, list[dict], dict, list[str]]] = []
+    for ch in chapters:
+        meta = titles_state[ch["path"].name]
+        ctx = {
+            "chapter_no": ch["number"],
+            "chapter_title": meta["title"],
+            "titles": {str(n): t for n, t in meta["items"].items()},
+        }
+        for chunk in chunk_items(ch["items"]):
+            text = "\n".join(it["title_cn"] + "\n" + "\n".join(it["lines"]) for it in chunk)
+            jobs.append((ch, chunk, ctx, ref_hints(text, ch["number"], titles_state, ch_by_no)))
+    log(f"{len(jobs)} chunk(s) across {len(chapters)} chapter(s), {WORKERS} workers")
+
+    results: dict[str, dict[int, str]] = {ch["path"].name: {} for ch in chapters}
+    problems_by_chapter: dict[str, list[str]] = {ch["path"].name: [] for ch in chapters}
+    pending = {ch["path"].name: len(chunk_items(ch["items"])) for ch in chapters}
+    lock = threading.Lock()
+    done: list[dict] = []
+
+    def finish(ch: dict) -> None:
+        meta = titles_state[ch["path"].name]
+        res = assemble_chapter(ch, meta, results[ch["path"].name], problems_by_chapter[ch["path"].name])
+        done.append(res)
+
+    with futures.ThreadPoolExecutor(max_workers=WORKERS) as ex:
+        futmap = {ex.submit(translate_chunk, chunk, ctx, hints): (ch, chunk) for ch, chunk, ctx, hints in jobs}
+        for fut in futures.as_completed(futmap):
+            ch, chunk = futmap[fut]
+            key = ch["path"].name
+            nums = ", ".join(str(it["n"]) for it in chunk)
+            try:
+                blocks, problems = fut.result()
+            except Exception as exc:  # noqa: BLE001
+                with lock:
+                    problems_by_chapter[key].append(f"lỗi API ở mục {nums}: {exc}")
+                log(f"  !! {key}: lỗi API ở mục {nums}: {exc}")
+                blocks, problems = {}, []
+            with lock:
+                results[key].update(blocks)
+                if problems:
+                    problems_by_chapter[key].extend(problems)
+                    log(f"  !! {key}: {'; '.join(problems[:4])}")
+                pending[key] -= 1
+                if pending[key] == 0:
+                    log(f"chapter {ch['number']}: {ch['title_cn']}")
+                    finish(ch)
+    return done
+
+
 def translate_chapter(ch: dict, titles_state: dict, ch_by_no: dict) -> dict:
     meta = titles_state[ch["path"].name]
     ctx = {"chapter_no": ch["number"], "chapter_title": meta["title"], "titles": {str(n): t for n, t in meta["items"].items()}}
@@ -434,7 +616,7 @@ def translate_chapter(ch: dict, titles_state: dict, ch_by_no: dict) -> dict:
     prefix = ch["path"].name[:2] if re.match(r"^\d\d-", ch["path"].name) else f"{int(ch['number']):02d}"
     out_path = ROOT / "book" / "vi" / f"{prefix}-{slug}.md"
     lines = [
-        GLOSSARY["status_line"].format(src=ch["path"].name),
+        status_line(f"book/{ch['path'].name}", f"../{ch['path'].name}"),
         "[← Về mục lục](../../README.vi.md)",
         "",
         f"# {int(ch['number'])}. {meta['title']}",
@@ -498,20 +680,22 @@ def translate_prose(
         "properties": {"title": {"type": "string"}, "intro": {"type": "string"}},
         "required": ["title", "intro"],
     }
-    head = json.loads(
+    head = parse_json_loose(
         call_gemini(
-            f"{context}\nDịch tiêu đề và phần mở đầu này sang tiếng Việt:\n\n{h1}\n\n{intro}",
+            f"{context}\nDịch tiêu đề và phần mở đầu này sang tiếng Việt, "
+            f"trả về JSON với hai khóa title và intro:\n\n{h1}\n\n{intro}",
             SYSTEM_RULES,
             schema=schema,
             temperature=0.3,
         )
     )
-    out_sections: list[tuple[str, str]] = []
-    for heading, body in sections:
+    extra = ""
+    if hints:
+        extra = "Từ neo tham chiếu (dùng đúng nguyên văn):\n" + "\n".join(hints) + "\n\n"
+
+    def one(sec: tuple[str, str]) -> tuple[str, str]:
+        heading, body = sec
         chunk = f"{heading}\n\n{body}".strip()
-        extra = ""
-        if hints:
-            extra = "Từ neo tham chiếu (dùng đúng nguyên văn):\n" + "\n".join(hints) + "\n\n"
         out = unfence(
             call_gemini(
                 f"{context}\n{extra}Dịch sang tiếng Việt, giữ nguyên cấu trúc markdown, số liệu, URL, "
@@ -520,7 +704,13 @@ def translate_prose(
                 temperature=0.25,
             )
         )
-        out_sections.append((heading, out))
+        return heading, out
+
+    if len(sections) <= 1:
+        out_sections = [one(sec) for sec in sections]
+    else:
+        with futures.ThreadPoolExecutor(max_workers=min(WORKERS, len(sections))) as ex:
+            out_sections = list(ex.map(one, sections))
     return h1, head["title"], head["intro"], out_sections  # type: ignore[return-value]
 
 
@@ -560,8 +750,9 @@ def run_readme(titles_state: dict) -> None:
     body = rewrite_links(body, book_map, docs_map)
     intro = rewrite_links(intro, book_map, docs_map)
     out = (
-        GLOSSARY["status_line"].format(src="../README.md").replace("../", "")
-        + "\n\n"
+        status_line("README.md", "README.md")
+        + "\n"
+        + "[← Bản gốc tiếng Trung: README.md](README.md)\n\n"
         + f"# {title}\n\n{intro}\n\n{body}\n"
     )
     (ROOT / "README.vi.md").write_text(out, encoding="utf-8")
@@ -570,38 +761,80 @@ def run_readme(titles_state: dict) -> None:
 
 
 def run_docs(titles_state: dict) -> None:
+    """Translate docs/*.md into docs/vi/. All files share one worker pool."""
     docs = sorted(p for p in (ROOT / "docs").glob("*.md") if p.name not in {"引用对照.md"})
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     state_path = STATE_DIR / "vi-docs-titles.json"
     state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
     book_map, docs_map = build_maps(titles_state)
-    # docs cross-reference chapters; give every doc the full anchor sheet once
     anchor_sheet = [
         f'phần {int(ch["number"])} "{titles_state[ch["path"].name]["title"]}"'
         for ch in chapters_list()
         if ch["path"].name in titles_state
     ]
+    schema = {
+        "type": "object",
+        "properties": {"title": {"type": "string"}, "intro": {"type": "string"}},
+        "required": ["title", "intro"],
+    }
+    parsed: dict[str, tuple[str, str, list[tuple[str, str]]]] = {}
     for p in docs:
-        text = p.read_text(encoding="utf-8")
-        log(f"docs: {p.name}")
-        h1, title, intro, sections = translate_prose(
-            text,
-            context=f'Đây là một bài viết dài trong sách "Cẩm nang sống tốt với chi phí thấp", tệp gốc docs/{p.name}.',
-            hints=anchor_sheet,
-            level=2,
+        parsed[p.name] = parse_sections(p.read_text(encoding="utf-8"), level=2)
+    log(f"docs: {len(docs)} files, {sum(len(v[2]) for v in parsed.values())} sections")
+
+    def head(name: str) -> tuple[str, dict]:
+        h1, intro, _ = parsed[name]
+        data = parse_json_loose(
+            call_gemini(
+                f'Đây là một bài viết dài trong sách "Cẩm nang sống tốt với chi phí thấp", tệp gốc docs/{name}.\n'
+                f"Dịch tiêu đề và phần mở đầu này sang tiếng Việt, trả về JSON với hai khóa title và intro:\n\n{h1}\n\n{intro}",
+                SYSTEM_RULES,
+                schema=schema,
+                temperature=0.3,
+            )
         )
-        body = rewrite_links("\n\n".join(t for _, t in sections), book_map, docs_map)
-        intro = rewrite_links(intro, book_map, docs_map)
-        slug = slugify(title)
+        log(f"  docs title: {name} -> {data['title']}")
+        return name, data
+
+    with futures.ThreadPoolExecutor(max_workers=min(WORKERS, len(docs))) as ex:
+        heads = dict(ex.map(head, [p.name for p in docs]))
+
+    jobs = []
+    for name in heads:
+        _, _, sections = parsed[name]
+        for idx, (heading, body) in enumerate(sections):
+            jobs.append((name, idx, f"{heading}\n\n{body}".strip(), anchor_sheet))
+
+    def one(job: tuple[str, int, str, list[str]]) -> tuple[str, int, str]:
+        name, idx, chunk, hints = job
+        extra = "Từ neo tham chiếu (dùng đúng nguyên văn):\n" + "\n".join(hints) + "\n\n"
+        out = unfence(
+            call_gemini(
+                f'Đây là một bài viết dài trong sách "Cẩm nang sống tốt với chi phí thấp", tệp gốc docs/{name}.\n'
+                f"{extra}Dịch sang tiếng Việt, giữ nguyên cấu trúc markdown, số liệu, URL, chỉ trả về markdown:\n\n{chunk}",
+                SYSTEM_RULES,
+                temperature=0.25,
+            )
+        )
+        return name, idx, out
+
+    bodies: dict[str, dict[int, str]] = {name: {} for name in heads}
+    with futures.ThreadPoolExecutor(max_workers=WORKERS) as ex:
+        for name, idx, out in ex.map(one, jobs):
+            bodies[name][idx] = out
+    for p in docs:
+        body = rewrite_links("\n\n".join(bodies[p.name][i] for i in sorted(bodies[p.name])), book_map, docs_map)
+        intro = rewrite_links(heads[p.name]["intro"], book_map, docs_map)
+        slug = slugify(heads[p.name]["title"])
         out_path = ROOT / "docs" / "vi" / f"{slug}.md"
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(
-            GLOSSARY["status_line"].format(src=f"docs/{p.name}")
+            status_line(f"docs/{p.name}", f"../../docs/{p.name}")
             + "\n[← Về mục lục](../../README.vi.md)\n\n"
-            + f"# {title}\n\n{intro}\n\n{body}\n",
+            + f"# {heads[p.name]['title']}\n\n{intro}\n\n{body}\n",
             encoding="utf-8",
         )
-        state[p.name] = {"title": title, "slug": slug}
+        state[p.name] = {"title": heads[p.name]["title"], "slug": slug}
         state_path.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
         log(f"  wrote docs/vi/{slug}.md")
 
@@ -640,10 +873,9 @@ def main() -> None:
 
     unresolved: list[str] = []
     han_total = 0
-    for ch in selected:
-        log(f"chapter {ch['number']}: {ch['title_cn']}")
-        res = translate_chapter(ch, titles_state, ch_by_no)
-        unresolved.extend(f"{ch['path'].name}: {p}" for p in res["unresolved"])
+    results = translate_chapters_parallel(selected, titles_state, ch_by_no)
+    for res in results:
+        unresolved.extend(f"{res['path'].name}: {p}" for p in res["unresolved"])
         han_total += res["han"]
     log(f"done. hanzi left in book: {han_total}; unresolved: {len(unresolved)}")
     for u in unresolved:
