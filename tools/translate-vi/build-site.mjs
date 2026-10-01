@@ -34,6 +34,15 @@ const withRow = (html, prefix) => {
   return html.replace(marker, `  ${LANG_ROW(prefix)}\n${marker}`);
 };
 
+// trang tiếng Trung cũng có hàng liên kết ngôn ngữ, để hai trang trỏ qua lại
+const ZH = resolve(ROOT, 'index.html');
+const zh = readFileSync(ZH, 'utf8');
+const zh2 = withRow(zh, '');
+if (zh2 !== zh) {
+  writeFileSync(ZH, zh2);
+  console.log('index.html: đã chèn hàng liên kết ngôn ngữ');
+}
+
 let root = readFileSync(SRC, 'utf8');
 root = withRow(root, '');
 writeFileSync(SRC, root);
