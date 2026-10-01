@@ -8,30 +8,30 @@ Lưu ý: WebFetch mở trực tiếp các trang của nhà xuất bản (Wiley /
 ## 1. Tự động gia hạn
 - URL: <https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2025/art_4b47c79b8d994a42bba4835997688faa.html>
 - Đã xác nhận: tiêu đề "网络交易监督管理办法", 总局令第 37 号 (công bố 2021-03-15), 令第 101 号 sửa đổi (2025-03-18), thi hành từ 2021-05-01.
-- Nguyên văn: Điều 18 「网络交易经营者采取自动展期、自动续费等方式提供服务的，应当在消费者接受服务前和自动展期、自动续费等日期前，以显著方式提请消费者注意，由消费者自主选择。……在服务期间内，应当为消费者提供显著、简便的随时取消或者变更的选项，并不得收取不合理费用。」
+- Nguyên văn: Điều 18 「网络交易经营者采取自动展期、自动续费等方式提供服务的，应当在消费者接受服务前和自动展期、自动续费等日期前，以显著方式提请消费者注意，由消费者自主选择。……在服务期间内，应当为消费者提供显著、简便的随时取消或者变更的选项，并不得收取不合理费用。」  (dịch: Chủ thể kinh doanh thương mại điện tử khi cung cấp dịch vụ theo phương thức tự động gia hạn, tự động gia hạn phí và các phương thức tương tự, phải nhắc nhở người tiêu dùng một cách rõ ràng trước khi người tiêu dùng chấp nhận dịch vụ và trước ngày tự động gia hạn, tự động gia hạn phí..., để người tiêu dùng tự chủ lựa chọn.…… Trong thời gian cung cấp dịch vụ, phải cung cấp cho người tiêu dùng lựa chọn rõ ràng, đơn giản để hủy hoặc thay đổi bất cứ lúc nào, và không được thu phí bất hợp lý.)
 
 ## 2. Vé số
 - URL: <http://m.mof.gov.cn/czxw/201511/t20151113_1560814.htm>
 - Đã xác nhận: "关于规范和加强彩票资金构成比例管理的通知" 财综〔2015〕94 号, 2015-10-21, thực hiện từ 2016-01-01.
-- Nguyên văn: loại lotto, loại con số 「奖金比例不得低于50%」; loại dự đoán 「奖金比例不得低于73%」; loại cào mở ngay, loại video, loại keno 「奖金比例不得低于65%」.
+- Nguyên văn: loại lotto, loại con số 「奖金比例不得低于50%」  (dịch: tỷ lệ tiền thưởng không được thấp hơn 50%)`; loại dự đoán 「奖金比例不得低于73%」  (dịch: tỷ lệ tiền thưởng không được thấp hơn 73%)`; loại cào mở ngay, loại video, loại keno 「奖金比例不得低于65%」  (dịch: tỷ lệ tiền thưởng không được thấp hơn 65%)`.
 - URL: <http://zhs.mof.gov.cn/zhengcefabu/202508/t20250828_3970977.htm>
 - Đã xác nhận: "中华人民共和国财政部公告2025年第8号".
-- Nguyên văn: 「全国发行销售彩票6234.86亿元」「2024年共筹集彩票公益金1610.31亿元」.
+- Nguyên văn: 「全国发行销售彩票6234.86亿元」  (dịch: doanh số phát hành, bán xổ số toàn quốc đạt 623,486 tỷ nhân dân tệ)`「2024年共筹集彩票公益金1610.31亿元」  (dịch: năm 2024 huy động được tổng cộng 161,031 tỷ nhân dân tệ quỹ công ích xổ số)`.
 - URL: <https://mzj.nc.gov.cn/ncsmzj/flcp/202111/5dccc1a5da89434e94a62f8ea0e5887e.shtml> (南昌市民政局 (Cục Dân chính thành phố Nam Xương) đăng lại, quy tắc trò chơi được 财政部 (Bộ Tài chính) phê duyệt)
 - Đã xác nhận: "中国福利彩票双色球游戏规则".
-- Nguyên văn: Điều 14 「双色球按当期销售额的51%、13%和36%分别计提彩票奖金、彩票发行费和彩票公益金。」
+- Nguyên văn: Điều 14 「双色球按当期销售额的51%、13%和36%分别计提彩票奖金、彩票发行费和彩票公益金。」  (dịch: Xổ số Song Sắc Cầu trích lập lần lượt 51%, 13% và 36% doanh số bán kỳ hiện hành cho tiền thưởng xổ số, phí phát hành xổ số và quỹ công ích xổ số.)
 - Ghi chú: kỳ vọng hoàn vốn 0,51 nhân dân tệ/nhân dân tệ, kỳ vọng lỗ 49% được tính trực tiếp từ 51%.
 
 ## 3. Trả tối thiểu thẻ tín dụng
 - URL: <https://xining.pbc.gov.cn/zhengwugongkai/4081330/4406346/4693549/4159909/index.html> (trang công khai chính vụ của 人民银行西宁中心支行 (Chi nhánh Trung tâm Tây Ninh thuộc Ngân hàng Nhân dân Trung Quốc), chuyển tiếp văn bản của ngân hàng trung ương)
 - Đã xác nhận: "中国人民银行关于推进信用卡透支利率市场化改革的通知" 银发〔2020〕327 号, 2020-12-31.
-- Nguyên văn: 「信用卡透支利率由发卡机构与持卡人自主协商确定」「取消信用卡透支利率上限和下限管理（即上限为日利率万分之五、下限为日利率万分之五的0.7倍）」「披露信用卡透支利率时应以明显方式展示年化利率，不得仅展示日利率、日还款额等」.
+- Nguyên văn: 「信用卡透支利率由发卡机构与持卡人自主协商确定」  (dịch: Lãi suất thấu chi thẻ tín dụng do tổ chức phát hành thẻ và chủ thẻ tự chủ thương lượng xác định)`「取消信用卡透支利率上限和下限管理（即上限为日利率万分之五、下限为日利率万分之五的0.7倍）」  (dịch: Bãi bỏ quản lý giới hạn trên và giới hạn dưới của lãi suất thấu chi thẻ tín dụng (tức giới hạn trên là 0,05% mỗi ngày, giới hạn dưới là 0,7 lần của 0,05% mỗi ngày))`「披露信用卡透支利率时应以明显方式展示年化利率，不得仅展示日利率、日还款额等」  (dịch: Khi công bố lãi suất thấu chi thẻ tín dụng phải thể hiện lãi suất quy đổi theo năm một cách rõ ràng, không được chỉ thể hiện lãi suất theo ngày, số tiền trả theo ngày...）`.
 - Ghi chú: 18,25% = 0,05% × 365, lãi đơn, do mục này tự tính. Trang nguyên văn 银发〔2016〕111 号 <https://www.pbc.gov.cn/tiaofasi/144941/3581332/3589049/index.html> đã mở, nhưng nội dung nằm trong tệp PDF đính kèm, chưa trích xuất; mục này không trích dẫn bất kỳ con số nào trong đó.
 
 ## 4. Bảo hành mở rộng
 - DOI: <https://doi.org/10.1086/605298>
 - Crossref đã xác nhận: Chen T, Kalra A, Sun B. Why Do Consumers Buy Extended Service Contracts? Journal of Consumer Research 2009;36(4):611-623.
-- Nguyên văn PDF (đơn vị công tác của tác giả là 长江商学院 (Học viện Kinh doanh Trường Giang) lưu trữ <https://english.ckgsb.edu.cn/sites/default/files/ck_faculty_bhsun_esc.pdf>, dùng pdftotext trích xuất văn bản): 「Their cost usually ranges between 10% and 50% of a product's original price (Business Week 2004).」「even though they account for only 3%–4% of the revenue, in 2003 they contributed more than 50% of Best Buy's profit and almost 100% of Circuit City's profits (Business Week 2004). Some analysts estimate that the average margin for the ESCs is 50%–60%, or approximately 18 times the margin for regular products (Business Week 2004).」
+- Nguyên văn PDF (đơn vị công tác của tác giả là 长江商学院 (Học viện Kinh doanh Trường Giang) lưu trữ <https://english.ckgsb.edu.cn/sites/default/files/ck_faculty_bhsun_esc.pdf>, dùng pdftotext trích xuất văn bản): 「Their cost usually ranges between 10% and 50% of a product's original price (Business Week 2004).」  (dịch: Chi phí của họ thường dao động từ 10% đến 50% giá gốc của sản phẩm (Business Week 2004).)`「even though they account for only 3%–4% of the revenue, in 2003 they contributed more than 50% of Best Buy's profit and almost 100% of Circuit City's profits (Business Week 2004). Some analysts estimate that the average margin for the ESCs is 50%–60%, or approximately 18 times the margin for regular products (Business Week 2004).」  (dịch: mặc dù chúng chỉ chiếm 3%–4% doanh thu, nhưng năm 2003 chúng đóng góp hơn 50% lợi nhuận của Best Buy và gần 100% lợi nhuận của Circuit City (Business Week 2004). Một số nhà phân tích ước tính biên lợi nhuận trung bình của dịch vụ ESC là 50%–60%, tức khoảng 18 lần biên lợi nhuận của sản phẩm thông thường (Business Week 2004).)
 - Ghi chú: DOI 10.1086/598983 ban đầu tôi viết theo trí nhớ qua kiểm tra của Crossref là một bài báo khác về bệnh truyền nhiễm, đã sửa thành 10.1086/605298。 do Crossref tìm kiếm.
 
 ## 5. Mua sắm tập trung và đánh giá tương đương
@@ -88,8 +88,8 @@ Lưu ý: WebFetch mở trực tiếp các trang của nhà xuất bản (Wiley /
 
 ## 9. Phí quỹ
 - URL: <http://www.csrc.gov.cn/xiamen/c105636/c7511608/content.shtml> (chuyên mục "Tiếng nói truyền thông" của 证监会厦门监管局 (Cục Giám sát Chứng khoán Hạ Môn thuộc Ủy ban Điều tiết Chứng khoán Trung Quốc))
-- Đã xác nhận: 「让利实打实 公募费率改革『以降促升』」 2024-10-12.
-- Nguyên văn: 「新注册的主动权益类基金统一执行『管理费率不超过1.2%、托管费率不超过0.2%』的上限标准」「全行业136家基金管理人陆续发布公告，将旗下存量主动权益类公募基金产品的管理费率、托管费率统一下调至1.2%、0.2%以下」。
+- Đã xác nhận: 「让利实打实 公募费率改革『以降促升』」  (dịch: Nhượng lợi thật chất, cải cách phí quỹ công khai 『lấy giảm thúc đẩy tăng』)` 2024-10-12.
+- Nguyên văn: 「新注册的主动权益类基金统一执行『管理费率不超过1.2%、托管费率不超过0.2%』的上限标准」  (dịch: Các quỹ loại cổ phần chủ động mới đăng ký thực hiện thống nhất tiêu chuẩn giới hạn trên 『phí quản lý không vượt quá 1,2%, phí lưu ký không vượt quá 0,2%』)`「全行业136家基金管理人陆续发布公告，将旗下存量主动权益类公募基金产品的管理费率、托管费率统一下调至1.2%、0.2%以下」  (dịch: Toàn bộ 136 nhà quản lý quỹ trong ngành lần lượt ra thông báo, điều chỉnh giảm thống nhất phí quản lý, phí lưu ký của các sản phẩm quỹ công khai loại cổ phần chủ động hiện hữu xuống dưới 1,2% và 0,2%)`。
 - Ghi chú: trang "Trả lời phóng viên" của trụ sở 证监会 (Ủy ban Điều tiết Chứng khoán Trung Quốc) <http://www.csrc.gov.cn/csrc/c100028/c7418692/content.shtml> đã mở (2023-07-08), nhưng nội dung thu thập được không chứa các con số 1,2%/0,2%, do đó dẫn từ trang đăng lại của Cục Hạ Môn. 0,99^20 = 0,818, 0,99^30 = 0,740 là tự tính toán.
 
 ## 10. Phòng tập gym
@@ -99,23 +99,23 @@ Lưu ý: WebFetch mở trực tiếp các trang của nhà xuất bản (Wiley /
 
 ## 11. Thời gian cân nhắc / 7 ngày trả hàng không cần lý do
 - URL: <https://www.gov.cn/zhengce/zhengceku/2020-11/03/content_5557118.htm>
-- Đã xác nhận: 「网络购买商品七日无理由退货暂行办法」 总局令第 31 号 (sửa đổi ngày 2020-10-23), thi hành ngày 2017-03-15.
-- Nguyên văn: Điều 3 「网络商品销售者应当依法履行七日无理由退货义务」; Điều 6 hàng hóa không áp dụng: hàng hóa do người tiêu dùng đặt làm riêng, hàng hóa tươi sống dễ hư hỏng, sản phẩm nghe nhìn/phần mềm và các hàng hóa kỹ thuật số khác đã tải xuống hoặc đã mở niêm phong, báo chí định kỳ đã giao.
-- Ghi chú: bản thân 「24 小时冷静期」 không có tài liệu, mục này đánh dấu C.
+- Đã xác nhận: 「网络购买商品七日无理由退货暂行办法」  (dịch: Biện pháp tạm hành về trả hàng không cần lý do trong bảy ngày đối với hàng hóa mua qua mạng)` 总局令第 31 号 (sửa đổi ngày 2020-10-23), thi hành ngày 2017-03-15.
+- Nguyên văn: Điều 3 「网络商品销售者应当依法履行七日无理由退货义务」  (dịch: Người bán hàng hóa trên mạng phải thực hiện nghĩa vụ trả hàng không cần lý do trong bảy ngày theo quy định của pháp luật)`; Điều 6 hàng hóa không áp dụng: hàng hóa do người tiêu dùng đặt làm riêng, hàng hóa tươi sống dễ hư hỏng, sản phẩm nghe nhìn/phần mềm và các hàng hóa kỹ thuật số khác đã tải xuống hoặc đã mở niêm phong, báo chí định kỳ đã giao.
+- Ghi chú: bản thân 「24 小时冷静期」 (dịch: thời gian cân nhắc 24 giờ) không có tài liệu, mục này đánh dấu C.
 
 ## 12. Định giá neo
 - DOI: <https://doi.org/10.1126/science.185.4157.1124>
 - Crossref đã xác nhận: Tversky A, Kahneman D. Judgment under Uncertainty: Heuristics and Biases. Science 1974;185(4157):1124-1131.
 - PDF nguyên văn (bản scan JSTOR lưu trên trang khóa học của UC Irvine <https://sites.socsci.uci.edu/~bskyrms/bio/readings/tversky_k_heuristics_biases.pdf>, trích xuất bằng pdftotext, trang đầu 「Science, New Series, Vol. 185, No. 4157, (Sep. 27, 1974), pp. 1124-1131」): 「different starting points yield different estimates, which are biased toward the initial values. We call this phenomenon anchoring.」「Since adjustment from the starting point is typically insufficient…」
 - URL: <https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_cae53a080be2401e8f91c6d6291539f8.html>
-- Đã xác nhận: 「规范促销行为暂行规定」 总局令第 32 号, thi hành ngày 2020-12-01.
-- Nguyên văn: Điều 21 「经营者折价、减价，应当标明或者通过其他方便消费者认知的方式表明折价、减价的基准。未标明或者表明基准的，其折价、减价应当以同一经营者在同一经营场所内，在本次促销活动前七日内最低成交价格为基准。」
+- Đã xác nhận: 「规范促销行为暂行规定」 (dịch: Quy định tạm hành về việc quy phạm hành vi khuyến mại) 总局令第 32 号, thi hành ngày 2020-12-01.
+- Nguyên văn: Điều 21 「经营者折价、减价，应当标明或者通过其他方便消费者认知的方式表明折价、减价的基准。未标明或者表明基准的，其折价、减价应当以同一经营者在同一经营场所内，在本次促销活动前七日内最低成交价格为基准。」 (dịch: Khi chiết khấu, giảm giá, người kinh doanh phải ghi rõ hoặc thể hiện bằng cách khác thuận tiện cho người tiêu dùng nhận biết về mức cơ sở của việc chiết khấu, giảm giá. Trường hợp không ghi rõ hoặc không thể hiện mức cơ sở thì việc chiết khấu, giảm giá phải lấy mức giá giao dịch thấp nhất của cùng một người kinh doanh tại cùng một địa điểm kinh doanh trong bảy ngày trước hoạt động khuyến mại lần này làm mức cơ sở.)
 
 ## 13. Bảo hiểm
 - URL: <https://www.gov.cn/zhengce/zhengceku/2023-01/04/content_5735014.htm>
-- Đã xác nhận: 「中国银保监会关于印发一年期以上人身保险产品信息披露规则的通知」 银保监规〔2022〕24 号, 2022-12-30.
-- Nguyên văn: Điều 8 yêu cầu bản thuyết minh sản phẩm có chia lãi dùng chữ in đậm để cảnh báo 「提示未来的保单红利为非保证利益，其红利分配是不确定的」; minh họa lợi ích 「用于利益演示的利差水平分别不得高于0、4.5%减去产品预定利率」。
-- Ghi chú: khoảng cách định lượng của 「消费型 + 自投 优于 返还型」 không có dữ liệu gốc để trích dẫn, mục này đánh dấu C và ghi chú rõ.
+- Đã xác nhận: 「中国银保监会关于印发一年期以上人身保险产品信息披露规则的通知」 (dịch: Thông báo của Ủy ban Giám sát và Quản lý Ngân hàng và Bảo hiểm Trung Quốc về việc ban hành Quy tắc công bố thông tin đối với sản phẩm bảo hiểm nhân thọ có thời hạn từ một năm trở lên) 银保监规〔2022〕24 号, 2022-12-30.
+- Nguyên văn: Điều 8 yêu cầu bản thuyết minh sản phẩm có chia lãi dùng chữ in đậm để cảnh báo 「提示未来的保单红利为非保证利益，其红利分配是不确定的」 (dịch: lưu ý rằng cổ tức hợp đồng bảo hiểm trong tương lai là lợi ích không được bảo đảm, việc phân chia cổ tức là không xác định); minh họa lợi ích 「用于利益演示的利差水平分别不得高于0、4.5%减去产品预定利率」 (dịch: mức chênh lệch lãi suất dùng để minh họa lợi ích lần lượt không được cao hơn 0 và 4,5% trừ đi lãi suất định trước của sản phẩm).
+- Ghi chú: khoảng cách định lượng của 「消费型 + 自投 优于 返还型」 (dịch: loại tiêu dùng + tự đầu tư ưu việt hơn loại hoàn trả) không có dữ liệu gốc để trích dẫn, mục này đánh dấu C và ghi chú rõ.
 
 ## 14. Trả trước khoản vay mua nhà
 - URL: <https://www.chinamoney.com.cn/chinese/rdgz/20260820/3399885.html> (中国货币网 [Mạng Tiền tệ Trung Quốc], Trung tâm Giao dịch Liên ngân hàng Toàn quốc được Ngân hàng Nhân dân ủy quyền công bố)

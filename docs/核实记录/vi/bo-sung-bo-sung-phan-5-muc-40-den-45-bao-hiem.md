@@ -5,7 +5,7 @@
 
 2026-09-29. Người dùng hỏi "rốt cuộc có cần mua bảo hiểm không". Toàn sách vốn đã có năm mục nói về các loại bảo hiểm cụ thể: phần 5, mục 25 và 26; phần 7, mục 20; phần 21, mục 4; phần 17, mục 6. Còn thiếu hai thứ: một mục tổng quan nói rõ cái gì nên mua, cái gì không nên mua; thêm vài mục về các việc cần làm trước khi mua và sau khi xảy ra sự cố. Cả sáu mục đều được bổ sung vào cuối phần 5, không chèn vào giữa, số thứ tự các mục phía sau không bị đẩy lùi.
 
-## 1. 保险法（2015 修正）
+## 1. 保险法（2015 修正） (nghĩa: Luật Bảo hiểm (sửa đổi 2015))
 - URL: <https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7c4060811>. Tra theo API Cơ sở dữ liệu Pháp luật và Quy định Quốc gia Trung Quốc, sxx=3 (có hiệu lực), ngày công bố và ngày thi hành đều là 2015-04-24, đã đối chiếu từng chữ bản toàn văn docx.
 - Điều 15: Sau khi hợp đồng bảo hiểm được xác lập, bên mua bảo hiểm có thể chấm dứt hợp đồng.
 - Điều 16: Nghĩa vụ thông báo trung thực. Khoản 3 viết "自合同成立之日起超过二年的，保险人不得解除合同；发生保险事故的，保险人应当承担赔偿或者给付保险金的责任". Khoản 4 viết trường hợp cố ý không thông báo, sự kiện bảo hiểm xảy ra trước khi chấm dứt hợp đồng sẽ không được bồi thường và không hoàn phí bảo hiểm. Điều này được đưa vào ghi chú của phần 7, mục 20.
@@ -14,12 +14,12 @@
 - Điều 39, 41, 42: Chỉ định, thay đổi người thụ hưởng, cùng 3 trường hợp số tiền bảo hiểm được tính là di sản và suy đoán người thụ hưởng tử vong trước trong cùng một sự kiện.
 - Điều 47: Bên mua bảo hiểm chấm dứt hợp đồng, doanh nghiệp bảo hiểm hoàn lại giá trị tiền mặt trong vòng 30 ngày.
 
-## 2. 保险法司法解释（三）（2020 修正）
+## 2. 保险法司法解释（三）（2020 修正） (nghĩa: Giải thích tư pháp về Luật Bảo hiểm (3) (sửa đổi 2020))
 - URL: <https://flk.npc.gov.cn/detail?id=ff808181799df4000179ac03d7f21115>, sxx=3, thi hành từ 2021-01-01.
 - Điều 9 khoản 2 điểm 3: "约定的受益人包括姓名和身份关系，保险事故发生时身份关系发生变化的，认定为未指定受益人。".
 - Điều 10 khoản 2: Thay đổi người thụ hưởng nhưng không thông báo cho doanh nghiệp bảo hiểm, nếu doanh nghiệp bảo hiểm yêu cầu việc thay đổi đó không có hiệu lực đối với mình thì tòa án ủng hộ.
 
-## 3. 商业银行代理保险业务管理办法（银保监办发〔2019〕179 号）
+## 3. 商业银行代理保险业务管理办法（银保监办发〔2019〕179 号） (nghĩa: Biện pháp quản lý hoạt động đại lý bảo hiểm của ngân hàng thương mại (Văn bản số 179 năm 2019 của Văn phòng Ủy ban Giám sát và Quản lý Ngân hàng và Bảo hiểm Trung Quốc))
 - URL: <https://www.gov.cn/zhengce/zhengceku/2019-12/03/content_5457853.htm>, thi hành từ 2019-10-01.
 - Điều 30: Chứng từ và tài liệu tuyên truyền không được xuất hiện các chữ như "tiền gửi", "tiết kiệm", "hợp tác ra mắt cùng ngân hàng".
 - Điều 31: Trang bìa phải ghi rõ chữ "hợp đồng bảo hiểm" với cỡ chữ không nhỏ hơn cỡ 72, ghi tên công ty bảo hiểm với cỡ chữ không nhỏ hơn cỡ 2.

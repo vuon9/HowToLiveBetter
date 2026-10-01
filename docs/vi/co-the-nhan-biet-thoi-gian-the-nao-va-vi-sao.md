@@ -91,7 +91,7 @@ Vì vậy hiện tại chỉ có thể nói đến đây: **khi làm ca đêm, c
 
 Nguồn: Chellappa SL et al. (2021). Daytime eating prevents internal circadian misalignment and glucose intolerance in night work. Science Advances. <https://doi.org/10.1126/sciadv.abg9910>; Chellappa SL et al. (2025). Daytime eating during simulated night work mitigates changes in cardiovascular risk factors: secondary analyses of a randomized controlled trial. Nature Communications. <https://doi.org/10.1038/s41467-025-57846-y>; Wulandari F et al. (2026). Cardiometabolic status among shift workers under meal time regulation: A systematic review of randomized controlled trials. Nutrition and Health. <https://doi.org/10.1177/02601060261464874>
 
-## 八、Có thể đổi hẳn đồng hồ sinh học sang ca đêm không
+## 8. Có thể đổi hẳn đồng hồ sinh học sang ca đêm không
 
 Những phần trước đều nói về việc "lệch nhịp sinh học có hại". Vậy nói theo chiều ngược lại, chuyển hẳn đồng hồ sinh học sang khung giờ ca đêm thì có được không?
 

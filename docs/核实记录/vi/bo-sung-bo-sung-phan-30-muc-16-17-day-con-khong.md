@@ -42,7 +42,7 @@
 - Nguyên văn (tóm tắt): "effect sizes significantly favored conditional spanking over 10 of 13 alternative disciplinary tactics for reducing child noncompliance or antisocial behavior. Customary physical punishment yielded effect sizes equal to alternative tactics, except for one large study favoring physical punishment. Only overly severe or predominant use of physical punishment compared unfavorably with alternative disciplinary tactics."
 - Định nghĩa cụ thể của "đánh có điều kiện" chỉ nằm trong toàn văn, chưa lấy được toàn văn (Springer), nên trong mục không giải thích cụm từ này chỉ điều gì, chỉ viết kết luận theo phần tóm tắt.
 
-### 6. Điều khoản luật (flk 国家法律法规数据库 (Cơ sở dữ liệu văn bản quy phạm pháp luật quốc gia), sxx=3 hiện hành có hiệu lực, đối chiếu từng chữ theo docx)
+### 6. Điều khoản luật (flk 国家法律法规数据库 (nghĩa: Cơ sở dữ liệu văn bản quy phạm pháp luật quốc gia), sxx=3 hiện hành có hiệu lực, đối chiếu từng chữ theo docx)
 - 反家庭暴力法 (công bố 2015-12-27, thi hành 2016-03-01) <https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7f9d60889>
   - Điều 2: "Bạo lực gia đình được nói đến trong luật này là hành vi xâm hại về thân thể, tinh thần giữa các thành viên gia đình bằng các phương thức như đánh đập, trói buộc, tàn hại, hạn chế tự do thân thể cũng như thường xuyên lăng mạ, đe dọa."
   - Điều 12: "Người giám hộ của người chưa thành niên phải tiến hành giáo dục gia đình bằng phương thức văn minh, thực hiện nghĩa vụ giám hộ và giáo dục theo quy định của pháp luật, không được thực hiện bạo lực gia đình."

@@ -37,7 +37,7 @@ Mục 17 (cãi nhau nhắm vào việc, không nhắm vào người), phần ghi
 - Nguyên văn: "professionals are cautious to risk the possibility of violent retaliation between partners"; "the worry of a violent retaliation after a session"; "We also wish to stress that our findings at this time can only be applied to instances of mild to moderate situational couple violence."; "‘situational couple violence’ refers to mutual mild violence among partners in response to specific stressors or life events as a means to resolve conflict, in contrast to ‘characterological couple violence’ or ‘intimate terrorism’, which are predominantly characterized by partner domination and severe physical abuse."
 - Không tìm thấy văn bản chính thức bằng tiếng Trung quy định về việc "có bạo lực gia đình thì có được trị liệu cặp đôi hay không", mục chỉ nêu phạm vi áp dụng của bài viết này, và dẫn đến phần 8, mục 43 (bị bạo lực gia đình).
 
-## 7. 精神卫生法 (Luật Sức khỏe tâm thần, sửa đổi năm 2018)
+## 7. 精神卫生法 (Luật Sức khỏe tâm thần, sửa đổi năm 2018) (nghĩa: Luật Sức khỏe tâm thần)
 - URL: <https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7448a066d> (Cơ sở dữ liệu pháp luật và quy định quốc gia Trung Quốc, sxx=3 còn hiệu lực; tải toàn văn docx qua cổng hậu đài để đối soát từng chữ)
 - Điều 23, khoản 2: "心理咨询人员不得从事心理治疗或者精神障碍的诊断、治疗。"
 - Điều 51: "心理治疗活动应当在医疗机构内开展。"

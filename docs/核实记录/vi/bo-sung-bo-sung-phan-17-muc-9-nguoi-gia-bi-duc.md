@@ -37,7 +37,7 @@ Toàn bộ tóm tắt đều được lấy nguyên văn qua Europe PMC REST (re
 - Nghiên cứu so sánh trước sau không tách bạch được ảnh hưởng của phẫu thuật và tác động do tuổi tác tăng lên, câu này là nhận định của tác giả, trong ghi chú viết đúng theo ý này.
 
 ## 6. Khả năng tiếp cận trong nước
-- 国家卫生健康委 (Ủy ban Y tế Sức khỏe Quốc gia)《「十四五」全国眼健康规划（2021-2025年）》<https://www.gov.cn/zhengce/zhengceku/2022-01/17/content_5668951.htm>, ngày kiểm chứng 2026-10-01 lấy được toàn văn bằng curl. Nguyên văn: "眼科服务能力持续提升，白内障复明手术在县域普遍开展。"; "完善眼科日间手术相关工作制度和工作流程，在做好白内障、屈光不正等患者日间手术基础上，逐步扩大病种范围"; "持续开展光明工程、光明行等活动".
+- 国家卫生健康委 (Ủy ban Y tế Sức khỏe Quốc gia)《「十四五」全国眼健康规划（2021-2025年）》<https://www.gov.cn/zhengce/zhengceku/2022-01/17/content_5668951.htm>, ngày kiểm chứng 2026-10-01 lấy được toàn văn bằng curl. Nguyên văn: "眼科服务能力持续提升，白内障复明手术在县域普遍开展。" (dịch: Năng lực phục vụ nhãn khoa không ngừng được nâng cao, phẫu thuật phục hồi thị lực do đục thủy tinh thể được triển khai phổ biến ở cấp huyện.); "完善眼科日间手术相关工作制度和工作流程，在做好白内障、屈光不正等患者日间手术基础上，逐步扩大病种范围" (dịch: Hoàn thiện chế độ công tác và quy trình công việc liên quan đến phẫu thuật trong ngày của nhãn khoa, trên cơ sở thực hiện tốt phẫu thuật trong ngày cho các bệnh nhân đục thủy tinh thể, tật khúc xạ v.v., từng bước mở rộng phạm vi nhóm bệnh); "持续开展光明工程、光明行等活动" (dịch: Tiếp tục triển khai các hoạt động như Công trình Ánh sáng, Ánh sáng Hành trình).
 - Cột Chi phí ghi "nhiều bệnh viện thực hiện theo hình thức phẫu thuật trong ngày" căn cứ vào câu thứ hai ở trên.
 
 ## Những nội dung không đưa vào

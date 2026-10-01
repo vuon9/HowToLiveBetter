@@ -5,7 +5,7 @@
 
 Ngày kiểm chứng: 2026-09-07. Mọi URL đều được mở bằng WebFetch (một ngoại lệ xem mục 9), câu trích dẫn là nguyên văn sao chép từng chữ.
 
-## 1. Bộ Nhân lực và An sinh Xã hội 《2024 年度人力资源和社会保障事业发展统计公报》
+## 1. Bộ Nhân lực và An sinh Xã hội 《2024 年度人力资源和社会保障事业发展统计公报》 (nghĩa: Công báo thống kê phát triển sự nghiệp nhân lực và an sinh xã hội năm 2024)
 - URL: <https://www.mohrss.gov.cn/SYrlzyhshbzb/zwgk/szrs/tjgb/202506/W020250616518526345602.pdf>
 - Trạng thái: mở thành công (PDF, 13 trang). Mô hình tóm tắt của WebFetch đọc không ra tiếng Trung, ở máy cục bộ dùng pypdf trích văn bản để đối chiếu.
 - Nguyên văn (phần thứ tư "Quan hệ lao động"):
@@ -68,18 +68,18 @@ Ngày kiểm chứng: 2026-09-07. Mọi URL đều được mở bằng WebFetch
 - Điều 227: "Tòa án nhân dân sau khi thụ lý đơn yêu cầu, qua thẩm tra sự thật, chứng cứ do chủ nợ cung cấp, đối với quan hệ nợ rõ ràng, hợp pháp, phải trong vòng 15 ngày kể từ ngày thụ lý ra lệnh thanh toán cho con nợ."
 - Điều 228: con nợ có ý kiến phản đối bằng văn bản được chấp nhận thì "ra phán quyết kết thúc thủ tục thúc đẩy, lệnh thanh toán tự mất hiệu lực" - trong mục này vì thế giới hạn lệnh thanh toán trong trường hợp "có giấy nợ hoặc bảng lương, sự thật rõ ràng".
 
-## 8. Tòa án nhân dân tối cao Trung Quốc 法释〔2013〕3 号
+## 8. Tòa án nhân dân tối cao Trung Quốc (nghĩa: Tòa án nhân dân tối cao) 法释〔2013〕3 号
 - URL ưu tiên thất bại: <https://www.court.gov.cn/fabu-xiangqing-5459.html> (404), <http://gongbao.court.gov.cn/Details/9cc6f93c9e7a7a3d2c93009a581a7b.html> (502).
 - URL thực tế: <https://www.court.gov.cn/fabu/xiangqing/5041.html>
 - Trạng thái: mở thành công. Pháp thích 〔2013〕3 号, thông qua 2013-01-14, thi hành 2013-01-23.
 - Điều 3: "Có một trong các tình hình sau đây thì nên được xác định là 'số tiền lớn' quy định tại khoản 1 Điều 276-1 của Bộ luật Hình sự: (1) không trả tiền công lao động từ ba tháng trở lên của một người lao động và số tiền từ năm nghìn nhân dân tệ đến hai vạn nhân dân tệ trở lên, (2) không trả tiền công lao động của mười người lao động trở lên và số tiền lũy kế từ ba vạn nhân dân tệ đến mười vạn nhân dân tệ trở lên." Tòa án nhân dân cấp cao các tỉnh có thể định tiêu chuẩn địa phương trong biên độ này.
 
-## 9. 《刑法修正案（八）》第四十一条（刑法第二百七十六条之一）
+## 9. 《刑法修正案（八）》第四十一条（刑法第二百七十六条之一） (nghĩa: Điều 41 Luật sửa đổi Bộ luật Hình sự (lần thứ tám) (Điều 276a Bộ luật Hình sự))
 - URL: <http://www.npc.gov.cn/cwhhdbdh/c6626/c14002/c14003/201905/t20190523_390477.html> (中国人大网 (Trang Quốc hội Trung Quốc))
 - Trạng thái: WebFetch báo lỗi bắt tay SSL thất bại (SSLV3_ALERT_HANDSHAKE_FAILURE); chuyển sang dùng curl mở qua http thành công (HTTP 200, 49712 byte), đối chiếu nguyên văn. Các trang đăng lại của gov.cn content_2602254 / content_1810969 / content_1810794 đều 404.
-- Nguyên văn: 「四十一、在刑法第二百七十六条后增加一条，作为第二百七十六条之一：『以转移财产、逃匿等方法逃避支付劳动者的劳动报酬或者有能力支付而不支付劳动者的劳动报酬，数额较大，经政府有关部门责令支付仍不支付的，处三年以下有期徒刑或者拘役，并处或者单处罚金；造成严重后果的，处三年以上七年以下有期徒刑，并处罚金。』」Ngày thông qua 2011-02-25.
+- Nguyên văn: 「四十一、在刑法第二百七十六条后增加一条，作为第二百七十六条之一：『以转移财产、逃匿等方法逃避支付劳动者的劳动报酬或者有能力支付而不支付劳动者的劳动报酬，数额较大，经政府有关部门责令支付仍不支付的，处三年以下有期徒刑或者拘役，并处或者单处罚金；造成严重后果的，处三年以上七年以下有期徒刑，并处罚金。』」 (dịch: Bốn mươi mốt, thêm một điều sau Điều 276 Bộ luật Hình sự, thành Điều 276a:『Người nào dùng các thủ đoạn như chuyển dịch tài sản, bỏ trốn để trốn tránh việc trả thù lao lao động của người lao động, hoặc có khả năng trả mà không trả thù lao lao động của người lao động, với số tiền lớn, đã bị cơ quan nhà nước có thẩm quyền buộc trả mà vẫn không trả, thì bị phạt tù có thời hạn đến ba năm hoặc bị cải tạo không giam giữ, đồng thời bị phạt tiền hoặc chỉ bị phạt tiền; gây hậu quả nghiêm trọng thì bị phạt tù có thời hạn từ trên ba năm đến bảy năm, đồng thời bị phạt tiền.』) Ngày thông qua 2011-02-25.
 
-## 10. 《保障农民工工资支付条例》（国务院令第 724 号）
+## 10. 《保障农民工工资支付条例》（国务院令第 724 号） (nghĩa: Điều lệ bảo đảm thanh toán tiền lương cho lao động nông dân nhập cư (Nghị định của Quốc vụ viện số 724))
 - URL: <https://www.gov.cn/gongbao/content/2020/content_5469641.htm>
 - Trạng thái: mở thành công. Có hiệu lực từ 2020-05-01.
 - Điều 10: "Người lao động nhập cư bị nợ lương có quyền khiếu nại theo pháp luật, hoặc yêu cầu hòa giải, trọng tài lao động (劳动仲裁) và khởi kiện. Mọi đơn vị và cá nhân đối với hành vi nợ lương người lao động nhập cư đều có quyền báo cáo với cơ quan hành chính bảo hiểm xã hội và nguồn nhân lực hoặc các cơ quan hữu quan khác."
@@ -91,7 +91,7 @@ Ngày kiểm chứng: 2026-09-07. Mọi URL đều được mở bằng WebFetch
 - Điều 36: giao thầu cho cá nhân hoặc đơn vị không đủ tư cách dẫn đến nợ lương thì "do đơn vị chủ đầu tư hoặc đơn vị tổng thầu thi công thanh toán".
 - Điều 41: bị tình nghi phạm tội không chịu trả thù lao lao động thì "phải chuyển kịp thời theo quy định cho cơ quan công an thẩm tra và ra quyết định".
 
-## 11. 《法律援助法》
+## 11. 《法律援助法》 (nghĩa: Luật Trợ giúp pháp lý)
 - URL: <https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202504/t20250402_4053713.html>
 - Trạng thái: kế thừa nguồn của mục gốc, lần này không mở lại; mục chỉ giữ kết luận Điều 31, 42 đã kiểm chứng ở mục gốc (người lao động nhập cư xin trả thù lao lao động được miễn xét khó khăn kinh tế).
 

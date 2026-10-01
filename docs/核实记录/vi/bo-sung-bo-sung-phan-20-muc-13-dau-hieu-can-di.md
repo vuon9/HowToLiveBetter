@@ -46,7 +46,7 @@
 - Lee M et al. (2016). Medicine 95(12):e3166, tóm tắt Europe PMC (PMID 27015203), tập và số đối chiếu theo Crossref.
 - Nguyên văn: "This hospitalization rate reduction was followed by a reduction in mortality from 26.2% to 15.9% after 2006." Đây là so sánh trước và sau khi triển khai, phần nội dung chính nêu rõ "không phải thử nghiệm phân nhóm".
 
-## 6. 国家基本公共卫生服务规范（第三版）
+## 6. 国家基本公共卫生服务规范（第三版） (nghĩa: Quy phạm dịch vụ y tế công cộng cơ bản quốc gia (bản thứ ba))
 - URL: <https://www.nhc.gov.cn/ewebeditor/uploadfile/2017/04/20170417104506514.pdf> (curl tải trực tiếp thành công, pdftotext có thể trích xuất từng chữ tiếng Trung)
 - Nguyên văn: "Trong vòng 1 tuần sau khi trẻ sơ sinh xuất viện, nhân viên y tế đến nhà trẻ sơ sinh thực hiện, đồng thời tiến hành thăm khám sau sinh. ... Trọng tâm hỏi và quan sát các tình trạng như nuôi dưỡng, giấc ngủ, đại tiểu tiện, vàng da, tình trạng vùng rốn, phát triển khoang miệng."
 - Nguyên văn: "Vào ngày 28-30 sau khi trẻ sơ sinh chào đời, kết hợp tiêm mũi vắc-xin viêm gan B thứ hai, tiến hành theo dõi tại trạm y tế thị trấn, trung tâm dịch vụ y tế cộng đồng. Trọng tâm hỏi và quan sát các tình trạng như nuôi dưỡng, giấc ngủ, đại tiểu tiện, vàng da của trẻ sơ sinh."

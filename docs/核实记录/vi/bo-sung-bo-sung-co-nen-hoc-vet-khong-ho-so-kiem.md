@@ -10,7 +10,7 @@ Phần đã có sẵn: phần 23, mục 14 đến 18 (thêm mới cùng ngày tr
 Điểm chốt: thêm 1 mục vào cuối phần 23 (mục 19), không liên quan đến việc đánh số lại các mục. Trong phần có 3 chỗ tham chiếu, đều là mục mới tự trỏ tới mục 14, 15, 16, trong bảng so sánh diff chỉ có ba dòng mới thêm này, không có dòng nào bị lệch.
 
 ## Phần 23, mục 19
-| 文献 | 复核 | 数字 |
+| 文献 (tài liệu) | 复核 (phúc thẩm/rà soát lại) | 数字 (số liệu) |
 |---|---|---|
 | Pan SC, Rickard TC (2018). Transfer of test-enhanced learning: Meta-analytic review and synthesis. Psychological Bulletin 144(7):710-756. <https://doi.org/10.1037/bul0000151> (Europe PMC lấy được toàn văn tóm tắt, PMID 29733621) | Có | 67 bài đã công bố và chưa công bố, 122 thí nghiệm, 192 hiệu ứng chuyển giao, N=10382; theo mô hình hiệu ứng ngẫu nhiên, so với đối chứng "gặp lại nhưng không kiểm tra", d=0,40 (95% CI 0,31–0,50). Chuyển giao mạnh nhất: khác hình thức kiểm tra, câu hỏi ứng dụng và suy luận, câu hỏi chẩn đoán y khoa, gợi ý bằng từ trung gian và từ liên quan; yếu nhất: mục kích thích - phản ứng bị đảo thứ tự, tài liệu đã thấy lúc đầu nhưng không được kiểm tra, câu hỏi dạng ví dụ mẫu. Yếu tố điều tiết: sự nhất quán của hình thức trả lời, luyện tập trích xuất có tinh chỉnh, điểm kiểm tra lần đầu. Sau khi hiệu chỉnh thiên lệch công bố bằng PET-PEESE và nhiều mô hình lựa chọn, hiệu ứng của các yếu tố điều tiết bị ảnh hưởng rất ít, nhưng giá trị dự đoán của hệ số chặn bị kéo xuống rõ rệt, "thường cho thấy khi các yếu tố điều tiết trên đều không có thì không có chuyển giao dương" |
 

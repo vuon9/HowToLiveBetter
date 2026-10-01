@@ -9,7 +9,7 @@ Tai nạn lao động (工伤) vốn là khoảng trống đơn lẻ lớn nhấ
 
 Phương pháp: dùng `Invoke-WebRequest` lấy byte gốc từ trang công báo gov.cn, giải mã theo GB18030 rồi xóa thẻ, đối chiếu từng mục với nguyên văn điều luật.
 
-## 一、 Nguyên văn đối chiếu từng điều khoản
+## 1、 Nguyên văn đối chiếu từng điều khoản
 Nguồn đều từ toàn văn công báo trên website Chính phủ Trung Quốc của 《工伤保险条例》(Lệnh Quốc vụ viện số 586, sửa đổi năm 2010) <https://www.gov.cn/gongbao/content/2011/content_1778064.htm>.
 
 | Điều luật | Nguyên văn đối chiếu được | Dùng ở đâu |
@@ -27,11 +27,11 @@ Nguồn đều từ toàn văn công báo trên website Chính phủ Trung Quố
 | Điều 39 | "(1) Trợ cấp mai táng bằng 6 tháng tiền lương bình quân hằng tháng của người lao động trong năm trước tại địa phương cấp điều phối; (2) Tiền tuất nuôi dưỡng thân nhân... vợ/chồng hưởng 40% mỗi tháng, các thân nhân khác hưởng 30% mỗi người mỗi tháng, người già cô đơn không nơi nương tựa hoặc trẻ mồ côi được cộng thêm 10% mỗi tháng trên mức tiêu chuẩn nêu trên... (3) Mức trợ cấp tử vong do tai nạn lao động một lần bằng 20 lần thu nhập khả dụng bình quân đầu người của cư dân thành thị trên toàn quốc năm trước đó." | Mục 10 |
 | Điều 62 | Khoản 2 "Người lao động thuộc đơn vị sử dụng lao động có nghĩa vụ tham gia bảo hiểm tai nạn lao động theo quy định của Điều lệ này nhưng không tham gia mà bị tai nạn lao động thì đơn vị sử dụng lao động đó phải chi trả các chi phí theo danh mục và mức hưởng chế độ bảo hiểm tai nạn lao động quy định tại Điều lệ này." Khoản 1: lệnh yêu cầu tham gia, đóng bù trong thời hạn quy định, "thu thêm tiền chậm nộp mỗi ngày bằng 0,05% số tiền nợ; quá thời hạn mà vẫn không đóng thì phạt tiền từ 1 đến 3 lần số tiền còn nợ" | Mục 8 |
 
-## 二、 Chưa lấy được / Chưa sử dụng
+## 2、 Chưa lấy được / Chưa sử dụng
 | Muốn tìm | Kết quả | Xử lý |
 | --- | --- | --- |
 | Số tiền cụ thể của trợ cấp tử vong do tai nạn lao động một lần trong năm | Cần thu nhập khả dụng bình quân đầu người của cư dân thành thị trên toàn quốc năm 2025. Cơ sở dữ liệu văn bản chính sách của Quốc vụ viện không tìm thấy bản thân công báo thống kê; bài viết giải thích công báo của gov.cn chỉ đưa ra "thu nhập khả dụng bình quân đầu người tăng trưởng thực tế 5,0% so với năm trước", không có giá trị tuyệt đối; danh sách phát hành mới nhất của stats.gov.cn cũng không có mục này | Mục 10 chỉ ghi công thức tính theo bội số, số tiền ghi TODO |
 | Tài liệu về tranh cãi điều khoản 48 giờ trong thực tế | Chỉ tìm thấy nhiều bài bình luận thứ cấp, chưa lấy được văn bản phán quyết hoặc tính theo chính thức có thể trích dẫn | Phần nội dung chính chỉ nêu nguyên văn điều luật, không mở rộng bình luận |
 
-## 三、 Cách tính và quy mô lợi ích
+## 3、 Cách tính và quy mô lợi ích
 Cả bốn mục đều tính theo tiền tệ. Quy mô lợi ích được xác định dựa trên ngưỡng tiền tệ từ phần 8 trở đi: trợ cấp thương tật một lần quy đổi theo tiền lương tháng, cấp mười thấp nhất cũng là 7 tháng lương; trợ cấp tử vong do tai nạn lao động là "20 lần thu nhập khả dụng bình quân đầu người của cư dân thành thị trên toàn quốc năm trước đó", đều từ mức hàng vạn nhân dân tệ trở lên, vì vậy toàn bộ xác định là "lớn". Về mặt chi phí, bản thân việc xác nhận và giám định không tốn tiền, nhưng đều phải đi làm thủ tục, chờ kết luận, thời gian ghi "vừa"; mục 8 (đơn vị chưa đóng bảo hiểm) ghi thêm "kiên trì=ít", vì đối phương phần lớn sẽ không nhận, phải theo đến bước trọng tài lao động (劳动仲裁).

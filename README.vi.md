@@ -11,7 +11,7 @@ Không cần làm theo tất cả: đây là danh sách lựa chọn xếp theo 
 [![Search](https://img.shields.io/badge/Search-vi-3451b2?style=flat-square)](https://vuon9.github.io/HowToLiveBetter/vi/)
 [![Tips](https://img.shields.io/badge/Tips-649-18794e?style=flat-square)](#mục-lục)
 [![Evidence](https://img.shields.io/badge/Evidence-A%20429%20%C2%B7%20B%20171%20%C2%B7%20C%2049-915930?style=flat-square)](#phân-cấp-mức-bằng-chứng)
-[![Sources](https://img.shields.io/badge/Sources-1528%20links-565a5f?style=flat-square)](docs/核实记录/vi/)
+[![Nguồn](https://img.shields.io/badge/Sources-1528%20links-565a5f?style=flat-square)](docs/核实记录/vi/)
 [![License](https://img.shields.io/badge/License-CC%20BY%204.0-565a5f?style=flat-square)](#giấy-phép)
 
 ### [Mở trang tra cứu trực tuyến](https://eternity4719.github.io/HowToLiveBetter/) · [Để AI trả lời theo sách (skill)](skills/life-decision-guide/README.md)

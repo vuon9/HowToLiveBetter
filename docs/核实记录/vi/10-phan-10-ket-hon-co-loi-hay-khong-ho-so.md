@@ -27,7 +27,7 @@ Công cụ: WebFetch; những trang WebFetch không mở được hoặc chỉ h
 - <https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm> : mở, là trang khung; chỉ mục cột trái (left.htm) liệt kê bảng 2-5 "全国各民族分性别、初婚年龄的人口", 5-1 "各地区分性别、婚姻状况的15岁及以上人口" và các bảng khác, nhưng toàn bộ bảng là ảnh JPG, không thể trích số liệu, phần này không dẫn tuổi kết hôn lần đầu và tỷ lệ chưa kết hôn
 
 ## Điều khoản pháp luật
-### 中华人民共和国民法典
+### 中华人民共和国民法典 (nghĩa: Bộ luật Dân sự nước Cộng hòa Nhân dân Trung Hoa)
 - Trang Cơ sở dữ liệu văn bản quy phạm pháp luật quốc gia <https://flk.npc.gov.cn/detail?title=...&id=ff808081729d1efe01729d50b5c500bf> : WebFetch chỉ hiển thị đến phần điều hướng (ứng dụng một trang); curl gọi giao diện backend của trang `<https://flk.npc.gov.cn/law-search/search/flfgDetails?bbbs=ff808081729d1efe01729d50b5c500bf`> trả về JSON: title "中华人民共和国民法典", flxz "法律", zdjgName "全国人民代表大会", gbrq "2020-05-28", sxrq "2021-01-01", cây điều khoản gồm các nút từ Điều 1062 đến Điều 1066, Điều 1076 đến Điều 1079, Điều 1088; giao diện chỉ cho số điều không cho chính văn, tệp PDF đính kèm là bản ảnh không thể trích văn bản
 - Chính văn điều khoản kiểm chứng từ trang đăng lại Công báo Tòa án nhân dân tối cao Trung Quốc <http://gongbao.court.gov.cn/Details/7f184078694d811fb3314f6af9accf.html> ("中华人民共和国民法典（续）", chuyên mục văn bản quy phạm pháp luật): curl lấy về rồi phân tích cục bộ
 - Nguyên văn:
@@ -40,10 +40,10 @@ Công cụ: WebFetch; những trang WebFetch không mở được hoặc chỉ h
   - Điều 1088 "夫妻一方因抚育子女、照料老年人、协助另一方工作等负担较多义务的，离婚时有权向另一方请求补偿，另一方应当给予补偿。具体办法由双方协议；协议不成的，由人民法院判决。"
 - Bản sao chính thức chưa mở được (ghi lại để tra cứu): các trang điều khoản trên npc.gov.cn (http/https đều chuyển về trang chủ hoặc bắt tay TLS thất bại); gov.cn 2020-06-01 content_5516649 và các biến thể đều 404
 
-### 民政部 民发〔2020〕116 号
+### 民政部 民发〔2020〕116 号 (nghĩa: Bộ Dân chính, văn bản số 民发〔2020〕116)
 - <https://www.gov.cn/zhengce/zhengceku/2020-12/04/content_5567010.htm> : WebFetch mở; số hiệu văn bản "民发〔2020〕116号", ngày 24 tháng 11 năm 2020; văn bản dẫn Điều 1076, Điều 1077, Điều 1078 làm căn cứ cho thủ tục đăng ký ly hôn, và trong thủ tục quy định thời gian cân nhắc ly hôn ba mươi ngày; không trích nguyên văn từng chữ điều khoản, phần này chỉ dùng làm bằng chứng phụ cho thủ tục cân nhắc
 
-## 期刊论文（DOI）
+## 期刊论文（DOI） (nghĩa: Bài báo tạp chí (DOI))
 ### Manzoli 2007, Soc Sci Med 64:77–94, doi 10.1016/j.socscimed.2006.08.031
 - <https://doi.org/10.1016/j.socscimed.2006.08.031> : phân giải DOI thành công, chuyển hướng 302 tới linkinghub.elsevier.com (trang này chỉ trả về "Redirecting", sciencedirect trả 403)
 - Siêu dữ liệu và tóm tắt được kiểm chứng từ giao diện Europe PMC (PMID 17011690): tiêu đề, tác giả, tập và trang tạp chí khớp với DOI

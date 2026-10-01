@@ -147,6 +147,38 @@ EPUB, và đăng `HowToLiveBetter-vi.{epub,pdf,html}` lên cùng release
 `epub-latest`. Trang `/vi/` cần bật GitHub Pages cho kho này; nếu chưa bật thì
 `index.vi.html` ở thư mục gốc vẫn mở được trực tiếp.
 
+## Chú thích tiếng Việt cho phần giữ nguyên tiếng Trung
+
+Bản dịch cố ý giữ chữ Hán ở vài chỗ (trích nguyên văn văn bản quy phạm, tên văn
+bản, số hiệu, tên cơ quan). Hai script lo phần chú thích:
+
+```bash
+python3 tools/translate-vi/audit_glosses.py          # còn bao nhiêu dòng chưa có chú thích
+python3 tools/translate-vi/audit_glosses.py --list   # liệt kê từng dòng
+
+VI_TRANSPORT=hermes VI_HERMES_MODEL=deepseek-flash VI_HERMES_PROVIDER=deepseek \
+  python3 tools/translate-vi/gloss_vi.py --area all --size 8
+```
+
+`gloss_vi.py` xử lý ba loại dòng, tất cả đều chỉ thêm chứ không xóa phần Hán:
+
+- **quote**: mỗi đoạn 「…」 có chữ Hán được thêm ` (dịch: …)` ngay sau.
+- **prose**: dòng còn nguyên tiếng Trung (thường là bảng trong hồ sơ kiểm chứng)
+  được dịch cả dòng, giữ số liệu và URL.
+- **gloss**: tiêu đề chỉ có tên văn bản Trung Quốc được thêm ` (nghĩa: …)`; chữ
+  số Hán trong tiêu đề đổi thành số Ả Rập.
+
+Chạy lại là an toàn: dòng đã có ` (dịch:` hoặc ` (nghĩa:` sẽ bị bỏ qua.
+
+Phần không chú thích được, và lý do:
+
+- Dòng `<!-- 成本标签: ... -->` là dữ liệu cho `index.html`, phải giữ nguyên
+  từng ký tự; người đọc không thấy nó (HTML comment, và bộ dựng sách bỏ đi).
+  Nhãn hiển thị của bộ lọc trong `index.vi.html` đã là tiếng Việt, chỉ giá trị
+  `data-v` giữ tiếng Trung để khớp cost tag.
+- Chú thích trong mã của `index.vi.html` và các script vẫn là tiếng Trung, giống
+  bản gốc; chúng không hiện ra cho người đọc.
+
 ## Kiểm tra tự động
 
 `verify_vi.py` so từng phần với bản gốc và báo:

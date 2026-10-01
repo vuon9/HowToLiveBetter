@@ -139,7 +139,7 @@ Ngày kiểm chứng 2026-09-07. Tất cả đều mở bằng WebFetch. Các đ
   - Nguyên văn: "2025年，全国居民人均消费支出29476元"; "人均食品烟酒消费支出8631元，增长2.6%，占人均消费支出的比重为29.3%"; "人均居住消费支出6397元，增长2.1%，占人均消费支出的比重为21.7%"
 - <https://www.gov.cn/govweb/zhengce/zhengceku/202310/content_6911233.htm> — đã mở. Xác nhận 《积极发展老年助餐服务行动方案》 民发〔2023〕58 号, 2023-10-20.
   - Nguyên văn: "完善老年食堂、老年餐桌、老年助餐点等老年助餐服务设施配置"; "对享受助餐服务的老年人给予差异化补贴"; "面向其他老年人的助餐服务广泛开展"
-- <https://rst.sc.gov.cn/rst/ylbxjwjgzxx/2026/7/10/89a8ef06cc264d29b282d7c62f362a6b.shtml> — đã mở (Sở Nhân lực và Bảo đảm xã hội tỉnh Tứ Xuyên, 2026-07-10, tiêu đề 「全国各省、自治区、直辖市最低工资标准情况（截至2026年1月1日）」, trang ghi nguồn là trang web chính thức của Bộ Nhân lực và Bảo đảm xã hội). Mức lương tối thiểu tháng bậc một cao nhất là Thượng Hải 2740 nhân dân tệ, thấp nhất là Thanh Hải 2080 nhân dân tệ.
+- <https://rst.sc.gov.cn/rst/ylbxjwjgzxx/2026/7/10/89a8ef06cc264d29b282d7c62f362a6b.shtml> — đã mở (Sở Nhân lực và Bảo đảm xã hội tỉnh Tứ Xuyên, 2026-07-10, tiêu đề 「全国各省、自治区、直辖市最低工资标准情况（截至2026年1月1日）」(dịch: Tình hình tiêu chuẩn tiền lương tối thiểu của các tỉnh, khu tự trị, thành phố trực thuộc trung ương trên toàn quốc (tính đến ngày 1 tháng 1 năm 2026)), trang ghi nguồn là trang web chính thức của Bộ Nhân lực và Bảo đảm xã hội). Mức lương tối thiểu tháng bậc một cao nhất là Thượng Hải 2740 nhân dân tệ, thấp nhất là Thanh Hải 2080 nhân dân tệ.
   - Chưa xác nhận: trang gốc của Bộ Nhân lực và Bảo đảm xã hội <https://www.mohrss.gov.cn/SYrlzyhshbzb/laodongguanxi_/fwyd/> trả về trắng, trang kỳ 2025-01 lỗi 403. Số lương tối thiểu theo giờ chưa dùng.
 
 ## 15. Đứt đóng bảo hiểm xã hội

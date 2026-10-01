@@ -41,7 +41,7 @@
   },
   "05": {
    "file": "book/vi/05-khong-lang-phi-tien.md",
-   "hanzi_kept": 3369,
+   "hanzi_kept": 3370,
    "hard_issues": [],
    "items": 44,
    "source": "book/05-不要浪费钱.md",
@@ -105,7 +105,7 @@
   },
   "13": {
    "file": "book/vi/13-tinh-huong-khan-cap-lam-gi-truoc.md",
-   "hanzi_kept": 1967,
+   "hanzi_kept": 1968,
    "hard_issues": [],
    "items": 44,
    "source": "book/13-紧急情况.md",
@@ -225,7 +225,7 @@
   },
   "28": {
    "file": "book/vi/28-dung-vi-ngoai-hinh-ma-lam-hong-co-the.md",
-   "hanzi_kept": 261,
+   "hanzi_kept": 260,
    "hard_issues": [],
    "items": 8,
    "source": "book/28-别为了外形把身体搞坏.md",
@@ -249,7 +249,7 @@
   },
   "31": {
    "file": "book/vi/31-cac-con-duong-sau-tuoi-18.md",
-   "hanzi_kept": 2362,
+   "hanzi_kept": 2366,
    "hard_issues": [],
    "items": 16,
    "source": "book/31-十八岁之后有哪几条路.md",
@@ -305,7 +305,7 @@
   },
   "doc:生物钟和夜班.md": {
    "file": "docs/vi/co-the-nhan-biet-thoi-gian-the-nao-va-vi-sao.md",
-   "hanzi_kept": 13,
+   "hanzi_kept": 12,
    "source": "docs/生物钟和夜班.md",
    "status": "translated"
   },

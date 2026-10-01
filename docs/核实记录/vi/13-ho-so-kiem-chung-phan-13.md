@@ -5,7 +5,7 @@
 
 Giải thích: mọi URL "đã mở" đều được mở thực tế bằng WebFetch và tìm thấy câu tương ứng trong nguyên văn trả về. Hạn ngạch WebSearch của phiên này đã dùng hết trước khi phần này bắt đầu (200/200), nên chỉ có thể dùng WebFetch; Bing/DuckDuckGo/Sogou/Baidu khi tra tiếng Trung qua WebFetch gần như đều trả về kết quả không liên quan hoặc mã xác minh, các trang chính thức tiếng Trung chỉ có thể mở bằng URL đã biết hoặc mục lục trong site mở dần từng lớp. Bài trên tạp chí đều được kiểm chứng tiêu đề, tác giả, tạp chí, năm và số liệu trong tóm tắt qua giao diện Europe PMC REST (tra DOI chính xác); các trang nhà xuất bản (LWW, Ovid, AHA, SAGE) trả về 402/403 cho công cụ này.
 
-## 期刊论文
+## 期刊论文 (nghĩa: Bài báo tạp chí)
 ### Sasson 2010（mục 1）
 - DOI: 10.1161/CIRCOUTCOMES.109.889576（doi.org 302 → ahajournals.org 403）
 - Đã mở: PubMed 20123673 và giao diện Europe PMC, phần tóm tắt khớp nhau.
@@ -34,68 +34,68 @@ Giải thích: mọi URL "đã mở" đều được mở thực tế bằng Web
 - DOI: 10.1016/j.wem.2018.10.004（cùng 403 như trên）
 - Europe PMC đã kiểm chứng tiêu đề, tác giả (Lipman GS, Gaudio FG, Eifling KP et al.), tạp chí, 2019, PMID 31221601, không truy cập mở. **Chỉ kiểm chứng được phần tóm tắt**.
 
-## 中国官方文件 → Văn bản chính thức của Trung Quốc
+## 中国官方文件 (nghĩa: Văn bản chính thức của Trung Quốc) → Văn bản chính thức của Trung Quốc
 
-### 狂犬病暴露预防处置工作规范（2023 年版）（条 3、14） → Quy phạm công tác dự phòng và xử lý phơi nhiễm bệnh dại (bản năm 2023) (mục 3, 14)
+### 狂犬病暴露预防处置工作规范（2023 年版） (nghĩa: Quy phạm công tác dự phòng và xử lý phơi nhiễm bệnh dại (bản năm 2023))（条 3、14） → Quy phạm công tác dự phòng và xử lý phơi nhiễm bệnh dại (bản năm 2023) (mục 3, 14)
 - URL: <https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_1706569159854649344.html>
 - Đã mở. Ban hành: 国家疾控局综合司 (Văn phòng Tổng hợp Cục Kiểm soát và Phòng chống Bệnh tật Quốc gia), 国家卫生健康委办公厅 (Văn phòng Ủy ban Y tế Quốc gia), ngày 13 tháng 9 năm 2023.
-- Nguyên văn: 「接触或者喂饲动物，或者完好的皮肤被舔舐为 I 级暴露。裸露的皮肤被轻咬……为 Ⅱ 级暴露。单处或者多处贯穿性皮肤咬伤……为 Ⅲ 级暴露」「用肥皂水（或者其他弱碱性清洁剂）和一定压力的流动清水交替彻底冲洗所有咬伤和抓伤处约 15 分钟」「判定为 Ⅲ 级暴露者，应处置伤口并注射狂犬病被动免疫制剂和接种狂犬病疫苗」「狂犬病病死率几乎达 100%，暴露后狂犬病疫苗接种无禁忌症」
+- Nguyên văn: 「接触或者喂饲动物，或者完好的皮肤被舔舐为 I 级暴露。裸露的皮肤被轻咬……为 Ⅱ 级暴露。单处或者多处贯穿性皮肤咬伤……为 Ⅲ 级暴露」 (dịch: Tiếp xúc hoặc cho động vật ăn, hoặc da lành bị liếm là phơi nhiễm cấp I. Da trần bị cắn nhẹ… là phơi nhiễm cấp Ⅱ. Bị cắn xuyên qua da một chỗ hoặc nhiều chỗ… là phơi nhiễm cấp Ⅲ) ` 「用肥皂水（或者其他弱碱性清洁剂）和一定压力的流动清水交替彻底冲洗所有咬伤和抓伤处约 15 分钟」 (dịch: Dùng nước xà phòng (hoặc chất tẩy rửa có tính kiềm yếu khác) và nước sạch chảy có áp lực nhất định luân phiên rửa kỹ tất cả các vết cắn và vết cào khoảng 15 phút) ` 「判定为 Ⅲ 级暴露者，应处置伤口并注射狂犬病被动免疫制剂和接种狂犬病疫苗」 (dịch: Người được xác định là phơi nhiễm cấp Ⅲ phải xử lý vết thương, tiêm chế phẩm miễn dịch thụ động bệnh dại và tiêm vắc xin bệnh dại) ` 「狂犬病病死率几乎达 100%，暴露后狂犬病疫苗接种无禁忌症」 (dịch: Tỷ lệ tử vong của bệnh dại gần như đạt 100%, việc tiêm vắc xin bệnh dại sau phơi nhiễm không có chống chỉ định)
 - PDF cùng văn bản của 中国疾控中心 (Trung tâm Kiểm soát và Phòng chống Bệnh tật Trung Quốc) (chinacdc.cn/…/P020240906525421817465.pdf) tải được nhưng công cụ không đọc được chữ, nên không trích dẫn.
 
-### 民法典（条 1、5） → Bộ luật Dân sự (mục 1, 5)
+### 民法典 (nghĩa: Bộ luật Dân sự)（条 1、5） → Bộ luật Dân sự (mục 1, 5)
 - URL: <https://www.spp.gov.cn/spp/fl/202006/t20200602_463888.shtml> (thư viện pháp luật của Viện kiểm sát nhân dân tối cao, phần 8 đã dùng)
-- Đã mở, tiêu đề trang là 「中华人民共和国民法典」.
-- Điều 184: 「因自愿实施紧急救助行为造成受助人损害的，救助人不承担民事责任。」
-- Điều 1032: 「自然人享有隐私权。任何组织或者个人不得以刺探、侵扰、泄露、公开等方式侵害他人的隐私权。」
-- Điều 1033 (đều đã kiểm chứng ở trang court.gov.cn/zixun/xiangqing/233181.html và trang tjca.miit.gov.cn): 「除法律另有规定或者权利人明确同意外，任何组织或者个人不得实施下列行为：（一）以电话、短信、即时通讯工具、电子邮件、传单等方式侵扰他人的私人生活安宁……」
+- Đã mở, tiêu đề trang là 「中华人民共和国民法典」 (dịch: Bộ luật Dân sự Cộng hòa Nhân dân Trung Hoa) `.
+- Điều 184: 「因自愿实施紧急救助行为造成受助人损害的，救助人不承担民事责任。」 (dịch: Người thực hiện hành vi cứu giúp khẩn cấp một cách tự nguyện mà gây thiệt hại cho người được cứu giúp thì người cứu giúp không phải chịu trách nhiệm dân sự.)
+- Điều 1032: 「自然人享有隐私权。任何组织或者个人不得以刺探、侵扰、泄露、公开等方式侵害他人的隐私权。」 (dịch: Thể nhân có quyền về đời sống riêng tư. Bất kỳ tổ chức hoặc cá nhân nào cũng không được xâm phạm quyền về đời sống riêng tư của người khác bằng các phương thức như thăm dò, quấy nhiễu, tiết lộ, công bố.)
+- Điều 1033 (đều đã kiểm chứng ở trang court.gov.cn/zixun/xiangqing/233181.html và trang tjca.miit.gov.cn): 「除法律另有规定或者权利人明确同意外，任何组织或者个人不得实施下列行为：（一）以电话、短信、即时通讯工具、电子邮件、传单等方式侵扰他人的私人生活安宁……」 (dịch: Trừ khi pháp luật có quy định khác hoặc chủ thể quyền đồng ý rõ ràng, bất kỳ tổ chức hoặc cá nhân nào cũng không được thực hiện các hành vi sau đây: (1) Quấy nhiễu sự yên ổn trong đời sống riêng tư của người khác bằng các phương thức như điện thoại, tin nhắn, công cụ liên lạc tức thời, thư điện tử, truyền đơn…)
 - Điều 1195: văn bản mà ba trang spp, court.gov.cn, miit trả về đều bị cắt trước điều này (do giới hạn độ dài khi công cụ thu thập), trang phân trang _6/_7 của cac.gov.cn trả 404, gov.cn content_5516649 trả 404, PDF zqdzfy trả 404. **Chưa kiểm chứng**, phần nội dung đánh dấu TODO.
 
-### 刑法（条 5、15） → Bộ luật Hình sự (mục 5, 15)
-- URL: <https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/11033925/index.html> (bản hợp nhất 「根据刑法修正案（十一）修正」 do 北京市公安交管局 (Cục Quản lý Giao thông Công an thành phố Bắc Kinh) đăng lại, phần 9 đã dùng)
+### 刑法 (nghĩa: Bộ luật Hình sự)（条 5、15） → Bộ luật Hình sự (mục 5, 15)
+- URL: <https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/11033925/index.html> (bản hợp nhất 「根据刑法修正案（十一）修正」 (dịch: sửa đổi theo Bản sửa đổi Bộ luật Hình sự (lần thứ mười một)) ` do 北京市公安交管局 (Cục Quản lý Giao thông Công an thành phố Bắc Kinh) đăng lại, phần 9 đã dùng)
 - Đã mở.
-- Điều 20: 「为了使国家、公共利益、本人或者他人的人身、财产和其他权利免受正在进行的不法侵害，而采取的制止不法侵害的行为，对不法侵害人造成损害的，属于正当防卫，不负刑事责任。」
-- Điều 263: 「以暴力、胁迫或者其他方法抢劫公私财物的，处三年以上十年以下有期徒刑，并处罚金」, tình tiết tăng nặng từ mười năm trở lên đến tử hình (phần tóm tắt của trang xác nhận có điều khoản tăng nặng).
-- Điều 274: 「敲诈勒索公私财物，数额较大或者多次敲诈勒索的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金」, số tiền đặc biệt lớn thì từ ba đến mười năm.
+- Điều 20: 「为了使国家、公共利益、本人或者他人的人身、财产和其他权利免受正在进行的不法侵害，而采取的制止不法侵害的行为，对不法侵害人造成损害的，属于正当防卫，不负刑事责任。」 (dịch: Hành vi nhằm làm cho lợi ích quốc gia, lợi ích công cộng, nhân thân, tài sản và các quyền khác của bản thân hoặc của người khác khỏi bị xâm hại bất hợp pháp đang diễn ra, mà được thực hiện để ngăn chặn hành vi xâm hại bất hợp pháp, gây thiệt hại cho người có hành vi xâm hại bất hợp pháp, là phòng vệ chính đáng, không phải chịu trách nhiệm hình sự.)
+- Điều 263: 「以暴力、胁迫或者其他方法抢劫公私财物的，处三年以上十年以下有期徒刑，并处罚金」 (dịch: Người nào dùng bạo lực, đe dọa hoặc phương pháp khác để cướp tài sản công và tư thì bị phạt tù có thời hạn từ ba năm đến mười năm, đồng thời bị phạt tiền) `, tình tiết tăng nặng từ mười năm trở lên đến tử hình (phần tóm tắt của trang xác nhận có điều khoản tăng nặng).
+- Điều 274: 「敲诈勒索公私财物，数额较大或者多次敲诈勒索的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金」 (dịch: Người nào tống tiền, cưỡng đoạt tài sản công và tư, với số tiền tương đối lớn hoặc tống tiền, cưỡng đoạt nhiều lần thì bị phạt tù có thời hạn dưới ba năm, giam giữ hoặc quản chế, đồng thời hoặc chỉ bị phạt tiền) `, số tiền đặc biệt lớn thì từ ba đến mười năm.
 
-### 反电信网络诈骗法（条 4） → Luật Phòng chống Lừa đảo qua Mạng Viễn thông và Internet (mục 4)
+### 反电信网络诈骗法 (nghĩa: Luật Phòng chống Lừa đảo qua Mạng Viễn thông và Internet)（条 4） → Luật Phòng chống Lừa đảo qua Mạng Viễn thông và Internet (mục 4)
 - URL: <https://www.spp.gov.cn/spp/fl/202209/t20220902_575631.shtml>
 - Đã mở. Thông qua ngày 2 tháng 9 năm 2022, có hiệu lực ngày 1 tháng 12.
-- Điều 8: 「各级人民政府和有关部门应当加强反电信网络诈骗宣传，普及相关法律和知识，提高公众对各类电信网络诈骗方式的防骗意识和识骗能力。」
+- Điều 8: 「各级人民政府和有关部门应当加强反电信网络诈骗宣传，普及相关法律和知识，提高公众对各类电信网络诈骗方式的防骗意识和识骗能力。」 (dịch: Chính quyền nhân dân các cấp và các cơ quan hữu quan phải tăng cường tuyên truyền về phòng chống lừa đảo qua mạng viễn thông, phổ biến pháp luật và kiến thức liên quan, nâng cao ý thức phòng ngừa lừa đảo và khả năng nhận biết lừa đảo của công chúng đối với các phương thức lừa đảo qua mạng viễn thông.)
 - Điều 20 và Điều 34 đã kiểm chứng cùng phần 8.
 
-### 福建省公安厅「识骗技巧」专栏（条 4、5） → Chuyên mục 「识骗技巧」 của 福建省公安厅 (Sở Công an tỉnh Phúc Kiến) (mục 4, 5)
+### 福建省公安厅 (nghĩa: Sở Công an tỉnh Phúc Kiến)「识骗技巧」 (nghĩa: Kỹ năng nhận diện lừa đảo) (dịch: Chuyên mục Kỹ năng nhận diện lừa đảo) 专栏（条 4、5） (dịch: Chuyên mục 「识骗技巧」 (dịch: Chuyên mục Kỹ năng nhận diện lừa đảo) của 福建省公安厅 (Sở Công an tỉnh Phúc Kiến) (mục 4, 5)) → Chuyên mục 「识骗技巧」 (dịch: Chuyên mục Kỹ năng nhận diện lừa đảo) của 福建省公安厅 (Sở Công an tỉnh Phúc Kiến) (mục 4, 5)
 - Trang mục lục <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/> đã mở, mở lần lượt từng bài trong mục lục:
-- 刷单 (đơn hàng ảo) (2023-07-03) <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/202307/t20230703_6196881.htm>: 「以低投入、高回报骗取受害人信任」「以『任务单未完成』为由拒绝退还本金」「喊你一起赚钱的大概率是想赚你的钱。如遇到诈骗，请及时拨打 110 报警，手机可下载并注册国家反诈中心 APP」
-- 投资理财 (đầu tư tài chính) (2023-12-20) …/202312/t20231220_6362145.htm: 「犯罪分子组织『水军』在群里扮演投资者，晒出收益误导受害人」「给予小额返利让受害人尝到甜头，不断诱导加大投资额度」「不轻信『专家指导』『稳赚不赔』等噱头」
-- 贷款 (cho vay) (2023-12-07) …/202312/t20231207_6326741.htm: 「缴纳一定的保证金，否则不放款，一旦你把钱打过去，对方立即就会把你拉黑」「贷款并不需要交保证金、做银行流水账，一旦遇上了，一定是假的」
-- 冒充客服 (giả danh nhân viên chăm sóc khách hàng) (2023-10-20) …/202310/t20231020_6279505.htm: ba bước 「自报家门，取得初步信任」「制造恐慌，提出解决办法」 (nói là ảnh hưởng đến lịch sử tín dụng) 「催促付款，实施诈骗」
-- 冒充公检法 (giả danh công an, kiểm sát, tòa án) (2023-09-13) …/202309/t20230913_6255863.htm: 「公检法机关不存在所谓的『安全账户』，凡是通过电话、QQ、微信、网络等办案、做笔录的『公检法机关』，都是诈骗。」 từ chối 「屏幕共享」
-- 杀猪盘 (bẫy tình cảm rồi lừa tiền) (2023-08-18) …/202308/t20230818_6232030.htm: 「对于从未见过面，只见到照片或者视频的『恋人』，不可轻信」
-- 色诱刷单 (dụ dỗ tình dục rồi lừa làm đơn hàng ảo) (2024-03-07) …/202403/t20240307_6410612.htm: 「任何时候，不管对方以什么理由借口，让你刷单返现、做任务、做数据的都是骗子」「一定要保存好证据，及时拨打 110，切勿继续转账」
-- 96110 (năm 2023, ngày trên URL là 2023-03-06, ngày mà phần tóm tắt của trang đưa ra không khớp với ngày này, chỉ ghi năm) …/202303/t20230306_6126156.htm: 「来电不轻信，信息不透露，链接不点击，转账多核实」
-- 「色字头上一把刀」 (2026-01-16, …/202601/t20260116_7081388.htm): trang mở được, thấy tiêu đề và đơn vị đăng, nhưng phần nội dung bị mã hóa thành dữ liệu ảnh base64, hai lần thu thập đều không đọc ra chữ, **không trích dẫn**.
+- 刷单 (đơn hàng ảo) (2023-07-03) <http://gat.fujian.gov.cn/ztzl/fjjffpzxrx/spjq/202307/t20230703_6196881.htm>: 「以低投入、高回报骗取受害人信任」 (dịch: Dùng chiêu đầu tư thấp, lợi nhuận cao để lừa lấy lòng tin của nạn nhân)`「以『任务单未完成』为由拒绝退还本金」 (dịch: Lấy lý do 『chưa hoàn thành đơn nhiệm vụ』 để từ chối trả lại tiền gốc)`「喊你一起赚钱的大概率是想赚你的钱。如遇到诈骗，请及时拨打 110 报警，手机可下载并注册国家反诈中心 APP」 (dịch: Kẻ rủ bạn cùng kiếm tiền phần lớn là muốn kiếm tiền từ bạn. Nếu gặp lừa đảo, hãy kịp thời gọi 110 báo cảnh sát, điện thoại có thể tải và đăng ký ứng dụng 国家反诈中心 APP)
+- 投资理财 (đầu tư tài chính) (2023-12-20) …/202312/t20231220_6362145.htm: 「犯罪分子组织『水军』在群里扮演投资者，晒出收益误导受害人」 (dịch: Tội phạm tổ chức 『thủy quân』 đóng vai nhà đầu tư trong nhóm, khoe lợi nhuận để đánh lừa nạn nhân)`「给予小额返利让受害人尝到甜头，不断诱导加大投资额度」 (dịch: Cho khoản hoàn lợi nhỏ để nạn nhân nếm mùi ngọt, không ngừng dụ dỗ tăng hạn mức đầu tư)`「不轻信『专家指导』『稳赚不赔』等噱头」 (dịch: Không nhẹ dạ tin những chiêu 『chuyên gia hướng dẫn』『chắc thắng không lỗ』)
+- 贷款 (cho vay) (2023-12-07) …/202312/t20231207_6326741.htm: 「缴纳一定的保证金，否则不放款，一旦你把钱打过去，对方立即就会把你拉黑」 (dịch: Phải nộp một khoản tiền bảo đảm nhất định, nếu không sẽ không giải ngân, một khi bạn chuyển tiền qua, đối phương lập tức chặn bạn)`「贷款并不需要交保证金、做银行流水账，一旦遇上了，一定是假的」 (dịch: Vay tiền không cần nộp tiền bảo đảm, không cần làm sao kê ngân hàng, một khi gặp phải, nhất định là giả)
+- 冒充客服 (giả danh nhân viên chăm sóc khách hàng) (2023-10-20) …/202310/t20231020_6279505.htm: ba bước 「自报家门，取得初步信任」 (dịch: Tự giới thiệu thân phận, giành được lòng tin ban đầu)`「制造恐慌，提出解决办法」 (dịch: Tạo hoang mang, đưa ra cách giải quyết)` (nói là ảnh hưởng đến lịch sử tín dụng) 「催促付款，实施诈骗」 (dịch: Thúc giục thanh toán, tiến hành lừa đảo)
+- 冒充公检法 (giả danh công an, kiểm sát, tòa án) (2023-09-13) …/202309/t20230913_6255863.htm: 「公检法机关不存在所谓的『安全账户』，凡是通过电话、QQ、微信、网络等办案、做笔录的『公检法机关』，都是诈骗。」 (dịch: Cơ quan công an, kiểm sát, tòa án không tồn tại cái gọi là 『tài khoản an toàn』, hễ là 『cơ quan công an, kiểm sát, tòa án』 làm án, lấy lời khai qua điện thoại, QQ, WeChat, mạng... đều là lừa đảo.)` từ chối 「屏幕共享」 (dịch: chia sẻ màn hình)
+- 杀猪盘 (bẫy tình cảm rồi lừa tiền) (2023-08-18) …/202308/t20230818_6232030.htm: 「对于从未见过面，只见到照片或者视频的『恋人』，不可轻信」 (dịch: Đối với 『người yêu』 chưa từng gặp mặt, chỉ thấy ảnh hoặc video, không được nhẹ dạ tin)
+- 色诱刷单 (dụ dỗ tình dục rồi lừa làm đơn hàng ảo) (2024-03-07) …/202403/t20240307_6410612.htm: 「任何时候，不管对方以什么理由借口，让你刷单返现、做任务、做数据的都是骗子」 (dịch: Bất cứ lúc nào, bất kể đối phương lấy lý do cớ gì, kẻ bảo bạn làm đơn hàng ảo hoàn tiền, làm nhiệm vụ, làm số liệu đều là kẻ lừa đảo)`「一定要保存好证据，及时拨打 110，切勿继续转账」 (dịch: Nhất định phải lưu giữ bằng chứng, kịp thời gọi 110, tuyệt đối không tiếp tục chuyển tiền)
+- 96110 (năm 2023, ngày trên URL là 2023-03-06, ngày mà phần tóm tắt của trang đưa ra không khớp với ngày này, chỉ ghi năm) …/202303/t20230306_6126156.htm: 「来电不轻信，信息不透露，链接不点击，转账多核实」 (dịch: Cuộc gọi đến không nhẹ dạ tin, thông tin không tiết lộ, đường link không bấm vào, chuyển tiền phải kiểm tra kỹ)
+- 「色字头上一把刀」 (dịch: Chữ 『色』 trên đầu có một con dao)` (2026-01-16, …/202601/t20260116_7081388.htm): trang mở được, thấy tiêu đề và đơn vị đăng, nhưng phần nội dung bị mã hóa thành dữ liệu ảnh base64, hai lần thu thập đều không đọc ra chữ, **không trích dẫn**.
 
-### 云南省疾控局 中暑提示（条 6） → Khuyến cáo về say nắng của 云南省疾控局 (Cục Kiểm soát Bệnh tật tỉnh Vân Nam) (mục 6)
+### 云南省疾控局 (nghĩa: Cục Kiểm soát Bệnh tật tỉnh Vân Nam) 中暑提示（条 6） → Khuyến cáo về say nắng của 云南省疾控局 (Cục Kiểm soát Bệnh tật tỉnh Vân Nam) (mục 6)
 - URL: <https://ynsjkj.yn.gov.cn/html/2026/jikongkepu_0719/2606.html>
-- Đã mở. Tiêu đề 「出现这些症状，你可能是中暑了！严重可致命」, ngày 2026-07-19.
-- Nguyên văn: 「立即将其转移到阴凉通风处」, dùng khăn lạnh ẩm để hạ nhiệt, người còn tỉnh táo thì bù nước có muối, 「如果症状严重或持续不缓解，应立即拨打急救电话」, tỉ lệ tử vong của sốc nhiệt 「极高」.
+- Đã mở. Tiêu đề 「出现这些症状，你可能是中暑了！严重可致命」 (dịch: Xuất hiện những triệu chứng này, có thể bạn đã bị say nắng! Nặng có thể tử vong), ngày 2026-07-19.
+- Nguyên văn: 「立即将其转移到阴凉通风处」 (dịch: Ngay lập tức chuyển người bệnh đến nơi râm mát, thoáng gió), dùng khăn lạnh ẩm để hạ nhiệt, người còn tỉnh táo thì bù nước có muối, 「如果症状严重或持续不缓解，应立即拨打急救电话」 (dịch: Nếu triệu chứng nặng hoặc không thuyên giảm, phải gọi ngay điện thoại cấp cứu), tỉ lệ tử vong của sốc nhiệt 「极高」 (dịch: cực cao).
 
 ## WHO
 ### 狂犬病实况报道（条 3） → Báo cáo thực tế về bệnh dại (mục 3)
 - <https://www.who.int/zh/news-room/fact-sheets/detail/rabies> (bản tiếng Anh cũng được mở)
-- Nguyên văn: 「全世界每年估计有 5.9 万人死于狂犬病」「在高达 99% 的人类狂犬病病例中，狗是病毒传播的罪魁祸首」「暴露后立即使用水和肥皂彻底清洗伤口至少 15 分钟」「清洗伤口，立即接种疫苗，并注射狂犬病免疫球蛋白/单克隆抗体」 (độ III)
+- Nguyên văn: 「全世界每年估计有 5.9 万人死于狂犬病」 (dịch: Trên toàn thế giới, ước tính mỗi năm có 5,9 vạn người chết vì bệnh dại)「在高达 99% 的人类狂犬病病例中，狗是病毒传播的罪魁祸首」 (dịch: Trong tới 99% ca bệnh dại ở người, chó là thủ phạm truyền virus)「暴露后立即使用水和肥皂彻底清洗伤口至少 15 分钟」 (dịch: Sau khi phơi nhiễm, lập tức dùng nước và xà phòng rửa sạch vết thương ít nhất 15 phút)「清洗伤口，立即接种疫苗，并注射狂犬病免疫球蛋白/单克隆抗体」 (dịch: Rửa vết thương, tiêm vaccine ngay, và tiêm globulin miễn dịch/kháng thể đơn dòng phòng dại) (độ III)
 
 ### 动物咬伤实况报道（条 12） → Báo cáo thực tế về động vật cắn (mục 12)
 - <https://www.who.int/zh/news-room/fact-sheets/detail/animal-bites> (bản tiếng Anh cũng được mở)
-- Nguyên văn: 「立即完全固定被咬的身体部位，并迅速送到最近的医疗机构就医」「避免使用止血带，并避免切割伤口」「用针对当地蛇种的适当抗蛇毒血清进行治疗」; chó cắn thì 「用肥皂和自来水冲洗和清洁伤口 15 分钟」
+- Nguyên văn: 「立即完全固定被咬的身体部位，并迅速送到最近的医疗机构就医」 (dịch: Ngay lập tức cố định hoàn toàn bộ phận cơ thể bị cắn, và nhanh chóng đưa đến cơ sở y tế gần nhất để điều trị)「避免使用止血带，并避免切割伤口」 (dịch: Tránh dùng garô, và tránh rạch vết thương)「用针对当地蛇种的适当抗蛇毒血清进行治疗」 (dịch: Điều trị bằng huyết thanh kháng nọc phù hợp với loài rắn tại địa phương); chó cắn thì 「用肥皂和自来水冲洗和清洁伤口 15 分钟」 (dịch: Dùng xà phòng và nước máy rửa và làm sạch vết thương 15 phút)
 
 ### 蛇咬伤中毒实况报道（条 12） → Báo cáo thực tế về nhiễm độc do rắn cắn (mục 12)
 - <https://www.who.int/zh/news-room/fact-sheets/detail/snakebite-envenoming> (bản tiếng Anh ngày 2023-09-12)
-- Nguyên văn: 「每年约有 81 410 至 137 880 人死于蛇咬伤」, số người bị cắt cụt chi và tàn tật vĩnh viễn khoảng gấp 3 lần số người chết; 「高质量抗蛇毒血清是防止或逆转蛇咬伤的大部分毒性作用的最有效治疗方法」
+- Nguyên văn: 「每年约有 81 410 至 137 880 人死于蛇咬伤」 (dịch: Mỗi năm có khoảng 81 410 đến 137 880 người chết vì rắn cắn), số người bị cắt cụt chi và tàn tật vĩnh viễn khoảng gấp 3 lần số người chết; 「高质量抗蛇毒血清是防止或逆转蛇咬伤的大部分毒性作用的最有效治疗方法」 (dịch: Huyết thanh kháng nọc chất lượng cao là phương pháp điều trị hiệu quả nhất để ngăn ngừa hoặc đảo ngược phần lớn tác dụng độc của rắn cắn)
 
 ### 溺水实况报道（条 8） → Báo cáo thực tế về đuối nước (mục 8)
 - <https://www.who.int/zh/news-room/fact-sheets/detail/drowning> (bản tiếng Anh cũng được mở)
-- Nguyên văn: 「世界各地每年溺水死亡总数估计为 30 万例」「92% 的溺水死亡发生在低收入和中等收入国家」; bản tiếng Anh 「fourth leading cause of death for children aged 1–4 years and the third leading cause of death for children aged 5–14 years」「safe rescue and resuscitation training」
+- Nguyên văn: 「世界各地每年溺水死亡总数估计为 30 万例」 (dịch: Tổng số ca tử vong do đuối nước trên toàn thế giới ước tính là 30 vạn ca mỗi năm)「92% 的溺水死亡发生在低收入和中等收入国家」 (dịch: 92% ca tử vong do đuối nước xảy ra ở các nước thu nhập thấp và thu nhập trung bình); bản tiếng Anh 「fourth leading cause of death for children aged 1–4 years and the third leading cause of death for children aged 5–14 years」 (dịch: nguyên nhân tử vong đứng thứ tư ở trẻ em 1–4 tuổi và nguyên nhân tử vong đứng thứ ba ở trẻ em 5–14 tuổi)「safe rescue and resuscitation training」 (dịch: huấn luyện cứu hộ và hồi sức an toàn)
 
 ## Trang chính thức của cơ quan liên bang Hoa Kỳ (phương án thay thế khi không mở được trang chính thức của Trung Quốc)
 ### FEMA Ready.gov Home Fires (mục 7)
@@ -128,10 +128,10 @@ Giải thích: mọi URL "đã mở" đều được mở thực tế bằng Web
 - <https://www.nps.gov/deva/planyourvisit/safety.htm> đã mở: "DRINK plenty of water, at least one gallon a day" "DO NOT hike in the valley/lower elevations when it is hot!" "limited to no cell phone service", khuyến nghị dùng điện thoại vệ tinh.
 - Cả hai trang đều không có nguyên văn "xe hỏng thì ở lại cạnh xe" (trang Joshua Tree 404), nên mục này trong phần chính được xếp mức C.
 
-## 打开失败或未能提取、未引用的来源
+## 打开失败或未能提取、未引用的来源 (nghĩa: Nguồn không mở được hoặc không trích xuất được, không được trích dẫn)
 - 公安部 (Bộ Công an) mps.gov.cn, m.mps.gov.cn: toàn bộ quá trình HTTP 521; tỉ lệ phần trăm các loại lừa đảo chỉ có thể ghi TODO.
 - 国家消防救援局 (Cục Cứu hỏa Quốc gia Trung Quốc) 119.gov.cn: 405 / 412; thư mục con qmxfkp 412.
-- 国家卫健委 (Ủy ban Y tế Quốc gia Trung Quốc) nhc.gov.cn「高温中暑预防知识要点」(/wjw/jbyfykz/201007/1edb19b7dd4e4bdf8da5ea45f4a64e23.shtml): 412 (cả http lẫn https).
+- 国家卫健委 (Ủy ban Y tế Quốc gia Trung Quốc) nhc.gov.cn「高温中暑预防知识要点」 (dịch: Những điểm chính về phòng chống say nắng do nhiệt độ cao)(/wjw/jbyfykz/201007/1edb19b7dd4e4bdf8da5ea45f4a64e23.shtml): 412 (cả http lẫn https).
 - 中国地震局 (Cục Địa chấn Trung Quốc) <https://www.cea.gov.cn/cea/dzpd/dzcs/5758823/index.html> (động đất, cách tự cứu và cứu nhau, 2024-05-10, do Sở Địa chấn tỉnh Hải Nam cung cấp) và …/5758835/index.html («Lâm» chấn hữu phương, Sở Địa chấn thành phố Bắc Kinh): trang mở được, tiêu đề và ngày tháng nhìn thấy được, nhưng phần nội dung do script kết xuất không trích được chữ.
 - 应急管理部 (Bộ Quản lý Tình trạng Khẩn cấp) mem.gov.cn/kp chuyên mục an toàn sinh hoạt, thiên tai: mở được, nhưng mọi liên kết bài viết đều trỏ tới mp.weixin.qq.com (tài khoản công khai), theo quy tắc không trích dẫn; cũng không có chuyên đề về gas, điện giật, lạc đường.
 - 中国红十字会 (Hội Chữ thập đỏ Trung Quốc) redcross.org.cn: trang chủ mở được, chuyên mục cấp cứu chỉ có tin tức tập huấn, không có trang kiến thức về cầm máu, đuối nước, thủ thuật Heimlich.
@@ -179,32 +179,32 @@ Nguồn chưa lấy được: trang phổ biến khoa học của 中国地震�
 Không sử dụng: các phân tích liên quan trên nền tảng video ngắn (không phù hợp quy tắc trích dẫn), trường hợp cụ thể「một trận động đất nào đó gần như không thương vong vì người chạy nhanh」mà bạn đọc nhắc tới
 không xác định được nguồn chính thức hoặc nguồn tạp chí, nên không viết vào mục.
 
-### 2026-09-07 bổ sung tiếp: lấy được nguyên văn của 中国地震局 (Cục Địa chấn Trung Quốc) (bản chép phụ đề video), gỡ TODO
+### 2026-09-07 bổ sung tiếp: lấy được nguyên văn của 中国地震局 (nghĩa: Cục Địa chấn Trung Quốc) (Cục Địa chấn Trung Quốc) (bản chép phụ đề video), gỡ TODO
 
-Đã tìm ra nguyên nhân hai lần lấy dữ liệu thất bại trước đó: nội dung bài viết của chuyên mục「地震科普」(phổ biến khoa học động đất) thuộc 中国地震局 (Cục Địa chấn Trung Quốc) không phải chữ, mà là mp4 nhúng.
+Đã tìm ra nguyên nhân hai lần lấy dữ liệu thất bại trước đó: nội dung bài viết của chuyên mục「地震科普」 (dịch: Phổ biến khoa học động đất) thuộc 中国地震局 (Cục Địa chấn Trung Quốc) không phải chữ, mà là mp4 nhúng.
 Trong raw HTML, bên trong `id="news_content"` chỉ có một `<video src="...mp4">`, nên trình duyệt kết xuất ra cũng trống.
 
 Chuyển sang đọc phụ đề bằng cách trích khung hình:
-- Trang <https://www.cea.gov.cn/cea/dzpd/dzcs/5537260/index.html> (tiêu đề「地震来了，是躲还是跑？」,
-   phần đầu ghi tên「安徽省地震局」(Sở Địa chấn tỉnh An Huy), chuyên mục phổ biến khoa học động đất trên trang chủ 中国地震局 (Cục Địa chấn Trung Quốc))
+- Trang <https://www.cea.gov.cn/cea/dzpd/dzcs/5537260/index.html> (tiêu đề「地震来了，是躲还是跑？」 (dịch: Động đất đến rồi, trốn hay chạy?),
+   phần đầu ghi tên「安徽省地震局」 (dịch: Sở Địa chấn tỉnh An Huy), chuyên mục phổ biến khoa học động đất trên trang chủ 中国地震局 (Cục Địa chấn Trung Quốc))
 - Video <https://www.cea.gov.cn/cea/dzpd/dzcs/5537260/2020051215493612585.mp4>, thời lượng 2 phút 33 giây, 1920×1080
 - Dùng ffmpeg cắt khung hình 1,5 đến 3 giây một khung, ghép ảnh dải phụ đề, đọc từng khung
 
 Nguyên văn phụ đề chép được (theo thứ tự xuất hiện, từng chữ):
-「今天我们就来聊一聊」「既要因地制宜」「也要因人而异」「综合考虑建筑物的抗震能力」
-「人员所处位置、体能、室外环境」「具体情况具体分析」
-「地震时 如果在户外」「应该第一时间疏散到空旷的地方避震」「避开容易倒塌的高大建筑物」
-「注意远离高架桥、电线杆、玻璃幕墙」「广告牌以及其他高空悬挂物」「还要注意远离化工厂、危险品仓库等」
-「这里指的是在符合抗震设防要求的建筑内」
-Thẻ tiêu đề:「震时就近躲避」「震后迅速撤离」
-「地震发生时」「建筑物整体垮塌的可能性较小」「即使在大地震中彻底垮塌的建筑物也是少数」
-「绝大多数的建筑物只是遭受不同程度的破坏」「坠落的建筑构件及装饰物品」「才是对生命安全最大的威胁」
-「震时无保护措施的盲目乱跑」「反而容易被坠落的天花板、吊灯（扇）等物品砸伤」
-「躲也要讲究科学」「的避震口诀要时刻牢记」「用手或者其他软物保护好头颈部」「并牢牢地抓住桌腿」
-「这样才能保证在晃动过程中」「从而达到遮蔽保护的效果」
-「则应迅速贴紧承重墙蹲伏」「同时保护好头部」「注意避开外墙、窗户、阳台等等」
+「今天我们就来聊一聊」 (dịch: Hôm nay chúng ta hãy cùng bàn một chút)``「既要因地制宜」 (dịch: Vừa phải tùy theo điều kiện địa phương)``「也要因人而异」 (dịch: Cũng phải tùy theo từng người mà khác nhau)``「综合考虑建筑物的抗震能力」 (dịch: Tổng hợp xem xét khả năng chống động đất của công trình)
+「人员所处位置、体能、室外环境」 (dịch: Vị trí của người, thể lực, môi trường bên ngoài)``「具体情况具体分析」 (dịch: Tình hình cụ thể thì phân tích cụ thể)
+「地震时 如果在户外」 (dịch: Khi động đất, nếu đang ở ngoài trời)``「应该第一时间疏散到空旷的地方避震」 (dịch: Nên sơ tán ngay lập tức đến nơi trống trải để tránh động đất)``「避开容易倒塌的高大建筑物」 (dịch: Tránh xa những tòa nhà cao lớn dễ đổ sập)
+「注意远离高架桥、电线杆、玻璃幕墙」 (dịch: Chú ý tránh xa cầu vượt, cột điện, tường kính)``「广告牌以及其他高空悬挂物」 (dịch: Biển quảng cáo và các vật treo trên cao khác)``「还要注意远离化工厂、危险品仓库等」 (dịch: Còn phải chú ý tránh xa nhà máy hóa chất, kho hàng nguy hiểm và những nơi tương tự)
+「这里指的是在符合抗震设防要求的建筑内」 (dịch: Ở đây chỉ trong các công trình đáp ứng yêu cầu phòng chống động đất)
+Thẻ tiêu đề:「震时就近躲避」 (dịch: Khi động đất thì tránh gần chỗ mình)``「震后迅速撤离」 (dịch: Sau động đất nhanh chóng rút ra ngoài)
+「地震发生时」 (dịch: Khi động đất xảy ra)``「建筑物整体垮塌的可能性较小」 (dịch: Khả năng công trình sụp đổ hoàn toàn là tương đối nhỏ)``「即使在大地震中彻底垮塌的建筑物也是少数」 (dịch: Ngay cả trong trận động đất lớn, số công trình sụp đổ hoàn toàn cũng chỉ là thiểu số)
+「绝大多数的建筑物只是遭受不同程度的破坏」 (dịch: Đại đa số công trình chỉ chịu mức độ hư hại khác nhau)``「坠落的建筑构件及装饰物品」 (dịch: Cấu kiện công trình và đồ trang trí rơi xuống)``「才是对生命安全最大的威胁」 (dịch: Mới là mối đe dọa lớn nhất đối với an toàn tính mạng)
+「震时无保护措施的盲目乱跑」 (dịch: Khi động đất mà chạy loạn không có biện pháp bảo vệ)``「反而容易被坠落的天花板、吊灯（扇）等物品砸伤」 (dịch: Ngược lại dễ bị trần nhà, đèn chùm (quạt trần) và các vật rơi xuống đập trúng gây thương tích)
+「躲也要讲究科学」 (dịch: Tránh cũng phải theo khoa học)``「的避震口诀要时刻牢记」 (dịch: Phải luôn ghi nhớ khẩu quyết tránh động đất)``「用手或者其他软物保护好头颈部」 (dịch: Dùng tay hoặc vật mềm khác để bảo vệ đầu và cổ)``「并牢牢地抓住桌腿」 (dịch: và nắm chặt chân bàn)
+「这样才能保证在晃动过程中」 (dịch: Như vậy mới có thể bảo đảm trong quá trình rung lắc) 「从而达到遮蔽保护的效果」 (dịch: Từ đó đạt được hiệu quả che chắn bảo vệ)
+「则应迅速贴紧承重墙蹲伏」 (dịch: Thì phải nhanh chóng áp sát tường chịu lực và ngồi xổm) 「同时保护好头部」 (dịch: Đồng thời bảo vệ tốt phần đầu) 「注意避开外墙、窗户、阳台等等」 (dịch: Chú ý tránh xa tường ngoài, cửa sổ, ban công v.v.)
 
-Điểm chính: khẩu quyết chính thức「震时就近躲避、震后迅速撤离」có tiền đề rõ ràng là「在符合抗震设防要求的建筑内」,
-và ngay phần mở đầu đã yêu cầu「因地制宜」「因人而异」「综合考虑建筑物的抗震能力」. Điều này khớp với cách viết của mục này theo tình huống từng loại công trình,
+Điểm chính: khẩu quyết chính thức「震时就近躲避、震后迅速撤离」 (dịch: Khi rung lắc thì lánh nạn gần đó, sau khi rung lắc thì nhanh chóng sơ tán) có tiền đề rõ ràng là「在符合抗震设防要求的建筑内」 (dịch: Trong công trình đáp ứng yêu cầu phòng chống động đất),
+và ngay phần mở đầu đã yêu cầu「因地制宜」 (dịch: Tùy theo điều kiện địa phương) 「因人而异」 (dịch: Tùy theo từng người) 「综合考虑建筑物的抗震能力」 (dịch: Tổng hợp xem xét khả năng chống động đất của công trình). Điều này khớp với cách viết của mục này theo tình huống từng loại công trình,
 nên mục được đổi sang lấy video này làm nguồn chính, TODO (cần kiểm chứng: nguyên văn của 中国地震局 (Cục Địa chấn Trung Quốc)) được gỡ.
 Video này không nói riêng về nhà một tầng, nhà tự xây không kháng chấn nên chạy hay nên tránh, phần「ra ngoài với nhà cũ」trong mục này vẫn dựa vào nghiên cứu Armenia và ghi là tranh cãi.
