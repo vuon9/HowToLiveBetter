@@ -46,11 +46,13 @@ html = html.slice(0, html.indexOf(GA_START)) + html.slice(html.indexOf(GA_END) +
 if (/googletagmanager|google-analytics/.test(html)) throw new Error('剥掉标记之间的内容后仍有统计域名残留，离线版会往外发请求');
 
 // 相对链接在本地打开时是死的，改成线上地址
-must('href="README.md"', ' README.md 链接');
-must('href="book/"', ' book/ 链接');
+const readmeHref = `href="${lang === 'zh' ? 'README.md' : info.readme}"`;
+const bookHref = `href="${info.bookGlob}"`;
+must(readmeHref, ` ${info.readme} 链接`);
+must(bookHref, ` ${info.bookGlob} 链接`);
 html = html
-  .replaceAll('href="README.md"', `href="${REPO}/blob/main/${info.readme}"`)
-  .replaceAll('href="book/"', `href="${REPO}/tree/main/${info.bookGlob.replace(/\/$/, '')}"`)
+  .replaceAll(readmeHref, `href="${REPO}/blob/main/${info.readme}"`)
+  .replaceAll(bookHref, `href="${REPO}/tree/main/${info.bookGlob.replace(/\/$/, '')}"`)
   .replaceAll('<a class="title" href="./"', `<a class="title" href="${SITE}"`);
 
 // 侧栏广告图和赞赏码转 data URI，否则离线打开是个裂图

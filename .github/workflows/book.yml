@@ -89,6 +89,25 @@ jobs:
           node-version: 22
       - run: node tools/sync-stats.mjs --check
 
+  # Bản dịch tiếng Việt: cấu trúc, hồ sơ kiểm chứng, trang tra cứu. Một job riêng
+  # vì lỗi ở bản dịch không nên chặn việc phát hành bản tiếng Trung.
+  vi:
+    name: Kiểm tra bản dịch tiếng Việt
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Kiểm tra cấu trúc 34 phần và hồ sơ kiểm chứng
+        run: |
+          python3 tools/translate-vi/verify_vi.py
+          python3 tools/translate-vi/verify_records.py
+      - name: Kiểm tra trang tra cứu (bộ đếm, cú pháp JS, mắt nối tham chiếu, chữ Hán còn sót)
+        run: |
+          python3 tools/translate-vi/verify_index.py
+          python3 tools/translate-vi/audit_js_strings.py --check
+
   build:
     runs-on: ubuntu-latest
     steps:

@@ -124,6 +124,57 @@ Chuỗi hiển thị thì đưa qua mô hình, chỉ ở nút văn bản và cá
 trị. Trang đọc `README.vi.md`, và phần chú thích trong mã vẫn là tiếng Trung
 như bản gốc.
 
+### Dịch trọn từng chuỗi, không dịch từng mảnh
+
+Mỗi chuỗi hiển thị được dịch như một đơn vị trọn vẹn (một nút văn bản, một giá
+trị thuộc tính, một literal trong script) rồi ghi lại theo vị trí. Không bao
+giờ thay thế bằng `str.replace` trên cả trang: thay một mảnh như `条` thành
+`mục` sẽ để lại câu nửa Trung nửa Việt kiểu `每一mục都回答两个问题：花掉什么，Đổi
+lại được gì。`.
+
+Bốn bảng ghim, vá trước khi dịch nên mô hình không bao giờ thấy chúng:
+
+| Bảng | Nội dung |
+| --- | --- |
+| `PANEL` | nhãn bảng lọc và nhãn chip (`Đáng tiền`, `Mức bằng chứng`, `Tốn tiền`, `Không cần`...) |
+| `JS_PINNED` | chuỗi hiển thị trong script: huy hiệu thẻ, tooltip, thông báo trạng thái, mẫu HTML của thẻ |
+| `MESSAGES` | thông báo có nội suy hoặc HTML, ghim theo tiền tố rồi thay cả literal (giữ nguyên kiểu nháy) |
+| `PINS` / `PATCHES` | chuỗi chức năng: nhãn trường, khóa cost tag, `LENS_LABEL`, giá trị `data-v` |
+
+`pin_js()` tái tạo **mắt nối tham chiếu chéo** cho tiếng Việt: bản gốc khớp
+`第 X 节第 Y 条` / `本节第 N 条` / `第 N 条` / `第 X 节`, bản dịch phải khớp
+`phần X, mục Y` / `mục N của phần này` / `mục N` / `phần X`, và nhận cả danh
+sách (`mục 7, 19`) lẫn khoảng (`mục 8 đến 10`). Số lượng dấu thoát trong dòng
+nguồn được đọc từ chính dòng đó nên không phải đếm tay. Cùng chỗ đó, dấu `;` của
+bản tiếng Việt được nhận làm dấu phân cách danh sách nguồn.
+
+`vn_punct()` đổi dấu câu toàn phần (。，、；：！？（）) sang ASCII, trừ phần nằm
+trong 「」 (trích nguyên văn). `finalize()` trỏ liên kết của bản dịch về
+`README.vi.md` và `book/vi/`.
+
+`gloss_vi.py`/`audit_glosses.py` lo phần chú thích; xem mục cuối.
+
+### Kiểm tra chuỗi trong script
+
+`audit_js_strings.py` đi qua script theo kiểu bộ tách từ (mã, ghi chú dòng, ghi
+chú khối, chuỗi, template, regex) rồi liệt kê mọi literal còn chữ Hán, phân biệt
+**khóa máy** (giữ tiếng Trung để khớp cost tag) với **chuỗi hiển thị** (phải dịch):
+
+```bash
+python3 tools/translate-vi/audit_js_strings.py           # liệt kê
+python3 tools/translate-vi/audit_js_strings.py --check   # thoát 1 nếu còn sót
+```
+
+Quét bằng regex là không đủ: một dấu nháy đơn trong ghi chú sẽ nuốt mất literal
+phía sau, và chuỗi thật thì lọt. Vì vậy `translate_index.py` cũng **không** đưa
+cho mô hình những literal có nội suy mã (`${...}` chứa `.split(`, `(`...): mô
+hình từng trả về `key.split('-'[1]` thiếu một dấu ngoặc, làm cả trang chết. Những
+chuỗi đó được ghim trong `MESSAGES` thay vì dịch máy.
+
+Sau mỗi lần chạy `translate_index.py`: `node tools/translate-vi/build-site.mjs`,
+rồi `verify_index.py` và `audit_js_strings.py --check`.
+
+
 ## Hình thức giống các bản dịch khác
 
 | Thành phần | Tệp | Lệnh |
@@ -188,4 +239,17 @@ Phần không chú thích được, và lý do:
 - lỗi mềm: số có thể thiếu, chữ Hán còn lại (những chỗ cố ý giữ như tên văn
   bản quy phạm), lệch số lượng tham chiếu chéo.
 
-Mã thoát khác 0 khi có lỗi cứng, nên có thể gắn vào CI sau này.
+Mã thoát khác 0 khi có lỗi cứng.
+
+`verify_records.py` so 111 hồ sơ kiểm chứng: lỗi cứng là URL/DOI thiếu hoặc khác
+bản gốc, lỗi mềm là độ phủ trích dẫn.
+
+`verify_index.py` kiểm trang tra cứu: bộ đếm (34 phần, 649 mục, đủ sáu trường,
+649 cost tag), các mốc chức năng còn nguyên, **cú pháp JS** của cả hai trang,
+**mắt nối tham chiếu** khớp bao nhiêu chỗ trên bản dịch so với bản gốc (hiện
+751 so với 743), và **không còn chữ Hán** trong chuỗi hiển thị lẫn văn bản
+trong trang (chữ Hán trong ngoặc là chú thích cố ý, được bỏ qua).
+
+CI (`book.yml`) có một job `vi` riêng chạy bốn script này, nên một lần dịch lại
+làm hỏng cấu trúc, hỏng tham chiếu chéo hay làm chết JavaScript đều đỏ ở PR
+trước khi merge.
