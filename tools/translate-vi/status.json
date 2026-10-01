@@ -1,0 +1,428 @@
+{
+ "chapters": {
+  "01": {
+   "file": "book/vi/01-dung-chet-som.md",
+   "hanzi_outside_tags": 1024,
+   "hard_issues": [],
+   "items": 40,
+   "section": "01-不要早死.md",
+   "soft_issues": [
+    "mục 5: số có thể thiếu ['2165']",
+    "mục 6: số có thể thiếu ['1000', '10000', '2000', '21', '3782']",
+    "mục 10: số có thể thiếu ['2000']",
+    "mục 16: số có thể thiếu ['1300', '167']",
+    "mục 20: số có thể thiếu ['2571']"
+   ],
+   "status": "reviewed"
+  },
+  "02": {
+   "file": "book/vi/02-dung-chet-mon.md",
+   "hanzi_outside_tags": 503,
+   "hard_issues": [],
+   "items": 42,
+   "section": "02-不要慢慢死.md",
+   "soft_issues": [
+    "mục 1: số có thể thiếu ['60']",
+    "mục 2: số có thể thiếu ['60']",
+    "mục 3: số có thể thiếu ['12169', '17395', '64640']",
+    "mục 4: số có thể thiếu ['3760', '4395']",
+    "mục 5: số có thể thiếu ['19488', '32484', '41233']"
+   ],
+   "status": "reviewed"
+  },
+  "03": {
+   "file": "book/vi/03-dung-lang-phi-suc-luc.md",
+   "hanzi_outside_tags": 143,
+   "hard_issues": [],
+   "items": 24,
+   "section": "03-不要浪费精力.md",
+   "soft_issues": [
+    "mục 9: số có thể thiếu ['125198']",
+    "mục 15: số có thể thiếu ['1068', '2978']",
+    "mục 18: số có thể thiếu ['14170']",
+    "tham chiếu chéo lệch: thiếu [] / thừa [(4, 15)]",
+    "dòng 86: còn chữ Hán -> - Nguồn: Carter et al. (2016). Association Between Portable Screen-Based Media Device Access or Use and Sleep "
+   ],
+   "status": "reviewed"
+  },
+  "04": {
+   "file": "book/vi/04-dung-lang-phi-thoi-gian.md",
+   "hanzi_outside_tags": 143,
+   "hard_issues": [],
+   "items": 18,
+   "section": "04-不要浪费时间.md",
+   "soft_issues": [
+    "mục 10: số có thể thiếu ['1098']",
+    "mục 11: số có thể thiếu ['2538']",
+    "mục 14: số có thể thiếu ['6271']",
+    "dòng 131: còn chữ Hán -> - Nguồn: Whillans, A. V., Dunn, E. W., Smeets, P., Bekkers, R., & Norton, M. I. (2017). Buying time promotes h",
+    "dòng 138: còn chữ Hán -> - Lợi ích: Người dân Trung Quốc dùng mạng trung bình mỗi ngày 5 giờ 37 phút. Chỉ tính riêng những người thực s"
+   ],
+   "status": "reviewed"
+  },
+  "05": {
+   "file": "book/vi/05-khong-lang-phi-tien.md",
+   "hanzi_outside_tags": 3369,
+   "hard_issues": [],
+   "items": 44,
+   "section": "05-不要浪费钱.md",
+   "soft_issues": [
+    "mục 5: số có thể thiếu ['1610', '6234']",
+    "mục 10: số có thể thiếu ['7000']",
+    "mục 12: số có thể thiếu ['1600', '1695']",
+    "mục 14: số có thể thiếu ['10000', '16000', '24000', '28000', '7300']",
+    "mục 15: số có thể thiếu ['5166']"
+   ],
+   "status": "reviewed"
+  },
+  "06": {
+   "file": "book/vi/06-danh-sach-nhung-dieu-khong-nen-lam.md",
+   "hanzi_outside_tags": 393,
+   "hard_issues": [],
+   "items": 28,
+   "section": "06-反面清单.md",
+   "soft_issues": [
+    "mục 2: số có thể thiếu ['1000']",
+    "mục 3: số có thể thiếu ['2000']",
+    "mục 4: số có thể thiếu ['30']",
+    "mục 5: số có thể thiếu ['1800']",
+    "mục 7: số có thể thiếu ['10000', '7000']"
+   ],
+   "status": "reviewed"
+  },
+  "07": {
+   "file": "book/vi/07-cach-song-khi-khong-co-tien.md",
+   "hanzi_outside_tags": 2159,
+   "hard_issues": [],
+   "items": 22,
+   "section": "07-没钱的时候怎么活.md",
+   "soft_issues": [
+    "mục 2: số có thể thiếu ['5000']",
+    "mục 15: số có thể thiếu ['2000']",
+    "mục 17: số có thể thiếu ['2080', '2740', '29476', '6397', '8631']",
+    "dòng 10: còn chữ Hán -> - Chi phí: Không tốn tiền. Có thể nộp hồ sơ bằng điện thoại qua một trong ba cổng: ứng dụng \"掌上 12333\", chương",
+    "dòng 11: còn chữ Hán -> - Nói đơn giản: Cơ quan và bạn đã đóng đủ 1 năm, đồng thời không phải bạn tự ý xin nghỉ việc, thì sau khi làm "
+   ],
+   "status": "reviewed"
+  },
+  "08": {
+   "file": "book/vi/08-dung-tu-chuoc-hoa-vao-than-an-toan-phap-luat-va.md",
+   "hanzi_outside_tags": 3510,
+   "hard_issues": [],
+   "items": 44,
+   "section": "08-别把自己搭进去.md",
+   "soft_issues": [
+    "mục 7: số có thể thiếu ['1000', '2000', '5000']",
+    "mục 10: số có thể thiếu ['1000', '2000']",
+    "mục 12: số có thể thiếu ['13', '86']",
+    "mục 13: số có thể thiếu ['1000']",
+    "mục 15: số có thể thiếu ['1000']"
+   ],
+   "status": "reviewed"
+  },
+  "09": {
+   "file": "book/vi/09-nhung-ranh-gioi-do-phap-ly-nguoi-binh-thuong-de.md",
+   "hanzi_outside_tags": 2426,
+   "hard_issues": [],
+   "items": 23,
+   "section": "09-普通人容易踩的法律红线.md",
+   "soft_issues": [
+    "mục 1: số có thể thiếu ['1000']",
+    "mục 2: số có thể thiếu ['1000', '250', '3000', '5000']",
+    "mục 4: số có thể thiếu ['1000', '3000', '5000']",
+    "mục 5: số có thể thiếu ['1000']",
+    "mục 6: số có thể thiếu ['3000']"
+   ],
+   "status": "reviewed"
+  },
+  "10": {
+   "file": "book/vi/10-tinh-toan-thiet-hon-khi-yeu-va-ket-hon.md",
+   "hanzi_outside_tags": 537,
+   "hard_issues": [],
+   "items": 20,
+   "section": "10-恋爱和结婚划不划算.md",
+   "soft_issues": [
+    "mục 2: số có thể thiếu ['1000']",
+    "mục 20: số có thể thiếu ['2092']",
+    "dòng 6: còn chữ Hán -> Phần này chia bài toán kết hôn có đáng không thành các khoản riêng: tiền bạc, thời gian, sức khỏe, rủi ro pháp",
+    "dòng 23: còn chữ Hán -> - Nguồn: 全国人大常委会 (Ủy ban Thường vụ Đại hội Đại biểu Nhân dân Toàn quốc Trung Quốc) (2025 修订). 治安管理处罚法（第五十条第一款第",
+    "dòng 64: còn chữ Hán -> - Chi phí: Không tốn tiền. Đọc một lần đoạn đăng ký kết hôn trong công báo năm của 民政部 (Bộ Dân chính Trung Quố"
+   ],
+   "status": "reviewed"
+  },
+  "11": {
+   "file": "book/vi/11-nhung-lan-ranh-do-lap-trinh-vien-va-nguoi-lam.md",
+   "hanzi_outside_tags": 1548,
+   "hard_issues": [],
+   "items": 17,
+   "section": "11-程序员和技术人容易踩的红线.md",
+   "soft_issues": [
+    "mục 2: số có thể thiếu ['1000', '2000', '5000']",
+    "mục 3: số có thể thiếu ['5000']",
+    "mục 4: số có thể thiếu ['1751', '5000']",
+    "mục 5: số có thể thiếu ['5000']",
+    "mục 6: số có thể thiếu ['12']"
+   ],
+   "status": "reviewed"
+  },
+  "12": {
+   "file": "book/vi/12-khoi-nghiep-va-kinh-doanh-dung-de-mat-trang-gia.md",
+   "hanzi_outside_tags": 1469,
+   "hard_issues": [],
+   "items": 23,
+   "section": "12-创业与做生意.md",
+   "soft_issues": [
+    "mục 3: số có thể thiếu ['100']",
+    "mục 9: số có thể thiếu ['2000', '5000']",
+    "mục 12: số có thể thiếu ['2000']",
+    "mục 13: số có thể thiếu ['1000', '30']",
+    "mục 14: số có thể thiếu ['1000']"
+   ],
+   "status": "reviewed"
+  },
+  "13": {
+   "file": "book/vi/13-tinh-huong-khan-cap-lam-gi-truoc.md",
+   "hanzi_outside_tags": 1967,
+   "hard_issues": [],
+   "items": 44,
+   "section": "13-紧急情况.md",
+   "soft_issues": [
+    "mục 3: số có thể thiếu ['6756']",
+    "mục 9: số có thể thiếu ['2131']",
+    "mục 11: số có thể thiếu ['2454']",
+    "mục 14: số có thể thiếu ['2495']",
+    "mục 19: số có thể thiếu ['11523', '2010', '2321', '2845']"
+   ],
+   "status": "reviewed"
+  },
+  "14": {
+   "file": "book/vi/14-bao-mat-tai-khoan-va-thong-tin-ca-nhan.md",
+   "hanzi_outside_tags": 316,
+   "hard_issues": [],
+   "items": 9,
+   "section": "14-账号与信息安全.md",
+   "soft_issues": [
+    "dòng 50: còn chữ Hán -> - Nguồn: 最高人民法院 (Tòa án nhân dân tối cao Trung Quốc) (2021). 关于审理银行卡民事纠纷案件若干问题的规定 (Điều 4, 5, 7, 14, 15). <htt",
+    "dòng 68: còn chữ Hán -> - Nguồn: 全国人大常委会 (Ủy ban Thường vụ Đại hội Đại biểu Nhân dân Toàn quốc Trung Quốc) (2021). 个人信息保护法. 中国人大网 (Tra",
+    "dòng 77: còn chữ Hán -> - Nguồn: 全国人大常委会 (Ủy ban Thường vụ Đại hội Đại biểu Nhân dân Toàn quốc Trung Quốc) (2021). 个人信息保护法. 中国人大网. <ht",
+    "dòng 86: còn chữ Hán -> - Nguồn: 国家互联网信息办公室 (Văn phòng Thông tin Internet Quốc gia Trung Quốc), 公安部 (Bộ Công an Trung Quốc) (2025). 人脸"
+   ],
+   "status": "reviewed"
+  },
+  "15": {
+   "file": "book/vi/15-thue-nha-va-mua-nha.md",
+   "hanzi_outside_tags": 541,
+   "hard_issues": [],
+   "items": 9,
+   "section": "15-租房与买房.md",
+   "soft_issues": [
+    "dòng 14: còn chữ Hán -> - Nguồn: 国务院 (Quốc vụ viện Trung Quốc) (2025). 住房租赁条例 (国令第 812 号, 2025 年 9 月 15 日施行) (Điều 10). <https://www.g",
+    "dòng 23: còn chữ Hán -> - Nguồn: 国务院 (Quốc vụ viện Trung Quốc) (2025). 住房租赁条例 (国令第 812 号, 2025 年 9 月 15 日施行) (Điều 12). <https://www.g",
+    "dòng 32: còn chữ Hán -> - Nguồn: 国务院 (Quốc vụ viện Trung Quốc) (2025). 住房租赁条例 (国令第 812 号, 2025 年 9 月 15 日施行) (Điều 25). <https://www.g",
+    "dòng 41: còn chữ Hán -> - Nguồn: 国务院 (Quốc vụ viện Trung Quốc) (2025). 住房租赁条例 (国令第 812 号, 2025 年 9 月 15 日施行) (Điều 19). <https://www.g",
+    "dòng 50: còn chữ Hán -> - Nguồn: 全国人大 (Đại hội Đại biểu Nhân dân Toàn quốc Trung Quốc) (2020). 民法典 (Điều 725). <https://www.spp.gov.cn"
+   ],
+   "status": "reviewed"
+  },
+  "16": {
+   "file": "book/vi/16-song-the-nao-sau-khi-mac-benh-man-tinh.md",
+   "hanzi_outside_tags": 394,
+   "hard_issues": [],
+   "items": 9,
+   "section": "16-得了慢性病之后怎么活.md",
+   "soft_issues": [
+    "mục 1: số có thể thiếu ['46847']",
+    "mục 9: số có thể thiếu ['6128', '6190']",
+    "tham chiếu chéo lệch: thiếu [] / thừa [(2, 7)]",
+    "dòng 19: còn chữ Hán -> - Chi phí: Không tốn tiền. Trước khi đi làm thủ tục đăng ký khám chữa bệnh ngoại tỉnh một lần trên ứng dụng bả",
+    "dòng 23: còn chữ Hán -> - Nguồn: 国家医保局办公室 (Văn phòng Cục Bảo hiểm Y tế Quốc gia Trung Quốc), 财政部办公厅 (Văn phòng Bộ Tài chính Trung Quốc"
+   ],
+   "status": "reviewed"
+  },
+  "17": {
+   "file": "book/vi/17-nha-co-nguoi-cao-tuoi.md",
+   "hanzi_outside_tags": 328,
+   "hard_issues": [],
+   "items": 9,
+   "section": "17-家里有老人.md",
+   "soft_issues": [
+    "mục 5: số có thể thiếu ['2100']",
+    "mục 8: số có thể thiếu ['1226', '19520', '4462']",
+    "mục 9: số có thể thiếu ['1000', '1113640']",
+    "dòng 14: còn chữ Hán -> - Nguồn: 全国人大 (Đại hội Đại biểu Nhân dân Toàn quốc Trung Quốc) (2020). 民法典 (Điều 33). <https://www.spp.gov.cn/",
+    "dòng 23: còn chữ Hán -> - Nguồn: 全国人大 (Đại hội Đại biểu Nhân dân Toàn quốc Trung Quốc) (2020). 民法典 (Điều 1134 đến Điều 1142). <https:/"
+   ],
+   "status": "reviewed"
+  },
+  "18": {
+   "file": "book/vi/18-nuoi-con-co-kinh-te-khong.md",
+   "hanzi_outside_tags": 92,
+   "hard_issues": [],
+   "items": 6,
+   "section": "18-养孩子划不划算.md",
+   "soft_issues": [
+    "mục 1: số có thể thiếu ['10800', '3600']",
+    "mục 3: số có thể thiếu ['1000', '5000']",
+    "dòng 10: còn chữ Hán -> - Chi phí: Không tốn tiền. Đến nơi đăng ký hộ khẩu (户口) của trẻ để nộp hồ sơ, đi một chuyến là xong.",
+    "dòng 11: còn chữ Hán -> - Nói đơn giản: Trẻ sinh từ ngày 1 tháng 1 năm 2025 trở đi và chưa tròn 3 tuổi thì được nhận khoản tiền này. C",
+    "dòng 12: còn chữ Hán -> - Lợi ích: Phương án do 中共中央办公厅 (Văn phòng Trung ương Đảng Cộng sản Trung Quốc) và 国务院办公厅 (Văn phòng Quốc vụ v"
+   ],
+   "status": "reviewed"
+  },
+  "19": {
+   "file": "book/vi/19-dang-lam-viec-thoi-viec-va-tai-nan-lao-dong.md",
+   "hanzi_outside_tags": 885,
+   "hard_issues": [],
+   "items": 18,
+   "section": "19-在职离职和工伤.md",
+   "soft_issues": [
+    "mục 15: số có thể thiếu ['1130040', '56502']",
+    "mục 16: số có thể thiếu ['1846']",
+    "mục 18: số có thể thiếu ['144000', '3480', '36000', '58080']",
+    "dòng 4: còn chữ Hán -> # 19. Đang làm việc, thôi việc và tai nạn lao động (工伤)",
+    "dòng 6: còn chữ Hán -> Phần này tính chuyện tiền bạc: tiền tính thế nào, chữ ký ra sao, thời hạn tính thế nào. Ba mục đầu nói về nhữn"
+   ],
+   "status": "reviewed"
+  },
+  "20": {
+   "file": "book/vi/20-cham-soc-tre-so-sinh-the-nao.md",
+   "hanzi_outside_tags": 323,
+   "hard_issues": [],
+   "items": 13,
+   "section": "20-刚出生的孩子怎么带.md",
+   "soft_issues": [
+    "mục 1: số có thể thiếu ['3500']",
+    "mục 9: số có thể thiếu ['2250']",
+    "mục 12: số có thể thiếu ['1162']",
+    "mục 13: số có thể thiếu ['48']",
+    "dòng 32: còn chữ Hán -> - Nguồn: 全国人大常委会 (Ủy ban Thường vụ Đại hội Đại biểu Nhân dân Toàn quốc) (2019). 疫苗管理法 (Luật Quản lý vắc-xin) ("
+   ],
+   "status": "reviewed"
+  },
+  "21": {
+   "file": "book/vi/21-di-nuoc-ngoai-du-lich-va-an-toan-o-nuoc-ngoai.md",
+   "hanzi_outside_tags": 434,
+   "hard_issues": [],
+   "items": 11,
+   "section": "21-出国旅行与境外安全.md",
+   "soft_issues": [
+    "mục 6: số có thể thiếu ['1000']",
+    "mục 10: số có thể thiếu ['5000']",
+    "dòng 14: còn chữ Hán -> - Nguồn: 国务院 (Quốc vụ viện) (2026). 关于出境入境管理的规定（国令第 841 号）. <https://www.gov.cn/zhengce/zhengceku/202607/conte",
+    "dòng 23: còn chữ Hán -> - Nguồn: 外交部 (Bộ Ngoại giao), 中国驻缅甸使领馆 (Đại sứ quán và các Tổng Lãnh sự quán Trung Quốc tại Myanmar) (2023). 关",
+    "dòng 32: còn chữ Hán -> - Nguồn: 国务院 (Quốc vụ viện) (2023). 领事保护与协助条例（国令第 763 号）. <https://www.gov.cn/zhengce/zhengceku/202307/content"
+   ],
+   "status": "reviewed"
+  },
+  "22": {
+   "file": "book/vi/22-cach-thu-gian-dia-diem-giai-tri-va-giai-toa.md",
+   "hanzi_outside_tags": 276,
+   "hard_issues": [],
+   "items": 10,
+   "section": "22-怎么放松.md",
+   "soft_issues": [
+    "mục 4: số có thể thiếu ['1000', '3000', '5000']",
+    "mục 6: số có thể thiếu ['14170']",
+    "dòng 14: còn chữ Hán -> - Nguồn: 国务院 (Quốc vụ viện Trung Quốc) (2006). 娱乐场所管理条例（国令第 458 号，第二十、二十一条）. <http://www.gov.cn/zhengce/zhengc",
+    "dòng 23: còn chữ Hán -> - Nguồn: 国务院 (Quốc vụ viện Trung Quốc) (2006). 娱乐场所管理条例（国令第 458 号，第二十九、五十三条）. <http://www.gov.cn/zhengce/zheng",
+    "dòng 32: còn chữ Hán -> - Nguồn: 国务院 (Quốc vụ viện Trung Quốc) (2006). 娱乐场所管理条例（国令第 458 号，第十四、三十、四十二条）. <http://www.gov.cn/zhengce/zhe"
+   ],
+   "status": "reviewed"
+  },
+  "23": {
+   "file": "book/vi/23-hoc-ky-nang-gi-thi-co-loi.md",
+   "hanzi_outside_tags": 1527,
+   "hard_issues": [],
+   "items": 23,
+   "section": "23-学什么技能划算.md",
+   "soft_issues": [
+    "mục 1: số có thể thiếu ['5000']",
+    "mục 2: số có thể thiếu ['10355']",
+    "mục 3: số có thể thiếu ['10', '14032', '15088', '15467', '213005258', '218360767']",
+    "mục 4: số có thể thiếu ['16000', '2000', '20000', '2300', '25000', '3300']",
+    "mục 7: số có thể thiếu ['1120']"
+   ],
+   "status": "reviewed"
+  },
+  "24": {
+   "file": "book/vi/24-kham-chua-benh-cach-bot-ton-tien-va-tranh-di.md",
+   "hanzi_outside_tags": 1259,
+   "hard_issues": [],
+   "items": 11,
+   "section": "24-看病.md",
+   "soft_issues": [
+    "dòng 8: còn chữ Hán -> Phần này căn cứ chủ yếu vào 《关于加快建设分级诊疗体系的若干措施》 do Văn phòng Quốc vụ viện Trung Quốc ban hành tháng 4 năm 2026",
+    "dòng 14: còn chữ Hán -> - Lợi ích: Người tham gia bảo hiểm y tế (医保) chuyển tuyến từng bước từ y tế cơ sở lên trên có thể được tính li",
+    "dòng 16: còn chữ Hán -> - Nguồn: 国务院办公厅 (Văn phòng Quốc vụ viện Trung Quốc) (2026). 关于加快建设分级诊疗体系的若干措施. <https://www.gov.cn/zhengce/zhe",
+    "dòng 25: còn chữ Hán -> - Nguồn: 国务院办公厅 (Văn phòng Quốc vụ viện Trung Quốc) (2026). 关于加快建设分级诊疗体系的若干措施. <https://www.gov.cn/zhengce/zhe",
+    "dòng 34: còn chữ Hán -> - Nguồn: 国务院办公厅 (Văn phòng Quốc vụ viện Trung Quốc) (2026). 关于加快建设分级诊疗体系的若干措施. <https://www.gov.cn/zhengce/zhe"
+   ],
+   "status": "reviewed"
+  },
+  "25": {
+   "file": "book/vi/25-can-lam-gi-sau-khi-nguoi-than-qua-doi.md",
+   "hanzi_outside_tags": 1139,
+   "hard_issues": [],
+   "items": 10,
+   "section": "25-人走了以后要办什么.md",
+   "soft_issues": [
+    "dòng 6: còn chữ Hán -> Tính theo: Tiền bạc. Phần này chỉ nói về cách làm thủ tục, cách lấy tiền, bao gồm việc cần làm ngay khi người ",
+    "dòng 8: còn chữ Hán -> Phần tang lễ căn cứ theo 《殡葬管理条例》 bản mới, thi hành từ ngày 30 tháng 3 năm 2026. Mức trợ cấp mai táng và trợ c",
+    "dòng 13: còn chữ Hán -> - Nói đơn giản: Người mất do tai nạn, không rõ nguyên nhân, hoặc sống một mình lâu ngày mới được phát hiện thì",
+    "dòng 16: còn chữ Hán -> - Nguồn: 全国人大常委会 (Ủy ban Thường vụ Đại hội Đại biểu Nhân dân Toàn quốc) (1958). 中华人民共和国户口登记条例 (Điều 8). <http:",
+    "dòng 22: còn chữ Hán -> - Nói đơn giản: Mất tại bệnh viện thì đến cơ sở phụ trách cứu chữa để xin giấy chứng tử. Mất tự nhiên tại nhà "
+   ],
+   "status": "reviewed"
+  },
+  "26": {
+   "items": 11,
+   "section": "26-做一个网站或平台.md",
+   "status": "missing"
+  },
+  "27": {
+   "items": 16,
+   "section": "27-怀孕和生产.md",
+   "status": "missing"
+  },
+  "28": {
+   "items": 8,
+   "section": "28-别为了外形把身体搞坏.md",
+   "status": "missing"
+  },
+  "29": {
+   "items": 13,
+   "section": "29-遭遇重大打击之后.md",
+   "status": "missing"
+  },
+  "30": {
+   "items": 17,
+   "section": "30-上学以后的孩子.md",
+   "status": "missing"
+  },
+  "31": {
+   "items": 16,
+   "section": "31-十八岁之后有哪几条路.md",
+   "status": "missing"
+  },
+  "32": {
+   "items": 10,
+   "section": "32-出国留学.md",
+   "status": "missing"
+  },
+  "33": {
+   "items": 20,
+   "section": "33-残疾之后怎么活.md",
+   "status": "missing"
+  },
+  "34": {
+   "items": 11,
+   "section": "34-家里的常备药别吃出事.md",
+   "status": "missing"
+  }
+ },
+ "description": "Trạng thái bản dịch tiếng Việt. Sinh ra bởi tools/translate-vi/make_status.py.",
+ "docs": {},
+ "generated_by": "tools/translate-vi/make_status.py",
+ "model": "gemini-3.8-flash",
+ "readme": {}
+}
