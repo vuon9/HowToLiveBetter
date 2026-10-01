@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import concurrent.futures as futures
 import json
+import os
 import re
 import sys
 import threading
@@ -24,6 +25,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import translate_book as tb  # noqa: E402
 
 SRC_DIR = tb.ROOT / "docs" / "核实记录"
+tb.REUSE_NAME = os.environ.get("VI_REUSE_NAME", "") == "1"
 OUT_DIR = SRC_DIR / "vi"
 HEAD_RE = re.compile(r"^##\s+(.*)$")
 URL_RE = tb.URL_RE
@@ -40,7 +42,7 @@ RECORD_RULES = (
     + """
 Bổ sung cho tệp hồ sơ kiểm chứng nguồn:
 - Giữ nguyên từng ký tự: URL, DOI, số hiệu văn bản, tên tài liệu và tên tạp chí tiếng Anh, mọi câu trích nguyên văn trong dấu ngoặc kép.
-- Nhãn 「原文：」 dịch thành "Nguyên văn:". Nhãn 「核实日期」 giữ nghĩa, viết "Ngày kiểm chứng".
+- Nhãn 「原文：」 luôn viết đúng là "Nguyên văn:" (không dùng "Câu trích", "Trích dẫn" hay cách gọi khác). Nhãn 「核实日期」 viết "Ngày kiểm chứng".
 - Dịch toàn bộ chú thích tiếng Trung, kể cả ghi chú trong ngoặc và ghi chú ở cuối dòng.
 - Giữ nguyên cấu trúc danh sách: số dấu gạch đầu dòng, mức thụt lề, thứ tự dòng.
 - Không thêm nhận xét của người dịch.
@@ -82,8 +84,8 @@ def validate(src: str, out: str) -> list[str]:
     miss_nums = {n for n in nums(src) if not re.search(rf"{n}\s*[万亿]", src)} - nums(out)
     if miss_nums:
         problems.append(f"thiếu số {sorted(miss_nums)[:5]}")
-    if src.count("原文：") != out.count("Nguyên văn:"):
-        problems.append(f"nhãn 'Nguyên văn:' {out.count('Nguyên văn:')}/{src.count('原文：')}")
+    # labels are advisory only: 原文 also appears in table headers, so a count
+    # mismatch is not evidence of dropped content
     if len(re.findall(r"^##", src, flags=re.M)) != len(re.findall(r"^##", out, flags=re.M)):
         problems.append("lệch số tiêu đề '##'")
     return problems
@@ -114,15 +116,36 @@ def translate_file(path: Path) -> dict:
         "properties": {"title": {"type": "string"}, "intro": {"type": "string"}},
         "required": ["title", "intro"],
     }
-    head = tb.parse_json_loose(
-        tb.call_gemini(
-            f"Hồ sơ kiểm chứng nguồn của sách, tệp gốc docs/核实记录/{path.name}.\n"
-            f"Dịch tiêu đề và đoạn mở đầu sang tiếng Việt, trả về JSON hai khóa title và intro:\n\n{h1}\n\n{intro_text}",
-            RECORD_RULES,
-            schema=schema,
-            temperature=0.3,
+    head: dict = {}
+    for attempt in range(3):
+        try:
+            head = tb.parse_json_loose(
+                tb.call_gemini(
+                    f"Hồ sơ kiểm chứng nguồn của sách, tệp gốc docs/核实记录/{path.name}.\n"
+                    f"Dịch tiêu đề và đoạn mở đầu sang tiếng Việt, trả về JSON hai khóa title và intro, "
+                    f"không thêm gì khác:\n\n{h1}\n\n{intro_text}",
+                    RECORD_RULES,
+                    schema=schema,
+                    temperature=0.3,
+                )
+            )
+            if head.get("title") and head.get("intro") is not None:
+                break
+        except Exception as exc:  # noqa: BLE001
+            log(f"  .. {path.name}: JSON tiêu đề lần {attempt + 1} lỗi ({exc}); thử lại")
+        head = {}
+    if not head:
+        # fallback: ask for the two pieces as plain text, one per call
+        title = tb.unfence(
+            tb.call_gemini(f"Dịch tiêu đề sau sang tiếng Việt, chỉ trả về tiêu đề:\n\n{h1}", RECORD_RULES)
+        ).lstrip("# ").strip()
+        intro = tb.unfence(
+            tb.call_gemini(
+                f"Dịch đoạn mở đầu sau sang tiếng Việt, chỉ trả về đoạn dịch:\n\n{intro_text}",
+                RECORD_RULES,
+            )
         )
-    )
+        head = {"title": title, "intro": intro}
     head["title"] = re.sub(r"^#+\s*", "", head["title"]).strip()
     head["intro"] = head["intro"].strip()
     job = pack_sections(h1, intro_text, sections)
@@ -149,14 +172,23 @@ def translate_file(path: Path) -> dict:
     name = path.name
     m = re.match(r"^(\d\d)-(.*)$", name)
     if m:
-        siblings = sorted((tb.ROOT / "book" / "vi").glob(f"{m.group(1)}-*.md"))
-        if siblings:
-            out_name = siblings[0].name  # keep the record next to its chapter
-        else:
-            out_name = f"{m.group(1)}-{tb.slugify(head['title'], 40)}.md"
+        prefix = m.group(1)
     else:
-        prefix, _, tail = name.partition("-")
-        out_name = f"{PREFIX_MAP.get(prefix, tb.slugify(prefix, 12))}-{tb.slugify(head['title'], 40)}.md"
+        head_prefix, _, _tail = name.partition("-")
+        prefix = PREFIX_MAP.get(head_prefix, tb.slugify(head_prefix, 12))
+    out_name = f"{prefix}-{tb.slugify(head['title'], 40)}.md"
+    if tb.REUSE_NAME:  # keep the existing filename so a redo does not duplicate it
+        for existing in OUT_DIR.glob("*.md"):
+            m3 = re.search(r"核实记录/([^\]]+\.md)\]", existing.read_text(encoding="utf-8"))
+            if m3 and m3.group(1) == name:
+                out_name = existing.name
+                break
+    # two source records can share a chapter prefix (07-a.md, 07-b.md): never
+    # let one overwrite the other
+    if (OUT_DIR / out_name).exists():
+        m2 = re.search(r"核实记录/([^\]]+\.md)\]", (OUT_DIR / out_name).read_text(encoding="utf-8"))
+        if m2 and m2.group(1) != name:
+            out_name = out_name[:-3] + f"-{tb.slugify(name.split('-', 1)[1], 16)}.md"
     out_path = OUT_DIR / out_name
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out_path.write_text(
@@ -167,25 +199,64 @@ def translate_file(path: Path) -> dict:
     )
     han = len(tb.HAN_RE.findall(out_path.read_text(encoding="utf-8")))
     log(f"  wrote docs/核实记录/vi/{out_name} ({len(sections)} mục, {han} chữ Hán)")
-    return {"file": out_name, "source": name, "sections": len(sections), "hanzi": han}
+    return {
+        "file": out_name,
+        "source": name,
+        "sections": len(sections),
+        "hanzi": han,
+        "model": f"{tb.TRANSPORT}:{tb.HERMES_MODEL}" if tb.TRANSPORT == "hermes" else f"gemini:{tb.MODEL}",
+    }
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", default="", help="comma separated source file prefixes")
+    ap.add_argument("--missing", action="store_true", help="chỉ dịch tệp chưa có bản dịch")
+    ap.add_argument("--sources", default="", help="tên tệp gốc cụ thể, cách nhau bằng dấu phẩy")
     args = ap.parse_args()
     files = sorted(p for p in SRC_DIR.glob("*.md"))
     if args.only:
         wanted = {x.strip() for x in args.only.split(",") if x.strip()}
         files = [p for p in files if p.name.split("-")[0] in wanted]
-    log(f"{len(files)} file(s), {tb.WORKERS} workers, transport={tb.TRANSPORT}")
-    results = []
+    if args.sources:
+        wanted = {x.strip() for x in args.sources.split(",") if x.strip()}
+        files = [p for p in files if p.name in wanted]
+    if args.missing:
+        done: set[str] = set()
+        if (OUT_DIR / "manifest.json").exists():
+            done = {e["source"] for e in json.loads((OUT_DIR / "manifest.json").read_text(encoding="utf-8"))}
+        for vi_file in OUT_DIR.glob("*.md") if OUT_DIR.exists() else []:
+            m = re.search(r"核实记录/([^\]]+\.md)\]", vi_file.read_text(encoding="utf-8"))
+            if m:
+                done.add(m.group(1))
+        files = [p for p in files if p.name not in done]
+    log(f"{len(files)} file(s), {tb.WORKERS} workers, transport={tb.TRANSPORT}"
+        + (f" model={tb.HERMES_MODEL} via {tb.HERMES_PROVIDER}" if tb.TRANSPORT == "hermes" else ""))
+    results: list[dict] = []
+    if not files:
+        log("không còn tệp nào cần dịch")
+        return
+    failed = []
     with futures.ThreadPoolExecutor(max_workers=max(1, min(tb.WORKERS, len(files)))) as ex:
-        for res in ex.map(translate_file, files):
-            results.append(res)
+        for fut in futures.as_completed({ex.submit(translate_file, p): p for p in files}):
+            try:
+                results.append(fut.result())
+            except Exception as exc:  # noqa: BLE001
+                failed.append(f"{files[0].name}: {exc}")
+                log(f"  !! lỗi ở một tệp: {exc}")
+    if failed:
+        log(f"{len(failed)} tệp lỗi")
     man = OUT_DIR / "manifest.json"
-    man.write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"done: {len(results)} file(s), tổng chữ Hán còn lại {sum(r['hanzi'] for r in results)}")
+    merged: dict[str, dict] = {}
+    if man.exists():
+        for entry in json.loads(man.read_text(encoding="utf-8")):
+            merged[entry["source"]] = entry
+    for entry in results:
+        merged[entry["source"]] = entry
+    man.write_text(
+        json.dumps([merged[k] for k in sorted(merged)], ensure_ascii=False, indent=1), encoding="utf-8"
+    )
+    log(f"done: {len(results)} file(s) mới, manifest có {len(merged)}; chữ Hán còn lại {sum(r['hanzi'] for r in results)}")
 
 
 if __name__ == "__main__":

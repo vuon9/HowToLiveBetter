@@ -1,0 +1,36 @@
+> Bản dịch không chính thức của [docs/核实记录/追加-燃气毒蘑菇车险预付消费与养犬.md](../../../docs/核实记录/追加-燃气毒蘑菇车险预付消费与养犬.md). Nếu có khác biệt, bản gốc tiếng Trung là bản có hiệu lực.
+[← Về mục lục](../../../README.vi.md)
+
+# Hồ sơ kiểm chứng: Bổ sung 8 mục qua các phần
+
+Ngày kiểm chứng: 2026-09-07. Toàn sách 346 → 354 mục. Phần 1 +2, phần 5 +5, phần 8 +1.
+
+Đợt này bổ sung các mục dự kiến đã liệt kê trong lần rà soát trước. Mọi tài liệu tiếng Trung đều tìm kiếm bằng `searchfield=title` (bài học từ đợt trước), Bộ luật Dân sự và Luật Bảo vệ thông tin cá nhân dùng trang toàn văn có sẵn trong kho lưu trữ này của 最高检 (Viện kiểm sát nhân dân tối cao Trung Quốc) và 中国人大网 (trang web Đại hội đại biểu nhân dân toàn quốc Trung Quốc).
+
+## I. Văn bản gốc đã đối chiếu từng mục
+| Nguồn | Văn bản gốc đã đối chiếu | Dùng ở đâu |
+| --- | --- | --- |
+| 《城镇燃气管理条例》（国务院令第 583 号）<http://www.gov.cn/gongbao/content/2010/content_1758214.htm> | Điều 27 「燃气用户应当遵守安全用气规则，使用合格的燃气燃烧器具和气瓶，及时更换国家明令淘汰或者使用年限已届满的燃气燃烧器具、连接管等」; Điều 28 cấm 「（一）擅自操作公用燃气阀门；（二）将燃气管道作为负重支架或者接地引线；（三）安装、使用不符合气源要求的燃气燃烧器具；（四）擅自安装、改装、拆除户内燃气设施和燃气计量装置；（五）在不具备安全条件的场所使用、储存燃气」; Điều 20 đơn vị kinh doanh khí đốt không được 「（六）要求燃气用户购买其指定的产品或者接受其提供的服务」; Điều 29 khiếu nại 「有关部门应当自收到投诉之日起15个工作日内予以处理」 | Phần 1 mục "Đổi ống mềm và bếp gas khi hết hạn" |
+| Mushroom Poisoning Outbreaks — China, 2025. China CDC Weekly (2026). doi:10.46234/ccdcw2026.120 (PMC13349670, truy cập mở) | 「In 2025, China CDC investigated 828 mushroom poisoning incidents across 27 provincial-level administrative divisions (PLADs), affecting 2,165 individuals and causing 13 deaths - a case fatality rate of 0.6%, the lowest of the past six years. In total, 138 poisonous mushroom species were identified, including 34 newly recorded in poisoning incidents in China.」「From 2019 to 2024, the annual number of incidents ranged from 276 to 676, and the case fatality rate ranged from 0.87% to 2.86%.」 | Phần 1 mục "Không hái, không mua, không ăn nấm dại" |
+| Cùng tạp chí, báo cáo thường niên 2024 doi:10.46234/ccdcw2025.106 | 「In 2024, China CDC investigated 599 mushroom poisoning incidents across 28 PLADs. These incidents affected 1,486 patients and resulted in 13 deaths, with a case fatality rate of 0.87%.」 | Như trên, dùng để so sánh qua từng năm |
+| 《机动车交通事故责任强制保险条例》（国务院令第 462 号，第 618 号令修改）<http://www.gov.cn/gongbao/content/2012/content_2131962.htm> | Điều 23 「机动车交通事故责任强制保险在全国范围内实行统一的责任限额。责任限额分为死亡伤残赔偿限额、医疗费用赔偿限额、财产损失赔偿限额以及被保险人在道路交通事故中无责任的赔偿限额。」「责任限额由保监会会同国务院公安部门、国务院卫生主管部门、国务院农业主管部门规定。」 Điều 21 bồi thường trong hạn mức; Điều 39 không tham gia bảo hiểm 「扣留机动车……处依照规定投保最低责任限额应缴纳的保险费的2倍罚款」 | Phần 5 mục "Mua đủ bảo hiểm trách nhiệm dân sự bên thứ ba" |
+| 《消费者权益保护法实施条例》（国务院令第 778 号）<https://www.gov.cn/zhengce/zhengceku/202403/content_6940159.htm> | Điều 22 tiền trả trước phải lập hợp đồng bằng văn bản, thỏa thuận phương thức hoàn trả; 「经营者未按照约定提供商品或者服务的，应当按照消费者的要求履行约定或者退还预付款」; 「经营者出现重大经营风险……应当停止收取预付款。经营者决定停业或者迁移服务场所的，应当提前告知消费者……有权要求经营者继续履行……或者要求退还未消费的预付款余额」; Điều 50 điều khoản xử phạt 「处以违法所得1倍以上10倍以下的罚款，没有违法所得的，处以50万元以下的罚款」; Điều 27 tiền đặt cọc 「应当事先与消费者约定退还押金的方式、程序和时限，不得对退还押金设置不合理条件」 | Phần 5 mục "Trả tiền trước phải ký hợp đồng bằng văn bản" |
+| Như trên | 「直播营销平台经营者应当建立健全消费者权益保护制度，明确消费争议解决机制。发生消费争议的，直播营销平台经营者应当根据消费者的要求提供直播间运营者、直播营销人员相关信息以及相关经营活动记录等必要信息。」 Ngoài ra: không được tùy tiện mở rộng phạm vi hàng hóa không áp dụng đổi trả hàng không cần lý do, 「不得将不适用无理由退货作为消费者默认同意的选项。未经消费者确认，经营者不得拒绝无理由退货」; Điều 10 tự động gia hạn 「应当在消费者接受服务前和自动展期、自动续费等日期前，以显著方式提请消费者注意」 | Phần 5 mục "Hàng mua qua phòng phát trực tiếp gặp sự cố" |
+| 国办发〔2021〕14 号《关于建立健全职工基本医疗保险门诊共济保障机制的指导意见》<https://www.gov.cn/zhengce/zhengceku/2021-04/22/content_5601280.htm> | Khoản (5) 「个人账户……可以用于支付参保人员本人及其配偶、父母、子女在定点医疗机构就医发生的由个人负担的医疗费用，以及在定点零售药店购买药品、医疗器械、医用耗材发生的由个人负担的费用。探索个人账户用于配偶、父母、子女参加城乡居民基本医疗保险等的个人缴费。个人账户不得用于公共卫生费用、体育健身或养生保健消费等不属于基本医疗保险保障范围的支出。」 | Phần 5 mục "Tài khoản cá nhân có thể dùng cho người nhà" |
+| 《民法典》，最高检 (Viện Kiểm sát Nhân dân Tối cao Trung Quốc) đăng tải lại toàn văn <https://www.spp.gov.cn/spp/fl/202006/t20200602_463888.shtml> | Điều 19, Điều 20 phân loại năng lực hành vi; Điều 145 「限制民事行为能力人实施的……其他民事法律行为经法定代理人同意或者追认后有效」「法定代理人未作表示的，视为拒绝追认」 | Phần 5 mục "Trẻ nạp tiền chơi game hoặc tặng quà trên điện thoại" |
+| Như trên | Điều 1245 「饲养的动物造成他人损害的，动物饲养人或者管理人应当承担侵权责任；但是，能够证明损害是因被侵权人故意或者重大过失造成的，可以不承担或者减轻责任。」 Điều 1246 「违反管理规定，未对动物采取安全措施造成他人损害的……能够证明损害是因被侵权人故意造成的，可以减轻责任。」 Điều 1247 nuôi giống chó dữ bị cấm gây thương tích cho người khác thì không có lý do miễn trách nhiệm; Điều 1249 trong thời gian bỏ rơi, sổng chuồng thì người nuôi ban đầu chịu trách nhiệm | Phần 8 mục "Nuôi chó bắt buộc phải xích" |
+
+## II. Chưa thu thập được
+| Cần tìm | Kết quả | Hướng xử lý |
+| --- | --- | --- |
+| Số tiền cụ thể của từng hạn mức trách nhiệm hiện hành trong bảo hiểm trách nhiệm bắt buộc xe cơ giới | Nghị định giao thẩm quyền quy định hạn mức cho cơ quan giám sát tài chính quy định riêng, bản thông cáo không nằm trong kho văn bản chính sách của Quốc vụ viện Trung Quốc | Mục ghi TODO, phần nội dung chỉ trình bày cơ cấu không nêu con số |
+| Các bước xử lý tiêu chuẩn sau khi ngửi thấy mùi khí gas | Nghị định chỉ quy định quy tắc dùng khí gas và các hành vi bị cấm, không có phần xử lý tại chỗ; chưa tìm thấy văn bản gốc chính thức để đối chiếu từng chữ | Phần ghi chú ghi TODO |
+| 《国家免疫规划疫苗儿童免疫程序及说明（2021 年版）》 | Kho văn bản chính sách của Quốc vụ viện Trung Quốc không có kết quả phù hợp; nhc.gov.cn trả về HTTP 412 (chặn tự động) | Chưa viết mục này |
+| Án lệ điển hình chính thức về lừa đảo dưỡng lão | Lần này vẫn chưa thu thập được | Chưa viết mục này |
+
+## III. Tính theo và độ lớn lợi ích
+- Nấm độc, thiết bị dùng khí gas xếp mức "Tỉ lệ tử vong, lớn": can thiệp nhằm tránh hoàn toàn một yếu tố nguy cơ gây chết người, không phải giảm một vài phần trăm.
+- Mục bảo hiểm bắt buộc xe cơ giới xếp mức "Tiền bạc, lớn", và là một trong số ít mục trong toàn bộ sách có mức "Tiền = nhiều" (phí bảo hiểm trách nhiệm bên thứ ba thương mại hằng năm từ hàng nghìn nhân dân tệ trở lên): khoản này đổi lấy việc phòng ngừa rủi ro đuôi, vì phần bồi thường vượt quá hạn mức bảo hiểm bắt buộc sẽ không có bất kỳ nguồn nào chi trả đỡ.
+- Tiền trả trước, bán hàng qua phát trực tiếp, dùng chung tài khoản cá nhân, trẻ vị thành niên nạp tiền đều xếp mức "Tiền bạc, vừa": số tiền dao động từ vài trăm đến hàng chục nghìn nhân dân tệ.
+- Trách nhiệm nuôi chó xếp mức "Tiền bạc, lớn": chi phí y tế cộng tiền bồi thường ngày công nghỉ việc kèm vắc xin và huyết thanh kháng độc, mỗi vụ từ hàng chục nghìn nhân dân tệ trở lên là bình thường, mức thiệt hại khi tổn thương trẻ em còn lớn hơn.
+- Mục trẻ vị thành niên nạp tiền xếp chi phí thời gian ở mức "Vừa": hao phí thực tế nằm ở khâu thu thập chứng cứ và làm việc qua lại nhiều lần với nền tảng, không nằm ở việc đưa ra yêu cầu ban đầu.

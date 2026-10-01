@@ -1,0 +1,35 @@
+> Bản dịch không chính thức của [docs/核实记录/追加-issue37职称.md](../../../docs/核实记录/追加-issue37职称.md). Nếu có khác biệt, bản gốc tiếng Trung là bản có hiệu lực.
+[← Về mục lục](../../../README.vi.md)
+
+# issue #37: Đăng ký chức danh nghề nghiệp thế nào, thi ra sao, tránh bẫy gì (2026-09-27)
+
+Nguồn nhiệm vụ: GitHub issue #37 (superman-death), hỏi xem có thể bổ sung thông tin về chức danh nghề nghiệp không: cách lấy, cần chuẩn bị hồ sơ gì, đến cơ quan nào.
+
+## Phạm vi được xác định thế nào
+Trước đây toàn bộ sách không có mục về chức danh nghề nghiệp (职称), chỉ nhắc thoáng qua ở phần 24, 31, 32, 33. Phần 23, mục 8, 11 nói về chứng chỉ hành nghề và bậc kỹ năng, không phải chức danh nghề nghiệp.
+
+Không mở phần mới, bổ sung 4 mục vào cuối phần 23 (mục 20 đến 23), không chèn vào giữa để tránh làm trượt số thứ tự từ mục 14 đến 19 (các mục này được dẫn lại hơn mười lần ở những nơi khác).
+
+Mục "Cần chuẩn bị giấy tờ gì" không viết thành danh sách. Chức danh nghề nghiệp chia thành 27 nhóm ngành, danh mục hồ sơ, thời gian nộp và điều kiện thành tích do thông báo xét duyệt hằng năm của từng nhóm ngành và từng tỉnh quy định, toàn quốc không có bản thống nhất. Viết từng mục sẽ biến thành hướng dẫn thủ tục địa phương khó cập nhật. Văn bản chính chỉ định hướng: trước hết tìm thông báo xét duyệt trong năm của Sở Nhân lực và An sinh xã hội (人社厅) tỉnh mình.
+
+## Đối chiếu từng mục
+| Áp dụng cho mục nào | Nguồn | Phương thức kiểm tra | Ý chính văn bản gốc |
+|---|---|---|---|
+| 23-20, 22, 23 | 人社部 (Bộ Nhân lực và An sinh xã hội) 令第 40 号《职称评审管理暂行规定》, gov.cn 国务院 (Quốc vụ viện) Công báo | Tải toàn văn đối chiếu từng chữ | Điều 2 áp dụng cho doanh nghiệp, đơn vị sự nghiệp, đoàn thể xã hội, tổ chức kinh tế cá thể và người làm nghề tự do, kết quả là căn cứ quan trọng để tuyển dụng, đánh giá, thăng chức; Điều 13 người đã nghỉ hưu không được đăng ký xét duyệt, viên chức đơn vị sự nghiệp trong thời gian chịu hình thức kỷ luật từ ghi lỗi trở lên không được đăng ký xét duyệt; Điều 14 thông thường đăng ký xét duyệt theo từng cấp; Điều 15 thông tin kiểm tra được trực tuyến thì không được yêu cầu bổ sung giấy tờ chứng minh; Điều 16 đơn vị phải công khai danh sách tối thiểu 5 ngày làm việc; Điều 17 nhân sự khối ngoài công lập và người làm nghề tự do do cơ quan dịch vụ nhân sự xét duyệt và tiến cử; Điều 18 thông báo bổ sung hồ sơ một lần; Điều 29 khi luân chuyển công tác cần xét duyệt lại hoặc công nhận; Điều 39 thu hồi chức danh nghề nghiệp, ghi vào cơ sở dữ liệu hồ sơ trung thực, đưa vào nền tảng chia sẻ thông tin tín nhiệm toàn quốc, thời hạn lưu hồ sơ 3 năm; Điều 44 có hiệu lực từ ngày 2019-09-01 |
+| 23-20 | 人社厅 (Sở Nhân lực và An sinh xã hội)《关于进一步做好民营企业职称工作的通知》(2020), gov.cn | Tải toàn văn đối chiếu từng chữ | Đăng ký xét duyệt tại nơi có quan hệ lao động; điểm tiếp nhận dịch vụ, tổ chức dịch vụ trung gian nhân lực, hội công thương, hiệp hội ngành nghề thương hội, hội học thuật; người được cử đi công tác ngoại tỉnh liên tục từ 1 năm trở lên có thể đăng ký xét duyệt tại nơi công tác |
+| 23-20, 22 | 新华社 (Tân Hoa Xã) 2024-10-09《职称评审进入高峰，信息如何查？》, gov.cn đăng lại | Tải toàn văn đối chiếu từng chữ | 27 nhóm chức danh nghề nghiệp; tra cứu qua trang web 12333, ứng dụng di động, trang web chính thức của 人社部 (Bộ Nhân lực và An sinh xã hội), tài khoản WeChat; người làm nghề tự do tham gia xét duyệt tại cơ quan nhân sự địa phương theo nguyên tắc địa bàn |
+| 23-20, 21, 23 | 中办 (Văn phòng Trung ương Đảng), 国办 (Văn phòng Quốc vụ viện)《关于深化职称制度改革的意见》(2016), gov.cn 国务院 (Quốc vụ viện) Công báo 2017 年第 3 号 | Tải toàn văn đối chiếu từng chữ | (VI) Đạt chứng chỉ hành nghề là có thể công nhận chức danh nghề nghiệp tương ứng, các chuyên ngành đã thi chung toàn quốc cấp sơ cấp và trung cấp không còn tổ chức xét duyệt; (VIII) Không lấy bài báo khoa học làm điều kiện bắt buộc đối với nhân tài định hướng ứng dụng, ngoại ngữ và tin học xét chức danh không còn yêu cầu đồng loạt; (XI) Nhân tài tay nghề cao có thể tham gia xét duyệt nhóm ngành kỹ thuật, công chức không được tham gia xét duyệt; (XV) Đơn vị sự nghiệp xét duyệt trong phạm vi tỷ lệ cơ cấu vị trí việc làm, các trường hợp còn lại có thể tách rời giữa xét duyệt và bổ nhiệm |
+| 23-21 | 人社部 (Bộ Nhân lực và An sinh xã hội), 财政部 (Bộ Tài chính)《关于深化会计人员职称制度改革的指导意见》(2019), gov.cn | Tải toàn văn đối chiếu từng chữ | Kế toán viên sơ cấp, kế toán viên thi chung toàn quốc; kế toán viên cao cấp kết hợp thi và xét, kế toán viên cao cấp chính thường xét duyệt; kế toán viên sơ cấp yêu cầu bằng tốt nghiệp trung học phổ thông trở lên; kế toán viên yêu cầu bằng tiến sĩ, hoặc thạc sĩ đủ 1 năm, bằng cử nhân thứ hai hoặc lớp nghiên cứu sinh đủ 2 năm, bằng đại học đủ 4 năm, bằng cao đẳng đủ 5 năm; công chức được thi nhưng không được xét |
+| 23-21 | 财政部 (Bộ Tài chính) et al.《关于做好会计专业学位与会计专业技术资格衔接有关工作的通知》(2024), gov.cn | Tải toàn văn đối chiếu từng chữ | Người có bằng thạc sĩ, tiến sĩ chuyên ngành kế toán khi đăng ký thi cấp trung cấp được miễn thi môn 《财务管理》 |
+| 23-22 | 人社部 (Bộ Nhân lực và An sinh xã hội)《职称评审监管暂行办法》(2024), gov.cn | Tải toàn văn đối chiếu từng chữ | Điều 5 bốn nhóm hành vi vi phạm của người đăng ký xét duyệt; Điều 15 điều tra xử lý trang web giả mạo, tuyên truyền sai sự thật, bẫy hợp đồng, xét duyệt giả mạo, chứng chỉ giả của các tổ chức trung gian; Điều 17 cam kết không đúng sự thật thì trong 3 năm không được đăng ký xét duyệt, lưu hồ sơ 3 năm, xác minh đúng sẽ thu hồi ngay lập tức; Điều 27 trường hợp nghiêm trọng chuyển cơ quan chức năng xử lý |
+| 23-22 | 人社厅 (Sở Nhân lực và An sinh xã hội)《关于进一步做好职称评审工作的通知》(2022), gov.cn | Tải toàn văn đối chiếu từng chữ | Hội đồng xét duyệt chưa qua phê duyệt đăng ký thì kết quả xét duyệt không được đưa vào hệ thống tra cứu và xác thực thông tin xét duyệt chức danh nghề nghiệp toàn quốc |
+
+## Nội dung không đưa vào
+- Bảng đối chiếu cụ thể về "mối quan hệ tương ứng giữa chứng chỉ hành nghề và chức danh nghề nghiệp": tìm theo tiêu đề trong kho văn bản chính sách không có, chỉ dẫn quy định mang tính nguyên tắc trong văn bản ý kiến năm 2016.
+- Việc xét chức danh nghề nghiệp để tính điểm nhập hộ khẩu (户口), trợ cấp nhân tài: chính sách các địa phương khác nhau, không tìm thấy văn bản gốc áp dụng toàn quốc, trong ghi chú của mục 23 không đưa vào.
+- Việc các nhóm ngành có thi chung hay không: chỉ kiểm tra đối chiếu một nhóm ngành kế toán, các nhóm ngành khác để người đọc tự tra cứu "Ý kiến hướng dẫn về việc đi sâu cải cách chế độ chức danh nghề nghiệp..." của nhóm ngành đó.
+
+## Mức độ lợi ích được xác định thế nào
+- Mục 20, 21: tính theo thời gian, hiệu quả là giảm bớt công sức đi lại lòng vòng một lần, đối chiếu theo ngưỡng xếp vào mức "nhỏ".
+- Mục 22: tính theo quyền tự do, hậu quả là bị thu hồi chức danh nghề nghiệp, lưu hồ sơ vi phạm tín nhiệm 3 năm, không được đăng ký xét duyệt trong 3 năm, tính chất gần với xử lý hành chính, đối chiếu theo tiêu chí "tránh bị xử phạt hành chính" xếp vào mức "vừa".
+- Mục 23: tính theo tiền bạc, nhưng trong văn bản không có con số "được xét duyệt thì tăng bao nhiêu", dựa trên đánh giá xếp vào mức "nhỏ", mức bằng chứng B.

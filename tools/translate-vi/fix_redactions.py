@@ -102,6 +102,31 @@ def fix_prose(src_path: Path, vi_path: Path) -> int:
     return changed
 
 
+def fix_digit_placeholders(src_path: Path, vi_path: Path) -> int:
+    """Fallback: put the original digit runs back where [PHONE] stands.
+
+    Used when a placeholder sits inside a URL whose prefix does not literally
+    match the source (for example the Europe PMC query form). The original
+    digit runs that are missing from the translation are restored in order.
+    """
+    src_text = src_path.read_text(encoding="utf-8")
+    text = vi_path.read_text(encoding="utf-8")
+    hits = list(PLACEHOLDER_RE.finditer(text))
+    if not hits:
+        return 0
+    runs = [r for r in DIGIT_RUN_RE.findall(src_text) if r not in text]
+    if len(runs) < len(hits):
+        return 0
+    out, last = [], 0
+    for i, m in enumerate(hits):
+        out.append(text[last : m.start()])
+        out.append(runs[i])
+        last = m.end()
+    out.append(text[last:])
+    vi_path.write_text("".join(out), encoding="utf-8")
+    return len(hits)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
@@ -128,6 +153,26 @@ def main() -> None:
             n = len(PLACEHOLDER_RE.findall(txt)) if args.dry_run else fix_prose(src, vi)
             if n:
                 print(f"{vi.name} (so với docs/{src.name}): {n} chỗ")
+            total += n
+    man_path = ROOT / "docs" / "核实记录" / "vi" / "manifest.json"
+    if man_path.exists():
+        import json as _json
+
+        for entry in _json.loads(man_path.read_text(encoding="utf-8")):
+            src = ROOT / "docs" / "核实记录" / entry["source"]
+            vi = ROOT / "docs" / "核实记录" / "vi" / entry["file"]
+            if not vi.exists():
+                continue
+            txt = vi.read_text(encoding="utf-8")
+            if not PLACEHOLDER_RE.search(txt):
+                continue
+            if args.dry_run:
+                n = len(PLACEHOLDER_RE.findall(txt))
+            else:
+                n = fix_prose(src, vi)
+                n += fix_digit_placeholders(src, vi)
+            if n:
+                print(f"docs/核实记录/vi/{vi.name}: {n} chỗ")
             total += n
     if (ROOT / "README.vi.md").exists():
         txt = (ROOT / "README.vi.md").read_text(encoding="utf-8")

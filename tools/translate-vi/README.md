@@ -58,6 +58,16 @@ biến môi trường `GEMINI_API_KEY` / `VI_API_KEY`. Có thể đổi `VI_MODE
 (mặc định `gemini-3.8-flash`), `VI_WORKERS` (mặc định 10) và `VI_CHUNK_CHARS`
 (mặc định 2600).
 
+Ba đường gọi model, chọn bằng `VI_TRANSPORT`:
+
+- `gemini` (mặc định): gọi thẳng Google bằng khóa trong `~/.hermes/config.yaml`.
+- `hermes`: gọi qua provider đã cấu hình trong Hermes, ví dụ
+  `VI_HERMES_MODEL=deepseek-flash VI_HERMES_PROVIDER=deepseek`. Đây là đường
+  nhanh nhất khi Google hết hạn mức tháng (khoảng 5 giây mỗi lần gọi, so với
+  khoảng 2 phút khi đi vòng qua một provider bị giới hạn khác).
+- `opencode` không dùng được cho việc này khi tài khoản OpenCode Zen và
+  OpenRouter đều hết tiền: cả hai đều trả về lỗi hết số dư.
+
 Khi project Google chạm hạn mức chi tiêu tháng, đặt `VI_TRANSPORT=hermes` để
 gọi cùng model đó qua provider đã cấu hình trong Hermes (`VI_HERMES_MODEL` mặc
 định `google/gemini-3.8-flash`, `VI_HERMES_PROVIDER` mặc định `openrouter`).
@@ -89,6 +99,9 @@ python3 tools/translate-vi/repair_item.py 31 4
   nhất cho mỗi tên cơ quan Trung Quốc (mỗi chunk dịch độc lập nên cùng một cơ
   quan có thể ra nhiều cách gọi khác nhau).
 - `rename_chapters.py`: đổi tên tệp theo slug chuẩn.
+- tên tệp hồ sơ kiểm chứng sinh từ tiêu đề đã dịch, kèm số thứ tự phần; hai hồ
+  sơ cùng một số phần (ví dụ `07-a.md` và `07-b.md`) không ghi đè nhau.
+  `VI_REUSE_NAME=1` giữ nguyên tên tệp cũ khi dịch lại một tệp.
 - `make_status.py`: ghi `status.json`.
 
 ## Bản dịch còn lại
