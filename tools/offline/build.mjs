@@ -4,19 +4,25 @@
 // 站内相对链接改成线上地址，侧栏图片转成 data URI，其余一个字不动。
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
-import { ROOT, REPO, SITE, read, gitCommit, buildStamp } from '../lib/book.mjs';
+import { ROOT, REPO, SITE, read, gitCommit, buildStamp, langOf } from '../lib/book.mjs';
+import { pickLang, outputArg } from '../lib/langs.mjs';
 
-const OUT = resolve(ROOT, process.argv[2] ?? 'dist/HowToLiveBetter.html');
+const lang = pickLang();
+const info = langOf(lang);
+const L = info.labels;
+const outArg = outputArg();
+const OUT = resolve(ROOT, outArg ?? `dist/${info.outputs.offline}`);
 const STAMP = buildStamp();
 const COMMIT = gitCommit();
 
 // ---------- 正文 ----------
-const readme = read('README.md');
-const files = [...new Set([...readme.matchAll(/\]\((book\/[^)]+\.md)\)/g)].map(m => m[1]))].sort();
-if (!files.length) throw new Error('README 目录里没找到 book/ 文件，离线版会是空的');
+const readme = read(info.readme);
+const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const files = [...new Set([...readme.matchAll(new RegExp(`\\]\\((${escRe(info.bookGlob)}[^)]+\\.md)\\)`, 'g'))].map(m => m[1]))].sort();
+if (!files.length) throw new Error(`${info.readme} 目录里没找到 ${info.bookGlob} 文件，离线版会是空的`);
 // 长文（docs/*.md）也要带上：检索页的长文弹窗就地渲染它们，离线副本里没有就只剩
 // 一个点不开的 GitHub 链接。清单从 README 里扒，和 EPUB、PDF 两套构建用的是同一处。
-const docs = [...new Set([...readme.matchAll(/\]\((docs\/[^)#/]+\.md)\)/g)].map(m => m[1]))].sort();
+const docs = [...new Set([...readme.matchAll(new RegExp(`\\]\\((${escRe(info.docsGlob)}[^)#]+\\.md)\\)`, 'g'))].map(m => m[1]))].sort();
 const corpus = {
   readme,
   parts: Object.fromEntries(files.map(f => [f, read(f)])),
@@ -26,9 +32,9 @@ const corpus = {
 const corpusJson = JSON.stringify(corpus).replace(/<\/script/gi, '<\\/script');
 
 // ---------- 页面 ----------
-let html = read('index.html');
+let html = read(info.page);
 const must = (needle, label) => {
-  if (!html.includes(needle)) throw new Error(`index.html 里找不到${label}，离线版脚本要跟着改：${needle}`);
+  if (!html.includes(needle)) throw new Error(`${info.page} 里找不到${label}，离线版脚本要跟着改：${needle}`);
 };
 
 // 统计脚本不能跟着离线版走：别人双击打开的副本不该往外发请求，断网时还要等超时
@@ -43,8 +49,8 @@ if (/googletagmanager|google-analytics/.test(html)) throw new Error('剥掉标�
 must('href="README.md"', ' README.md 链接');
 must('href="book/"', ' book/ 链接');
 html = html
-  .replaceAll('href="README.md"', `href="${REPO}/blob/main/README.md"`)
-  .replaceAll('href="book/"', `href="${REPO}/tree/main/book"`)
+  .replaceAll('href="README.md"', `href="${REPO}/blob/main/${info.readme}"`)
+  .replaceAll('href="book/"', `href="${REPO}/tree/main/${info.bookGlob.replace(/\/$/, '')}"`)
   .replaceAll('<a class="title" href="./"', `<a class="title" href="${SITE}"`);
 
 // 侧栏广告图和赞赏码转 data URI，否则离线打开是个裂图
@@ -57,8 +63,8 @@ for (const [img, mime] of [['ads/mcyyy-side.webp', 'image/webp'], ['ads/wechat-r
 // 页脚注明这是哪一版的离线副本
 const foot = '<div class="foot">';
 must(foot, '页脚');
-const commitNote = COMMIT ? `，正文提交 ${COMMIT.slice(0, 7)}` : '';
-html = html.replace(foot, `${foot}离线副本，生成于 ${STAMP}（北京时间）${commitNote}；正文会继续更新，以 <a href="${SITE}">在线版</a> 为准。<br>`);
+const commitNote = COMMIT ? `${L.offlineCommit} ${COMMIT.slice(0, 7)}` : '';
+html = html.replace(foot, `${foot}${L.offlineFoot} ${STAMP}${L.offlineTz}${commitNote}${L.offlineLive.replace('%SITE%', SITE)}<br>`);
 
 // 正文要在主脚本之前就位
 const mainScript = '\n<script>\n/* ---------- 调试面板';

@@ -5,10 +5,14 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname, posix } from 'node:path';
 import { deflateRawSync } from 'node:zlib';
 import { Marked, Tokenizer } from 'marked';
-import { ROOT, REPO, SITE, TITLE, read, readBook, gitCommit, buildStamp, stripBackLink } from '../lib/book.mjs';
+import { ROOT, REPO, SITE, read, readBook, gitCommit, buildStamp, stripBackLink, langOf } from '../lib/book.mjs';
+import { pickLang, outputArg } from '../lib/langs.mjs';
 
-const OUT = resolve(ROOT, process.argv[2] ?? 'dist/HowToLiveBetter.epub');
-const RELEASE = `${REPO}/releases/download/epub-latest/HowToLiveBetter.epub`;
+const lang = pickLang();
+const info = langOf(lang);
+const outArg = outputArg();
+const OUT = resolve(ROOT, outArg ?? `dist/${info.outputs.epub}`);
+const RELEASE = `${REPO}/releases/download/epub-latest/${info.outputs.epub}`;
 const BOOK_ID = 'urn:uuid:5c0c1c0e-6a5c-4d2b-9b1e-7d1f0a4e8c31';
 const NOW = new Date();
 const COMMIT = gitCommit();
@@ -17,37 +21,40 @@ const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&
 const plain = html => html.replace(/<[^>]+>/g, '');
 
 // ---------- 从 README 取内容与文件清单 ----------
-const book = readBook();
+const book = readBook(lang);
 const { description, frontMd, bookFiles, docFiles } = book;
-const contentsMd = book.contentsMd.replace(/^## 目录/, '# 各节简介');
+const L = info.labels;
+const tocRe = new RegExp('^' + info.marks.toc.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+if (!tocRe.test(book.contentsMd)) throw new Error(`${info.readme} 里找不到「${info.marks.toc}」这一段`);
+const contentsMd = book.contentsMd.replace(tocRe, `# ${L.contents}`);
 
 // ---------- 页面清单 ----------
 // 每页：xhtml 文件名、来源 md 的仓库路径（用来解析相对链接）、md 正文
 const pages = [
-  { file: 'front.xhtml', src: 'README.md', title: '前言', md: `# ${TITLE}\n\n${description}\n\n${frontMd}` },
-  { file: 'contents.xhtml', src: 'README.md', title: '各节简介', md: contentsMd },
+  { file: 'front.xhtml', src: info.readme, title: L.front, md: `# ${info.title}\n\n${description}\n\n${frontMd}` },
+  { file: 'contents.xhtml', src: info.readme, title: L.contents, md: contentsMd },
   ...bookFiles.map((src, i) => ({ file: `ch${String(i + 1).padStart(2, '0')}.xhtml`, src, md: stripBackLink(read(src)) })),
   ...docFiles.map((src, i) => ({ file: `doc${i + 1}.xhtml`, src, md: stripBackLink(read(src)) })),
-  { file: 'about.xhtml', src: 'README.md', title: '版本说明', md: aboutMd() },
+  { file: 'about.xhtml', src: info.readme, title: L.about, md: aboutMd() },
 ];
 const pageByPath = new Map(pages.map(p => [p.src, p.file]));
-pageByPath.set('README.md', 'front.xhtml');
+pageByPath.set(info.readme, 'front.xhtml');
 
 function aboutMd() {
-  const commitLine = COMMIT ? `- 对应提交：[${COMMIT.slice(0, 7)}](${REPO}/commit/${COMMIT})` : '';
-  return `# 版本说明
+  const commitLine = COMMIT ? `- ${L.commit}：[${COMMIT.slice(0, 7)}](${REPO}/commit/${COMMIT})` : '';
+  return `# ${L.about}
 
-这本电子书由仓库里的 Markdown 正文自动生成，正文一改就重新生成一本。手里这本的版本：
+${L.epubLead}
 
-- 生成时间：${buildStamp()}（北京时间）
+- ${L.builtAt}：${buildStamp()}
 ${commitLine}
-- 最新版下载：${RELEASE}
-- 在线检索页（按关键词、章节、证据等级和成本筛选）：${SITE}
-- 仓库、提意见、看每条来源的核实记录：${REPO}
+- ${L.latestDownload}：${RELEASE}
+- ${L.siteLine}：${SITE}
+- ${L.repoLine}：${REPO}
 
-正文里指向仓库内其他文件的链接已改成书内跳转；指向核实记录、许可证这类没收进书的文件的链接改成了 GitHub 网址。
+${L.internalLinks}
 
-正文以 CC BY 4.0 发布（https://creativecommons.org/licenses/by/4.0/）。可以转载、改编、商用，要写明出处「高性价比人生指南」并附仓库链接，改过内容的要注明改过。`;
+${L.license}`;
 }
 
 // ---------- Markdown → XHTML ----------
@@ -101,7 +108,7 @@ function toXhtml(body) {
 
 function wrap(title, body) {
   return `<?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="zh-CN" lang="zh-CN">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="${info.htmlLang}" lang="${info.htmlLang}">
 <head>
 <meta charset="utf-8"/>
 <title>${esc(title)}</title>
@@ -129,16 +136,16 @@ const navItems = pages.map(p => {
   return { ...top, subs };
 });
 
-const navXhtml = wrap('目录', `<nav epub:type="toc" id="toc">
-<h1>目录</h1>
+const navXhtml = wrap(L.navToc, `<nav epub:type="toc" id="toc">
+<h1>${L.navToc}</h1>
 <ol>
 ${navItems.map(n => `<li><a href="${n.href}">${n.text}</a>${n.subs.length ? `\n<ol>\n${n.subs.map(s => `<li><a href="${s.href}">${s.text}</a></li>`).join('\n')}\n</ol>\n` : ''}</li>`).join('\n')}
 </ol>
 </nav>
 <nav epub:type="landmarks" hidden="hidden">
 <ol>
-<li><a epub:type="cover" href="cover.xhtml">封面</a></li>
-<li><a epub:type="bodymatter" href="${pages[2].file}">正文</a></li>
+<li><a epub:type="cover" href="cover.xhtml">${L.navCover}</a></li>
+<li><a epub:type="bodymatter" href="${pages[2].file}">${L.navBody}</a></li>
 </ol>
 </nav>
 `);
@@ -146,14 +153,14 @@ ${navItems.map(n => `<li><a href="${n.href}">${n.text}</a>${n.subs.length ? `\n<
 let play = 0;
 const navPoint = n => `<navPoint id="np${++play}" playOrder="${play}"><navLabel><text>${n.text}</text></navLabel><content src="${n.href}"/>${n.subs?.map(navPoint).join('') ?? ''}</navPoint>`;
 const ncx = `<?xml version="1.0" encoding="UTF-8"?>
-<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="zh-CN">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="${info.htmlLang}">
 <head>
 <meta name="dtb:uid" content="${BOOK_ID}"/>
 <meta name="dtb:depth" content="2"/>
 <meta name="dtb:totalPageCount" content="0"/>
 <meta name="dtb:maxPageNumber" content="0"/>
 </head>
-<docTitle><text>${TITLE}</text></docTitle>
+<docTitle><text>${info.title}</text></docTitle>
 <navMap>
 ${navItems.map(navPoint).join('\n')}
 </navMap>
@@ -161,15 +168,15 @@ ${navItems.map(navPoint).join('\n')}
 `;
 
 // ---------- 封面、OPF、容器 ----------
-const coverXhtml = wrap(TITLE, `<div class="cover"><img src="cover.png" alt="${esc(TITLE)}"/></div>\n`);
+const coverXhtml = wrap(info.title, `<div class="cover"><img src="cover.png" alt="${esc(info.title)}"/></div>\n`);
 const modified = NOW.toISOString().replace(/\.\d{3}Z$/, 'Z');
 const manifestPages = pages.map(p => `<item id="${p.file.replace('.xhtml', '')}" href="${p.file}" media-type="application/xhtml+xml"/>`);
 const opf = `<?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="pub-id" xml:lang="zh-CN">
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="pub-id" xml:lang="${info.htmlLang}">
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 <dc:identifier id="pub-id">${BOOK_ID}</dc:identifier>
-<dc:title>${TITLE}</dc:title>
-<dc:language>zh-CN</dc:language>
+<dc:title>${info.title}</dc:title>
+<dc:language>${info.htmlLang}</dc:language>
 <dc:creator>eternity4719</dc:creator>
 <dc:description>${esc(description)}</dc:description>
 <dc:source>${REPO}</dc:source>

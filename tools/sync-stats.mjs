@@ -106,6 +106,20 @@ const EDITS = [
   ['tools/og.html', 'og 条目数', /<b>(\d+)<\/b> 条建议/g, `<b>${entries}</b> 条建议`],
   ['tools/og.html', 'og A 级数', /A 级证据 <b>(\d+)<\/b> 条/g, `A 级证据 <b>${grade.A}</b> 条`],
   ['tools/og.html', 'og 链接数', /<b>(\d+)<\/b> 条原始文献链接/g, `<b>${links}</b> 条原始文献链接`],
+  // 越南语版：徽章标签用英文（shields.io 上带声调的越南语会长得没法读），数字照样同步
+  ['README.vi.md', 'vi 首屏条目数', /(\d+) lời khuyên/g, `${entries} lời khuyên`],
+  ['README.vi.md', 'vi 条目徽章', /Tips-(\d+)-18794e/g, `Tips-${entries}-18794e`],
+  ['README.vi.md', 'vi 证据徽章', /Evidence-A%20\d+%20%C2%B7%20B%20\d+%20%C2%B7%20C%20\d+/g,
+    `Evidence-A%20${grade.A}%20%C2%B7%20B%20${grade.B}%20%C2%B7%20C%20${grade.C}`],
+  ['README.vi.md', 'vi 链接徽章', /Sources-(\d+)%20links/g, `Sources-${links}%20links`],
+  ['README.vi.md', 'vi 正文文件数', /thành (\d+) tệp/g, `thành ${sections} tệp`],
+  ['index.vi.html', 'vi numberOfPages', /numberOfPages":(\d+)/g, `numberOfPages":${entries}`],
+  ['index.vi.html', 'vi 页头条目数', /(\d+) phần (\d+) mục/g, `${sections} phần ${entries} mục`],
+  ['vi/index.html', 'vi/ 页 numberOfPages', /numberOfPages":(\d+)/g, `numberOfPages":${entries}`],
+  ['vi/index.html', 'vi/ 页头条目数', /(\d+) phần (\d+) mục/g, `${sections} phần ${entries} mục`],
+  ['tools/og-vi.html', 'og-vi 条目数', /<b>(\d+)<\/b> lời khuyên/g, `<b>${entries}</b> lời khuyên`],
+  ['tools/og-vi.html', 'og-vi A 级数', /Bằng chứng A: <b>(\d+)<\/b> mục/g, `Bằng chứng A: <b>${grade.A}</b> mục`],
+  ['tools/og-vi.html', 'og-vi 链接数', /<b>(\d+)<\/b> liên kết nguồn gốc/g, `<b>${links}</b> liên kết nguồn gốc`],
 ];
 
 const texts = new Map();

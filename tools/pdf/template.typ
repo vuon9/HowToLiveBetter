@@ -21,9 +21,12 @@ $--
 // ---------- 版面 ----------
 #set document(title: "$booktitle$", author: "eternity4719")
 #set text(
-  // 西文用 typst 自带的 Libertinus，中文按可用性往后找：CI 上是 Noto，本机是雅黑
-  font: ("Libertinus Serif", "Noto Serif CJK SC", "Noto Serif SC", "Source Han Serif SC", "Noto Sans CJK SC", "Microsoft YaHei", "SimSun"),
-  size: 10.5pt, lang: "zh", region: "cn",
+  // 西文用 typst 自带的 Libertinus（越南语的声调符号也在它里面），
+  // 中文按可用性往后找：CI 上是 Noto，本机是雅黑
+  font: ("Libertinus Serif", "Noto Serif", "DejaVu Serif", "Noto Serif CJK SC", "Noto Serif SC", "Source Han Serif SC", "Noto Sans CJK SC", "Microsoft YaHei", "SimSun"),
+  size: 10.5pt,
+  lang: "$if(textlang)$$textlang$$else$zh$endif$",
+  region: "$if(region)$$region$$else$cn$endif$",
 )
 #set par(justify: false, leading: 0.78em, spacing: 0.9em)
 #set list(indent: 0.6em, spacing: 0.75em)
@@ -51,20 +54,20 @@ $--
 // ---------- 封面 ----------
 #set page(paper: "a4", margin: (x: 2.2cm, top: 2.2cm, bottom: 2cm), header: none, footer: none)
 #align(center + horizon)[
-  #image("/og.png", width: 100%)
+  #image("$if(coverimage)$$coverimage$$else$/og.png$endif$", width: 100%)
   #v(1.2cm)
   #block(width: 80%)[#text(11.5pt, fill: luma(60))[$subtitle$]]
   #v(2cm)
   #text(10pt, fill: luma(90))[
-    生成于 $builddate$（北京时间）　·　正文提交 $commit$ \
-    正文每天都在改，以在线版为准：$site$ \
-    在线检索、EPUB 与本 PDF 的最新版都在 $repo$
+    $if(coverbuilt)$$coverbuilt$$else$生成于$endif$ $builddate$$if(covertz)$$covertz$$else$（北京时间）$endif$　·　$if(commitlabel)$$commitlabel$$else$正文提交$endif$ $commit$ \
+    $if(coverlive)$$coverlive$$else$正文每天都在改，以在线版为准$endif$：$site$ \
+    $if(coverwhere)$$coverwhere$$else$在线检索、EPUB 与本 PDF 的最新版都在$endif$ $repo$
   ]
 ]
 
 // ---------- 目录 ----------
 #pagebreak()
-#outline(title: [目录], depth: 1, indent: 1em)
+#outline(title: [$if(toctitle)$$toctitle$$else$目录$endif$], depth: 1, indent: 1em)
 
 // ---------- 正文 ----------
 #pagebreak(weak: true)

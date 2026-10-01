@@ -1,14 +1,17 @@
 // README 的结构解析和文件清单：EPUB（tools/epub）和 PDF（tools/pdf）两套构建共用。
 // 只认 README 里的结构，不维护文件名单——新增一节或一篇长文，两套构建都自动跟上。
+// 语言由 tools/lib/langs.mjs 登记：中文读 README.md + book/ + docs/，
+// 其他语言读自己的 README.<code>.md + book/<code>/ + docs/<code>/。
 import { readFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execSync } from 'node:child_process';
+import { LANGS, DEFAULT_LANG } from './langs.mjs';
 
 export const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 export const REPO = 'https://github.com/eternity4719/HowToLiveBetter';
 export const SITE = 'https://eternity4719.github.io/HowToLiveBetter/';
-export const TITLE = '高性价比人生指南';
+export const TITLE = LANGS[DEFAULT_LANG].title;
 export const RELEASE = `${REPO}/releases/download/epub-latest`;
 
 // 一律按 LF 交给各套构建：Windows 上 core.autocrlf=true 检出的是 CRLF，离线版脚本
@@ -32,26 +35,36 @@ export function buildStamp() {
 }
 
 export function stripBackLink(md) {
-  return md.replace(/^\[← 回总目录\]\([^)]*\)\s*\n/, '');
+  return md.replace(/^\[← (回总目录|Về mục lục)\]\([^)]*\)\s*\n/, '');
 }
 
+export function langOf(code = DEFAULT_LANG) {
+  const info = LANGS[code];
+  if (!info) throw new Error(`chưa khai báo ngôn ngữ "${code}" trong tools/lib/langs.mjs`);
+  return info;
+}
+
+const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
 // README 里从某个标题到下一个标题之间的一段
-export function readBook() {
-  const readme = read('README.md');
+export function readBook(code = DEFAULT_LANG) {
+  const info = langOf(code);
+  const readme = read(info.readme);
   const lines = readme.split('\n');
   const between = (from, to) => {
     const a = lines.findIndex(l => l.startsWith(from));
     const b = lines.findIndex((l, i) => i > a && l.startsWith(to));
-    if (a < 0 || b < 0) throw new Error(`README 里找不到 ${from} 到 ${to} 这一段`);
+    if (a < 0 || b < 0) throw new Error(`${info.readme} 里找不到 ${from} 到 ${to} 这一段`);
     return lines.slice(a, b).join('\n');
   };
-  const description = between('# 高性价比人生指南', '[![')
+  const h1 = lines.find(l => l.startsWith('# ')) ?? '';
+  const description = between(h1, '[![')
     .split('\n').slice(1).map(l => l.replace(/<[^>]+>/g, '').trim()).filter(Boolean).join('');
-  const frontMd = between('## 这本书想回答的问题', '## 目录');
-  const contentsMd = between('## 目录', '## 正文')
+  const frontMd = between(info.marks.questions, info.marks.toc);
+  const contentsMd = between(info.marks.toc, info.marks.body)
     .split('\n\n').filter(p => !p.includes('index.html')).join('\n\n');
-  const bookFiles = unique([...contentsMd.matchAll(/\]\((book\/[^)#]+\.md)\)/g)].map(m => m[1]));
-  const docFiles = unique([...readme.matchAll(/\]\((docs\/[^)#/]+\.md)\)/g)].map(m => m[1]));
-  if (bookFiles.length === 0) throw new Error('README 目录里没找到 book/ 文件');
-  return { readme, description, frontMd, contentsMd, bookFiles, docFiles };
+  const bookFiles = unique([...contentsMd.matchAll(new RegExp(`\\]\\((${escRe(info.bookGlob)}[^)#]+\\.md)\\)`, 'g'))].map(m => m[1]));
+  const docFiles = unique([...readme.matchAll(new RegExp(`\\]\\((${escRe(info.docsGlob)}[^)#]+\\.md)\\)`, 'g'))].map(m => m[1]));
+  if (bookFiles.length === 0) throw new Error(`${info.readme} 目录里没找到 ${info.bookGlob} 文件`);
+  return { readme, description, frontMd, contentsMd, bookFiles, docFiles, info, h1 };
 }

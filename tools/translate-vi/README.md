@@ -102,7 +102,7 @@ python3 tools/translate-vi/repair_item.py 31 4
 - tên tệp hồ sơ kiểm chứng sinh từ tiêu đề đã dịch, kèm số thứ tự phần; hai hồ
   sơ cùng một số phần (ví dụ `07-a.md` và `07-b.md`) không ghi đè nhau.
   `VI_REUSE_NAME=1` giữ nguyên tên tệp cũ khi dịch lại một tệp.
-- `make_status.py`: ghi `status.json`.
+- `make_status.py`: ghi `status.json`; `make_registry.py`: ghi `translations.json`.
 
 ## Bản dịch còn lại
 
@@ -123,6 +123,29 @@ Chuỗi hiển thị thì đưa qua mô hình, chỉ ở nút văn bản và cá
 `title` / `aria-label` / `alt` / `placeholder`, nên bộ lọc không bị lệch giá
 trị. Trang đọc `README.vi.md`, và phần chú thích trong mã vẫn là tiếng Trung
 như bản gốc.
+
+## Hình thức giống các bản dịch khác
+
+| Thành phần | Tệp | Lệnh |
+| --- | --- | --- |
+| Trang tra cứu | `index.vi.html`, `vi/index.html` | `python3 tools/translate-vi/translate_index.py` rồi `node tools/translate-vi/build-site.mjs` |
+| EPUB / PDF / HTML một tệp | `dist/HowToLiveBetter-vi.*` | `node tools/{epub,pdf,offline}/build.mjs --lang vi` |
+| Banner mạng xã hội | `tools/og-vi.html` → `og-vi.png` | `node tools/translate-vi/build-og.mjs` |
+| Sổ đăng ký bản dịch | `translations.json` | `python3 tools/translate-vi/make_registry.py` |
+
+Ba script dựng đọc ngôn ngữ từ `tools/lib/langs.mjs`: tệp README, thư mục
+`book/` và `docs/`, tiêu đề, nhãn trong sách và tên tệp đầu ra. Thêm ngôn ngữ
+mới chỉ cần thêm một mục vào đó. Bản tiếng Trung chạy không tham số nên giữ
+nguyên đường dẫn và tên tệp như trước.
+
+`tools/sync-stats.mjs` cũng cập nhật số của `README.vi.md`, `index.vi.html`,
+`vi/index.html` và `tools/og-vi.html`, nên `--check` trong CI vẫn đối chiếu
+được cả hai ngôn ngữ.
+
+GitHub Actions (`book.yml`) dựng cả hai bản, chạy epubcheck cho cả hai tệp
+EPUB, và đăng `HowToLiveBetter-vi.{epub,pdf,html}` lên cùng release
+`epub-latest`. Trang `/vi/` cần bật GitHub Pages cho kho này; nếu chưa bật thì
+`index.vi.html` ở thư mục gốc vẫn mở được trực tiếp.
 
 ## Kiểm tra tự động
 
