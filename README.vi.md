@@ -8,11 +8,11 @@ Chỉ cách sống lâu, cách ít đau ốm, gặp tai nạn thì sơ cứu ra 
 
 Không cần làm theo tất cả: đây là danh sách lựa chọn xếp theo mức độ đáng tiền, không phải danh sách nhiệm vụ - chỉ cần chọn một hai mục là được, bản thân tác giả cũng chưa làm được phần lớn trong số đó.
 
-[![Tra cứu trực tuyến](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E7%B4%A2-%E7%82%B9%E8%BF%99%E9%87%8C%E6%89%93%E5%BC%80-3451b2?style=flat-square)](https://eternity4719.github.io/HowToLiveBetter/)
-[![Mục](https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-649%20%E6%9D%A1-18794e?style=flat-square)](#目录)
-[![Phân loại bằng chứng](https://img.shields.io/badge/%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7-A%20429%20%C2%B7%20B%20171%20%C2%B7%20C%2049-915930?style=flat-square)](#证据分级)
-[![Tài liệu gốc](https://img.shields.io/badge/%E5%8E%9F%E5%A7%8B%E6%96%87%E7%8C%AE-1528%20%E6%9D%A1%E9%93%BE%E6%8E%A5-565a5f?style=flat-square)](docs/核实记录/)
-[![Giấy phép](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-CC%20BY%204.0-565a5f?style=flat-square)](#许可)
+[![Search](https://img.shields.io/badge/Search-vi-3451b2?style=flat-square)](https://vuon9.github.io/HowToLiveBetter/vi/)
+[![Tips](https://img.shields.io/badge/Tips-649-18794e?style=flat-square)](#mục-lục)
+[![Evidence](https://img.shields.io/badge/Evidence-A%20429%20%C2%B7%20B%20171%20%C2%B7%20C%2049-915930?style=flat-square)](#phân-cấp-mức-bằng-chứng)
+[![Sources](https://img.shields.io/badge/Sources-1528%20links-565a5f?style=flat-square)](docs/核实记录/vi/)
+[![License](https://img.shields.io/badge/License-CC%20BY%204.0-565a5f?style=flat-square)](#giấy-phép)
 
 ### [Mở trang tra cứu trực tuyến](https://eternity4719.github.io/HowToLiveBetter/) · [Để AI trả lời theo sách (skill)](skills/life-decision-guide/README.md)
 

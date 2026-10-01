@@ -540,6 +540,6 @@
  "generated_by": "tools/translate-vi/make_status.py",
  "model": "gemini-3.8-flash",
  "readme": {
-  "hanzi_outside_tags": 171
+  "hanzi_outside_tags": 163
  }
 }
