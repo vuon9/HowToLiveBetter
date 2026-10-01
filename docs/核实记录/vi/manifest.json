@@ -72,9 +72,10 @@
  {
   "file": "10-ho-so-kiem-chung-mo-rong-phan-10-bo.md",
   "source": "10-21-23-恋爱出国娱乐减压与技能.md",
-  "sections": 4,
+  "sections": 8,
   "hanzi": 2071,
-  "model": "hermes:deepseek-flash"
+  "model": "deepseek-flash (trực tiếp)",
+  "hanzi_kept": 2071
  },
  {
   "source": "10-结婚划不划算.md",
@@ -585,7 +586,8 @@
   "source": "追加-第1节骨质疏松筛查.md",
   "sections": 11,
   "hanzi": 1475,
-  "model": "hermes:deepseek-flash"
+  "model": "deepseek-flash (trực tiếp)",
+  "hanzi_kept": 1475
  },
  {
   "source": "追加-第20节新生儿黄疸.md",
@@ -683,7 +685,8 @@
   "source": "追加-第9节境外信息只看不转.md",
   "sections": 1,
   "hanzi": 40,
-  "model": "hermes:deepseek-flash"
+  "model": "deepseek-flash (trực tiếp)",
+  "hanzi_kept": 40
  },
  {
   "source": "追加-第9节薅羊毛.md",
@@ -704,7 +707,8 @@
   "source": "追加-自杀的后果.md",
   "sections": 5,
   "hanzi": 637,
-  "model": "hermes:deepseek-flash"
+  "model": "deepseek-flash (trực tiếp)",
+  "hanzi_kept": 637
  },
  {
   "source": "追加-自首与追诉期限.md",
@@ -725,7 +729,8 @@
   "source": "追加-要不要死记硬背.md",
   "sections": 3,
   "hanzi": 32,
-  "model": "hermes:deepseek-flash"
+  "model": "deepseek-flash (trực tiếp)",
+  "hanzi_kept": 32
  },
  {
   "source": "追加-读书还是打工.md",
